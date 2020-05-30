@@ -6,13 +6,18 @@ html {
 body {
     margin: 0;
     background-color: #33303f;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 0px 10px;
+    height: 100%;
 }
 
 /* NAVIGATION */
 .nav {
     margin: 0;
-    padding: 0;
+    padding: 2px;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -49,20 +54,36 @@ body {
 }
 
 
-
-.main {
-    margin-left: 100px;
-    padding: 0px 10px;
-    height: 100%;
+/* Home Page Formatting */
+#home-page {
     text-align: center;
+}
+
+#main-title h1 {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-size: 48px;
     color: #FBFAFB;
 }
 
-/* Home Page Formatting */
-#main-title {
+#main-title p {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
-    font-family: Consolas, monaco, monospace;
-    width: 78%;
-    margin: auto;
-    float: right;
 }
+
+#status {
+    padding: 20px 5px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Consolas, monaco, monospace;
+    color: #FFFFFF;
+    display: block;
+    background-color: #E14658;
+}
+
+#website {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
