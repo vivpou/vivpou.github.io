@@ -5,7 +5,7 @@ html {
 /* BACKGROUND */
 body {
     margin: 0;
-    background-color: #22252C;
+    background-color: #33303f;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #33303f;
+    background-color: #22252C;
     padding-top: 20px;
 }
 
