@@ -9,6 +9,18 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
+#content {
+    width: 78%;
+    height: 100%;
+    overflow: scroll;
+    float: right;
+    margin: 0;
+    padding: 1%;
+    border: 0;
+    float: right;
+    background-color: #22252C;
+}
+
 nav {
     float: left;
     background-color: #33303f;
@@ -18,7 +30,16 @@ nav {
     position: fixed;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
 nav li a {
+    margin: 5px;
+    padding: 10px 10px;
     font-family: Consolas, monaco, monospace;
     display: block;
     position: fixed;
@@ -35,9 +56,9 @@ nav li a:hover, .active {
 #main-title {
     color: #FFFFFF;
     font-family: Consolas, monaco, monospace;
-    position: relative;
-    text-align: center;
-
+    width: 78%;
+    margin: auto;
+    float: right;
 }
 
 
