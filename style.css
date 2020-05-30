@@ -75,13 +75,14 @@ body {
 #status {
     text-align: center;
     max-width: 700px;
+    margin: auto;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 24px;
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
-    background-color: rgba(225, 70, 88, .4);
+    background-color: #E14658;
 }
 
 #website {
@@ -91,3 +92,42 @@ body {
     color: #FFFFFF;
 }
 
+/* ABOUT PAGE */
+#about-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5px;
+    text-decoration: none;
+    z-index: 2;
+    font-size: 36px;
+    font-family: Consolas, monaco, monospace;
+    color: #FFFFFF;
+    display: block;
+    background-color: #E14658;
+    position: fixed;
+}
+
+#about-text {
+    margin: auto;
+    padding: 20px 100px;
+    text-decoration: none;
+    z-index: 3;
+    font-size: 18px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FFFFFF;
+    display: block;
+    background-color: #262830;
+    position: fixed;
+}
+
+#github-link {
+    margin: auto;
+    padding: 20px 100px;
+    text-decoration: none;
+    z-index: 3;
+    font-size: 18px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FBFAFB;
+    display: block;
+    position: fixed;
+}

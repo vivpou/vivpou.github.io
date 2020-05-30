@@ -53,9 +53,11 @@ NEW PROJECT TEMPLATE:
             </div>
 
             <!-- shortcuts to top and bottom -->
-            <div class="proj-shortcut">
+            <div class="proj-top">
+                <p><a href="#NEWEST">To top (newest entries)</p>
+            </div>
+            <div class="proj-bottom">
                 <p><a href="#OLDEST">To bottom (oldest entries)</p>
-                <p><a href="#NEWEST">To top (newest entries)</a></p>
             </div>
         </div>
 
