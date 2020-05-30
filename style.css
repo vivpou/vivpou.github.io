@@ -32,6 +32,11 @@ body {
     display: block;
 }
 
+#current {
+    background-color: #E14658;
+    color: #FFFFFF;
+}
+
 .nav a:hover, .active {
     background-color: #E14658;
     color: #FFFFFF;
