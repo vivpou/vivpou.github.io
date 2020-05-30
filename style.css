@@ -7,7 +7,7 @@ a {color: #FFFFFF;}
 /* BACKGROUND */
 body {
     margin: 0;
-    background-color: #33303f;
+    background-color: #2B2B36;
 }
 
 .main {
@@ -57,7 +57,6 @@ body {
 
 
 /* Home Page Formatting */
-
 #main-title h1 {
     margin-top: 20%;
     text-align: center;
