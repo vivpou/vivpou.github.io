@@ -9,19 +9,9 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
-#content {
-    width: 78%;
-    height: 100%;
-    overflow: scroll;
-    float: right;
+.nav {
     margin: 0;
-    padding: 1%;
-    border: 0;
-    float: right;
-    background-color: #22252C;
-}
-
-nav {
+    padding: 0;
     height: 100%;
     width: 20%;
     position: fixed;
@@ -32,7 +22,7 @@ nav {
     padding-top: 20px;
 }
 
-nav a {
+.nav a {
     padding: 6px 8px 8px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -63,15 +53,4 @@ nav li a:hover, .active {
     width: 78%;
     margin: auto;
     float: right;
-}
-
-
-
-/* Post Page Formatting */
-h3.posts {
-
-}
-
-p.posts {
-
 }
