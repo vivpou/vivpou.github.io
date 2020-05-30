@@ -81,7 +81,7 @@ body {
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
-    background-color: rgba(225, 70, 88, .69);
+    background-color: rgba(225, 70, 88, .4);
 }
 
 #website {
