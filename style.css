@@ -19,7 +19,7 @@ body {
 /* NAVIGATION */
 .nav {
     margin: 0;
-    padding: 2px;
+    padding: 0;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -60,8 +60,8 @@ body {
 #main-title h1 {
     margin-top: 20%;
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-    font-size: 48px;
+    font-family: Consolas, monaco, monospace;
+    font-size: 64px;
     color: #FBFAFB;
 }
 
@@ -74,6 +74,7 @@ body {
 
 #status {
     text-align: center;
+    margin-top: 40%;
     max-width: 700px;
     margin: auto;
     padding: 20px 5px;
@@ -91,6 +92,8 @@ body {
     font-size: 16px;
     color: #FFFFFF;
 }
+
+/* PROJECT PAGES */
 
 /* ABOUT PAGE */
 #about-header {
