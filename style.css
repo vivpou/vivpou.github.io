@@ -2,13 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-/*Background and Navigation formatting*/
+/* BACKGROUND */
 body {
     margin: 0;
     background-color: #22252C;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
+/* NAVIGATION */
 .nav {
     margin: 0;
     padding: 0;
@@ -31,19 +32,24 @@ body {
     display: block;
 }
 
-nav li a:hover, .active {
+.nav a:hover, .active {
     background-color: #E14658;
     color: #FFFFFF;
 }
 
+/* change padding when screen is smaller */
 @media screen and (max-height: 450px) {
     nav {padding-top: 10px;}
     nav a {font-size: 15px;}
 }
 
+
+
 .main {
     margin-left: 160px;
     padding: 0px 10px;
+    height: 100%;
+    width: 80%;
 }
 
 /* Home Page Formatting */
