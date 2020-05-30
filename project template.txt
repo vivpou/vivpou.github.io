@@ -1,3 +1,14 @@
+NEW POST TEMPLATE:
+    <div id= "template">
+        <p><strong>MONTH day, year<br>DoW<br>Title</strong></p>
+        <p>
+        text
+        </p>
+    </div>
+
+
+NEW PROJECT TEMPLATE:
+(REMEMBER TO UPDATE NAVIGATION IN ALL DOCUMENTS)
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +29,9 @@
     <div class="nav">
         <a href="./index.html">Home</a></li>
         <div id="current">
-            <a href="./gamified.html">Gamified Task Manager</a></li>
+            NEW PROJECT
         </div>
+        <a href="./gamified.html">Gamified Task Manager</a></li>
         <a href="./fidelity.html">Fidelity</a></li>
         <a href="./greencrew.html">Sustainable Claremont</a></li>
         <a href="./about.html">Blog Info</a>
@@ -30,14 +42,14 @@
         <!-- Project Header -->
         <div class="proj-header">
             <div class="proj-title">
-                <h1>Gamified Task Manager</h1>
+                <h1>PROJECT NAME</h1>
             </div>
 
             <div class="proj-status">
                 <p><strong>STATUS: </strong>In-Progress</p>
             </div>
             <div class="proj-dates">
-                <p><strong>Started: May 2020</strong></p>
+                <p><strong>DATES</strong></p>
             </div>
 
             <!-- shortcuts to top and bottom -->
