@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Background and Navigation formatting*/
+body {
+    margin: 0;
+    background-color: #22252C;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+
+nav {
+    float: left;
+    background-color: #33303f;
+    height: 100%;
+    width: 20%;
+    padding: 1%;
+    position: fixed;
+}
+
+nav li a {
+    font-family: Consolas, monaco, monospace;
+    display: block;
+    position: fixed;
+    background-color: #33303F;
+    color: #FBFAFB;
+}
+
+nav li a:hover, .active {
+    background-color: #E14658;
+    color: #FFFFFF;
+}
+
+/* Home Page Formatting */
+#main-title {
+    color: #FFFFFF;
+    font-family: Consolas, monaco, monospace;
+    position: relative;
+    text-align: center;
+
+}
+
+
+
+/* Post Page Formatting */
+h3.posts {
+
+}
+
+p.posts {
+
+}
