@@ -10,22 +10,45 @@
     </header>
 
     <div id="posts">
-      <p><strong>JUNE 10, 2019</strong></p>
-      <p><strong>Monday</strong></p>
-      <p><strong>Joining the Team</strong></p>
-      <p>
-        Today was my first day on the Green Crew Research Team! The first hour or so was spent talking to Christina, Reymond, and Prof. Medero about what the team had accomplished in the first couple of weeks and what was left to work on. The rest of the morning and the early part of the afternoon was spent learning about Google App Script by working with a toy example and following online tutorials until I felt relatively comfortable working in the language. From there I read the Protocol for Future Developers documents from the team drive in order to familiarize myself with what had already been accomplished and what still needed work. I decided it would be best for me to start looking at the code for Tree Benefit Analysis as it seemed that much of the work regarding the messaging system was nearly complete (although I spent a little bit of time seeing if we could link the original text to translated messages in case the google translations didn’t make sense, but this did not result in anything concrete). After looking through the notes and the code, it seemed like one of the main problems was run time in gathering data for individual trees. Thus, I tried to comb through the existing code to see if there were any places that run time could be improved. Toward the end of the work day we decided to try turning the ~700 lines of if-statements into a dictionary, so I spent the remainder of the work day beginning to convert these if-statements into a dictionary.
-      </p>
-      <p>
-        Tomorrow I will finish turning the if statements into dictionaries for tree names, distances, and direction as well as making sure my new implementation doesn’t introduce more errors. I plan to also look through more of the code to see if there are other steps that can be taken to improve the runtime so that users don’t have to split the calculation into chunks of rows. There also seemed to be an unresolved error with getting individual tree benefits on a yearly basis.
-      </p>
-    </div>
+      <!--
+      <div id= "template">
+        <p><strong>MONTH day, year<br>DoW<br>Title</strong></p>
+        <p>
+          (8 spaces) text
+        </p>
+      </div>
+      -->
 
-    <div id="image">
-      <img src= raspberrie.jpg alt="raspberries">
+      <div id= "June 11">
+        <p><strong>JUNE 11, 2019<br>Tuesday<br>Starting to Fix Individal Benefits</strong></p>
+        <p>
+                  Today I finished up yesterday's task of turning the long chunks of if-statements into more concise dictionaries. This was effective in cutting the code from ~1300 lines to ~800 lines in Part II of the Tree Benefit Analysis Script! :)
+        </p>
+        <p>
+                  There are two parts of the Tree Benefit Analysis tool. The first is the Overall Benefits which is used for writing grant reports and reports year-by-year and sums across trees. This tool is functional, but quite slow. The second is the Individual Benefits which is used for community engagement and reports tree-by-tree and sums across years. This tool does not work.
+        </p>
+        <p>
+                  The rest of the morning and much of the afternoon was spent trying to get the Individual Tree Benefits results to work. I found that it was difficult for me to work with the original format from last year of having the individual tree benefit results appear in the same document as the original trees. At least temporarily, I will try to get the results to appear in a separate tab similar to how the Overall Benefits results were set up to appear in a separate tab 'Results'. This change was made since the Overall Benefits code results work and I wanted to try and mirror the working code from Overall Benefits to get the non-working code in Individual Benefits to work. Additionally, I had noticed some inconsistencies in variable naming and that similar functions often had the same variables but in different orders, so I spent some time trying to get the code to be more uniform and easier to read. 
+        </p>
+        <p>
+                  At the end, we noticed that iTree had been updated with different tree names, so some of the information about tree benefits was incorrect, so I began to compare our tree species dictionary with the tree species on iTree. 
+        </p>
+        <p>
+                  Tomorrow, I will finish updating the tree species and I will look into seeing if it is possible to get the dictionary to update when iTree updates, since it may be cumbersome to have to recheck the tree species dictionary every time iTree updates. Additionally, the code for Individual Tree Species does not consistently work (although it works better than it did this morning) so I hope to put in more time and see what cases it is not working for so we can polish up what last year's group started. Hopefully we will be able to make new developments towards generalizing this code for other organizations!
+        </p>
+      </div>
+
+      <div id= "June 10">
+        <p><strong>JUNE 10, 2019<br>Monday<br>Joining the Team</strong></p>
+        <p>
+                  Today was my first day on the Green Crew Research Team! The first hour or so was spent talking to Christina, Reymond, and Prof. Medero about what the team had accomplished in the first couple of weeks and what was left to work on. The rest of the morning and the early part of the afternoon was spent learning about Google App Script by working with a toy example and following online tutorials until I felt relatively comfortable working in the language. From there I read the Protocol for Future Developers documents from the team drive in order to familiarize myself with what had already been accomplished and what still needed work. I decided it would be best for me to start looking at the code for Tree Benefit Analysis as it seemed that much of the work regarding the messaging system was nearly complete (although I spent a little bit of time seeing if we could link the original text to translated messages in case the google translations didn’t make sense, but this did not result in anything concrete). After looking through the notes and the code, it seemed like one of the main problems was run time in gathering data for individual trees. Thus, I tried to comb through the existing code to see if there were any places that run time could be improved. Toward the end of the work day we decided to try turning the ~700 lines of if-statements into a dictionary, so I spent the remainder of the work day beginning to convert these if-statements into a dictionary.
+        </p>
+        <p>
+                  Tomorrow I will finish turning the if statements into dictionaries for tree names, distances, and direction as well as making sure my new implementation doesn’t introduce more errors. I plan to also look through more of the code to see if there are other steps that can be taken to improve the runtime so that users don’t have to split the calculation into chunks of rows. There also seemed to be an unresolved error with getting individual tree benefits on a yearly basis.
+        </p>
+      </div>
+
     </div>
-    
   
-        
   </body>
 </html>
