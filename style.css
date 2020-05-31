@@ -94,6 +94,34 @@ body {
 }
 
 /* PROJECT PAGES */
+.project-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 5px;
+    text-decoration: none;
+    z-index: 2;
+    font-size: 36px;
+    font-family: Consolas, monaco, monospace;
+    display: block;
+    background-color: #E14658;
+    color: #FFFFFF;
+    position: fixed;
+}
+
+.project-text {
+    margin: auto;
+    padding: 20px 100px;
+    text-decoration: none;
+    z-index: 3;
+    font-size: 18px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    display: block;
+    background-color: #262830;
+    color: #FFFFFF;
+    position: fixed;
+}
+
+
 
 /* ABOUT PAGE */
 #about-header {
@@ -104,9 +132,9 @@ body {
     z-index: 2;
     font-size: 36px;
     font-family: Consolas, monaco, monospace;
-    color: #FFFFFF;
     display: block;
     background-color: #E14658;
+    color: #FFFFFF;
     position: fixed;
 }
 
@@ -117,9 +145,9 @@ body {
     z-index: 3;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-    color: #FFFFFF;
     display: block;
     background-color: #262830;
+    color: #FFFFFF;
     position: fixed;
 }
 
