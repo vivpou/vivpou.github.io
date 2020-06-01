@@ -96,7 +96,7 @@ body {
 /* PROJECT PAGES */
 .proj-header {
     text-align: center;
-    margin: auto;
+    margin: auto 0;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 18px;
