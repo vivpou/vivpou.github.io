@@ -94,7 +94,7 @@ body {
 }
 
 /* PROJECT PAGES */
-.project-header {
+.proj-header {
     text-align: center;
     margin: auto;
     padding: 20px 5px;
@@ -106,7 +106,7 @@ body {
     background-color: #E14658;
 }
 
-.project-text {
+.proj-text {
     margin: auto;
     padding: 20px 100px;
     text-decoration: none;
