@@ -137,7 +137,7 @@ body {
     text-decoration: none;
 }
 
-.proj-text {
+.posts {
     margin: 250px auto auto auto;
     margin-top: 250px;
     padding: 20px 100px;
@@ -152,10 +152,11 @@ body {
     text-decoration: none;
 }
 
-.proj-text a {
+/* .proj-text a {
     color: #FFFFFF;
     text-decoration: none;
 }
+*/
 
 
 
@@ -180,7 +181,7 @@ body {
     background-color: #262830;
     padding: 50px 50px;
     display: block;
-    
+
     /* 
     position: relative;
     margin: auto;
