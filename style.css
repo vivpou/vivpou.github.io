@@ -63,6 +63,7 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 64px;
     color: #FBFAFB;
+    line-height: 1.2;
 }
 
 #main-title p {
@@ -70,6 +71,7 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
+    line-height: 1.2;
 }
 
 #status {
@@ -103,6 +105,7 @@ body {
     font-family: Consolas, monaco, monospace;
     display: block;
     background-color: #E14658;
+    line-height: 1.2;
 }
 
 .sticky {
@@ -112,7 +115,6 @@ body {
 
 .proj-header .proj-title {
     font-size: 36px;
-    line-height: 1.2;
     color: #FFFFFF;
 }
 
