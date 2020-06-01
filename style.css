@@ -122,6 +122,7 @@ body {
     justify-content: space-evenly;
     font-size: 12px;
     color: #262830;
+    text-decoration: none;
 }
 
 .proj-text {
