@@ -96,16 +96,14 @@ body {
 /* PROJECT PAGES */
 .project-header {
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px 5px;
     text-decoration: none;
-    z-index: 2;
-    font-size: 36px;
+    font-size: 18px;
     font-family: Consolas, monaco, monospace;
+    color: #FFFFFF;
     display: block;
     background-color: #E14658;
-    color: #FFFFFF;
-    position: fixed;
 }
 
 .project-text {
@@ -126,19 +124,6 @@ body {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin-top: 40%;
-    margin: auto;
-    padding: 20px 5px;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: Consolas, monaco, monospace;
-    color: #FFFFFF;
-    display: block;
-    background-color: #E14658;
-    
-    /*
-    text-align: center;
-    margin-top: 0;
     margin: auto;
     padding: 20px 5px;
     text-decoration: none;
@@ -147,8 +132,6 @@ body {
     color: #FFFFFF;
     display: block;
     background-color: #E14658;
-    position: fixed;
-    */
 }
 
 #about-text {
@@ -171,8 +154,8 @@ body {
 }
 
 #github-link {
-    text-align: left;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: center;
+    font-family: Consolas, monaco, monospace;
     font-size: 18px;
     color: #FFFFFF;
 }
