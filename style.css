@@ -101,23 +101,27 @@ body {
     padding: 20px 5px;
     text-decoration: none;
     font-family: Consolas, monaco, monospace;
-    color: #FFFFFF;
     display: block;
     background-color: #E14658;
+    position: fixed;
 }
 
 .proj-header .proj-title {
     font-size: 36px;
+    line-height: 1.2;
+    color: #FFFFFF;
 }
 
 .proj-header .proj-status {
     font-size: 18px;
+    color: #FFFFFF;
 }
 
 .proj-header .proj-shortcuts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 12px;
+    color: #262830;
 }
 
 .proj-text {
