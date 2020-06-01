@@ -62,7 +62,7 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 64px;
     color: #FBFAFB;
-    line-height: 1.2;
+    line-height: 1.0;
 }
 
 #main-title p {
@@ -70,7 +70,7 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
-    line-height: 1.2;
+    line-height: 1.0;
 }
 
 #status {
@@ -178,16 +178,12 @@ body {
     font-size: 18px;
     color: #FFFFFF;
     background-color: #262830;
+    padding: 50px 50px;
+    display: block;
+    
     /* 
-    text-align: left;
     position: relative;
     margin: auto;
-    padding: 100px 100px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-    display: block;
-    color: #FFFFFF;
     */
 }
 
