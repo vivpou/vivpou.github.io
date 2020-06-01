@@ -94,6 +94,10 @@ body {
     color: #FFFFFF;
 }
 
+#website a {
+    color: #FFFFFF;
+}
+
 
 /* PROJECT PAGES */
 .proj-header {
@@ -126,7 +130,7 @@ body {
     text-align: center;
 }
 
-.proj-header .proj-shortcuts {
+.proj-header .proj-shortcuts a {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -146,6 +150,11 @@ body {
     background-color: #262830;
     color: #FFFFFF;
     position: fixed;
+    text-decoration: none;
+}
+
+.proj-text a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -187,5 +196,9 @@ body {
     text-align: center;
     font-family: Consolas, monaco, monospace;
     font-size: 18px;
+    color: #FFFFFF;
+}
+
+#github-link a {
     color: #FFFFFF;
 }
