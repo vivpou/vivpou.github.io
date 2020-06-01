@@ -93,17 +93,31 @@ body {
     color: #FFFFFF;
 }
 
+
 /* PROJECT PAGES */
 .proj-header {
     text-align: center;
     margin: auto 0;
     padding: 20px 5px;
     text-decoration: none;
-    font-size: 18px;
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
     background-color: #E14658;
+}
+
+.proj-header .proj-title {
+    font-size: 36px;
+}
+
+.proj-header .proj-status {
+    font-size: 18px;
+}
+
+.proj-header .proj-shortcuts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
 }
 
 .proj-text {
@@ -117,6 +131,7 @@ body {
     background-color: #262830;
     color: #FFFFFF;
     position: fixed;
+    text-decoration: none;
 }
 
 
