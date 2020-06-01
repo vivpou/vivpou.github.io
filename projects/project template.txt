@@ -15,7 +15,7 @@ NEW PROJECT TEMPLATE:
 
   <head>
     <!-- CSS Style Sheet link -->
-    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="../style.css" type="text/css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
 
@@ -27,14 +27,14 @@ NEW PROJECT TEMPLATE:
   <body>
     <!-- Menu Navigation -->
     <div class="nav">
-        <a href="./index.html">Home</a></li>
+        <a href="../index.html">Home</a></li>
         <div id="current">
             NEW PROJECT
         </div>
         <a href="./gamified.html">Gamified Task Manager</a></li>
         <a href="./fidelity.html">Fidelity</a></li>
         <a href="./greencrew.html">Sustainable Claremont</a></li>
-        <a href="./about.html">Blog Info</a>
+        <a href="../about.html">Blog Info</a>
         </div>
 
     <div class="main">
