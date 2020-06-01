@@ -129,7 +129,7 @@ body {
     height: 300px;
     top: 0px;
     z-index: 1;
-    margin: 0px auto 0px auto;
+    margin: auto;
     background-color: #E14658;
 }
 
@@ -144,8 +144,8 @@ body {
 
 #about-text {
     position: relative;
-    margin: 300px auto 0px auto;
-    padding: 50px 100px;
+    margin: auto;
+    padding: 100px 100px;
 }
 
 #about-text p {
@@ -161,6 +161,7 @@ body {
 
 #github-link {
     text-align: center;
+    margin: auto;
     text-decoration: none;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
