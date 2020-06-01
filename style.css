@@ -12,7 +12,7 @@ body {
 
 .main {
     margin-left: 200px;
-    padding: 0px 10px;
+    padding: 0px;
     height: 100%;
 }
 
@@ -57,7 +57,7 @@ body {
 
 
 /* HOME PAGE */
-#main-title h1 {
+#main-title h2 {
     margin-top: 20%;
     text-align: center;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
@@ -98,9 +98,7 @@ body {
 
 /* PROJECT PAGES */
 .proj-header {
-    text-align: center;
     margin: auto 0;
-    padding: 20px 5px;
     width: 100%;
     height: 250px;
     text-decoration: none;
@@ -112,18 +110,21 @@ body {
 }
 
 .proj-header .proj-title {
-    font-size: 36px;
+    font-size: 32px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .proj-header .proj-status {
     font-size: 18px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .proj-header .proj-dates {
     font-size: 18px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .proj-header .proj-shortcuts {
@@ -135,7 +136,7 @@ body {
 }
 
 .proj-text {
-    margin: auto;
+    margin: 250px auto auto auto;
     margin-top: 250px;
     padding: 20px 100px;
     text-decoration: none;
