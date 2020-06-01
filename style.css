@@ -14,7 +14,6 @@ body {
     margin-left: 200px;
     padding: 0px 10px;
     height: 100%;
-    overflow: scroll;
 }
 
 /* NAVIGATION */
@@ -127,6 +126,18 @@ body {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
+    margin-top: 40%;
+    margin: auto;
+    padding: 20px 5px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Consolas, monaco, monospace;
+    color: #FFFFFF;
+    display: block;
+    background-color: #E14658;
+    
+    /*
+    text-align: center;
     margin-top: 0;
     margin: auto;
     padding: 20px 5px;
@@ -137,6 +148,7 @@ body {
     display: block;
     background-color: #E14658;
     position: fixed;
+    */
 }
 
 #about-text {
