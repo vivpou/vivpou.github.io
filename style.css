@@ -108,7 +108,7 @@ body {
     display: block;
     background-color: #E14658;
     line-height: 1.2;
-    position: fixed;
+    /*position: fixed;*/
 }
 
 .proj-header .proj-title {
