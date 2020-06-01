@@ -126,41 +126,41 @@ body {
 
 /* ABOUT PAGE */
 #about-header {
-    position: fixed;
-    height: 200px;
-    top: 0px;
-    z-index: 1;
-    margin: auto;
-    background-color: #E14658;
     text-align: center;
-    font-size: 48px;
+    margin-top: 0;
+    margin: auto;
+    padding: 20px 5px;
     text-decoration: none;
+    font-size: 36px;
     font-family: Consolas, monaco, monospace;
-    display: block;
     color: #FFFFFF;
+    display: block;
+    background-color: #E14658;
+    position: fixed;
 }
 
 #about-text {
+    text-align: left;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #262830;
+    /* 
+    text-align: left;
     position: relative;
     margin: auto;
     padding: 100px 100px;
-}
-
-#about-text p {
     text-decoration: none;
-    text-align: left;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     display: block;
-    background-color: #262830;
     color: #FFFFFF;
-
+    */
 }
 
 #github-link {
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
+    text-align: left;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-    color: #FBFAFB;
+    font-size: 18px;
+    color: #FFFFFF;
 }
