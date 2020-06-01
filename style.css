@@ -14,6 +14,7 @@ body {
     margin-left: 200px;
     padding: 0px 10px;
     height: 100%;
+    overflow: scroll;
 }
 
 /* NAVIGATION */
@@ -157,12 +158,9 @@ body {
 }
 
 #github-link {
-    text-align: center;
-    margin: auto;
     text-decoration: none;
+    text-align: center;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     color: #FBFAFB;
-    display: block;
-    position: fixed;
 }
