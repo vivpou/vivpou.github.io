@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 65px;
+    padding: 8px 8px 0px 50px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -124,26 +124,38 @@ body {
     text-decoration: none;
     display: block;
     background-color: #E14658;
+    line-height: 1.2;
 }
 
 .proj-title {
     font-size: 32px;
     color: #FFFFFF;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
 .proj-status {
     font-size: 18px;
     color: #FFFFFF;
+    font-family: Consolas, monaco, monospace;
 }
 
 .proj-dates {
     font-size: 14px;
     color: #FFFFFF;
+    font-family: Consolas, monaco, monospace;
 }
 
 .proj-shortcuts {
     right: 15px;
     bottom: 15px;
+}
+
+.proj-shortcuts a{
+    color: #CACACD;
+    text-decoration: none;
+}
+
+.proj-shortcuts-top, .proj-shortcuts-bot {
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
@@ -152,27 +164,49 @@ body {
     border-radius: 3px;
     position: fixed;
     padding: 5px 10px;
-}
 
-.proj-shortcuts a{
-    color: #CACACD;
-    text-decoration: none;
 }
-
 .proj-shortcuts-top:hover, .proj-shortcuts-bot:hover {
     background-color: #e14658;
 }
 
-.posts {
+.post-header {
     margin: auto 20px;
-    padding: 25px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: left;
+    padding: 25px 50px 10px 10px;
     display: block;
-    background-color: #262830;
-    color: #FFFFFF;
+    font-family: Consolas, monaco, monospace;
+    background-color: #339989;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.post-date {
+    font-size: 16px;
+    text-decoration: bold;
+    color: #CACACD;
+}
+
+.post-dow {
+    font-size: 16px;
     text-decoration: none;
+    color: #FFFFFF;
+}
+
+.post-title {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.post-body {
+    margin: auto 20px;
+    padding: 25px 50px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    color: #FFFFFF;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-color: #262830;
 }
 
 
