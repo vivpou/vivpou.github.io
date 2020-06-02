@@ -149,8 +149,9 @@ body {
     font-size: 12px;
     background-color: #22252c;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     position: fixed;
+    padding: 5px 10px;
 }
 
 .proj-shortcuts a{
