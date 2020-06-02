@@ -59,6 +59,7 @@ html {
 
 
 /* HOME PAGE */
+/*
 #main-title h2 {
     margin-top: 20%;
     text-align: center;
@@ -102,6 +103,7 @@ html {
 
 
 /* PROJECT PAGES */
+/*
 .proj-header {
     text-align: center;
     margin: 0px auto;
@@ -159,6 +161,7 @@ proj-header .proj-shortcuts {
 
 
 /* ABOUT PAGE */
+/*
 #about-header {
     text-align: center;
     margin: 0px 0px;
