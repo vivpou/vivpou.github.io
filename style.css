@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 50px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -48,7 +48,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     background-color: #22252c;
-    color: #fff;
+    color: #CACACD;
     padding: 10px 15px;
     border: none;
   }
@@ -114,47 +114,41 @@ body {
 
 
 /* PROJECT PAGES */
-
 .proj-header {
     text-align: center;
     margin: 0px;
     text-decoration: none;
     display: block;
-    color: #E14658;
+    background-color: #E14658;
     position: fixed;
 }
 
 .proj-header .proj-title {
     font-size: 32px;
     color: #FFFFFF;
-    text-align: center;
 }
 
 .proj-header .proj-status {
     font-size: 18px;
     color: #FFFFFF;
-    text-align: center;
 }
 
 .proj-header .proj-dates {
-    font-size: 18px;
+    font-size: 14px;
     color: #FFFFFF;
-    text-align: center;
-}
-
-proj-header .proj-shortcuts {
-    display: inline-block;
-    border: 5px solid #E14658;
-    text-align: center;
 }
 
 .proj-header .proj-shortcuts a {
+    display: inline-block;
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
     color: #E14658;
     background-color: #FFFFFF;
     text-decoration: none;
+    border: 5px solid #E14658;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .posts {
@@ -173,7 +167,7 @@ proj-header .proj-shortcuts {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin: 0px;
+    margin: 0px 0px;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 36px;
