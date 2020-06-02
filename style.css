@@ -31,7 +31,6 @@ body {
   }
   
   .sidebar a:hover, .active {
-    color: #fff;
     background-color: #e14658;
   }
   
@@ -144,16 +143,23 @@ body {
 
 .proj-shortcuts {
     float: right;
-    bottom: 0;
+    bottom: 25px;
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
-    color: #CACACD;
-    background-color: #e14658;
-    text-decoration: none;
+    background-color: #22252c;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     position: fixed;
+}
+
+.proj-shortcuts a{
+    color: #CACACD;
+    text-decoration: none;
+}
+
+.proj-shortcuts a:hover {
+    background-color: #e14658;
 }
 
 .posts {
