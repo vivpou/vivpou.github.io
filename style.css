@@ -214,13 +214,17 @@ body {
     margin: 0px 10px 20px;
     padding: 25px 50px 10px 20px;
     text-align: left;
-    text-indent: 5%;
     text-decoration: none;
     font-size: 16px;
     display: block;
     color: #FFFFFF;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: #262830;
+}
+
+.post-body p {
+    text-indent: 5%;
+
 }
 
 
