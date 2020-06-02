@@ -17,7 +17,8 @@ body {
     left: 0;
     background-color: #22252c;
     overflow-x: hidden;
-    padding-top: 60px; 
+    padding-top: 60px;
+    padding-right: 25px; 
     transition: 0.5s;
     padding-top: 60px;
   }
@@ -41,20 +42,21 @@ body {
     top: 0;
     right: 25px;
     font-size: 36px;
+    padding: 0px 10px;
     margin-left: 50px;
   }
   
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #e14658;
+    background-color: #22252c;
     color: #fff;
     padding: 10px 15px;
     border: none;
   }
   
   .openbtn:hover {
-    background-color: #22252c;
+    background-color: #e14658;
   }
   
   #main {
@@ -70,7 +72,6 @@ body {
 
 
 /* HOME PAGE */
-/*
 #main-title h2 {
     margin-top: 20%;
     text-align: center;
@@ -90,7 +91,6 @@ body {
 
 #status {
     text-align: center;
-    margin-top: 40%;
     max-width: 700px;
     margin: auto;
     text-decoration: none;
@@ -172,7 +172,6 @@ proj-header .proj-shortcuts {
 
 
 /* ABOUT PAGE */
-/*
 #about-header {
     text-align: center;
     margin: 0px 0px;
