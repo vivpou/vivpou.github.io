@@ -128,19 +128,19 @@ body {
 }
 
 .proj-title {
-    font-size: 32px;
+    font-size: 36px;
     color: #FFFFFF;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
 .proj-status {
-    font-size: 18px;
+    font-size: 24px;
     color: #FFFFFF;
     font-family: Consolas, monaco, monospace;
 }
 
 .proj-dates {
-    font-size: 14px;
+    font-size: 20px;
     color: #FFFFFF;
     font-family: Consolas, monaco, monospace;
 }
@@ -148,6 +148,14 @@ body {
 .proj-shortcuts {
     right: 15px;
     bottom: 15px;
+    text-align: center;
+    line-height: 1.0;
+    font-size: 12px;
+    background-color: #22252c;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    padding: 15px 15px;
 }
 
 .proj-shortcuts a{
@@ -155,41 +163,32 @@ body {
     text-decoration: none;
 }
 
-.proj-shortcuts-top, .proj-shortcuts-bot {
-    text-align: center;
-    line-height: 1.0;
-    font-size: 12px;
-    background-color: #22252c;
-    border: none;
-    border-radius: 3px;
-    position: fixed;
-    padding: 5px 10px;
-
-}
 .proj-shortcuts-top:hover, .proj-shortcuts-bot:hover {
     background-color: #e14658;
+    padding: 15px 15px;
 }
 
 .post-header {
     margin: auto 20px;
+    width: auto;
     text-align: left;
     padding: 25px 50px 10px 10px;
     display: block;
     font-family: Consolas, monaco, monospace;
-    background-color: #339989;
+    background-color: #2D9282;
     border-radius: 5px 5px 0px 0px;
 }
 
 .post-date {
     font-size: 16px;
     text-decoration: bold;
-    color: #CACACD;
+    color: #E5E5E6;
 }
 
 .post-dow {
     font-size: 16px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #E5E5E6;
 }
 
 .post-title {
