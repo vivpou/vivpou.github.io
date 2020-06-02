@@ -126,17 +126,17 @@ body {
     background-color: #E14658;
 }
 
-.proj-header .proj-title {
+.proj-title {
     font-size: 32px;
     color: #FFFFFF;
 }
 
-.proj-header .proj-status {
+.proj-status {
     font-size: 18px;
     color: #FFFFFF;
 }
 
-.proj-header .proj-dates {
+.proj-dates {
     font-size: 14px;
     color: #FFFFFF;
 }
@@ -164,6 +164,7 @@ body {
 
 .posts {
     margin: auto 20px;
+    padding: 25px 10px;
     text-decoration: none;
     font-size: 16px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
