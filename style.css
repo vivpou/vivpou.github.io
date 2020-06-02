@@ -5,7 +5,6 @@ html {
 
 /* BACKGROUND */
 body {
-    margin: 0;
     background-color: #2B2B36;
 }
 
@@ -130,6 +129,12 @@ body {
     text-align: center;
 }
 
+proj-header .proj-shortcuts {
+    display: inline-block;
+    border: 5px solid #E14658;
+    text-align: center;
+}
+
 .proj-header .proj-shortcuts a {
     text-align: center;
     margin: 25px;
@@ -139,7 +144,6 @@ body {
     color: #E14658;
     background-color: #FFFFFF;
     text-decoration: none;
-    display: inline;
 }
 
 .posts {
