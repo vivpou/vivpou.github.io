@@ -102,7 +102,7 @@ body {
 /* PROJECT PAGES */
 .proj-header {
     margin: 0;
-    height: 200px;
+    /*height: 200px;*/
     text-decoration: none;
     font-family: Consolas, monaco, monospace;
     display: block;
@@ -138,10 +138,11 @@ body {
     color: #E14658;
     background-color: #FFFFFF;
     text-decoration: none;
+    display: inline;
 }
 
 .posts {
-    margin: 100px auto auto auto;
+    margin: auto;
     padding: 20px 50px;
     text-decoration: none;
     z-index: 3;
