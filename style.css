@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 12px 12px 0px 50px;
+    padding: 10px 16px 10px 30px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -49,7 +49,7 @@ body {
     cursor: pointer;
     background-color: #22252c;
     color: #CACACD;
-    padding: 10px 5px;
+    padding: 10px 10px;
     border: none;
     position: fixed;
     z-index: 2;
@@ -155,7 +155,7 @@ body {
     border: none;
     border-radius: 5px;
     position: fixed;
-    padding: 15px 15px;
+    padding: 5px 5px;
 }
 
 .proj-shortcuts a{
@@ -163,16 +163,22 @@ body {
     text-decoration: none;
 }
 
+.proj-shortcuts-top, .proj-shortcuts-bot {
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
 .proj-shortcuts-top:hover, .proj-shortcuts-bot:hover {
     background-color: #e14658;
+    padding: 5px 5px;
     border-radius: 5px;
 }
 
 .post-header {
-    margin: auto 20px;
+    margin: 25px 20px;
     width: auto; 
     text-align: left;
-    padding: 0px 50px 10px 10px;
+    padding: 20px 30px 10px 10px;
     display: inline-block;
     font-family: Consolas, monaco, monospace;
     background-color: #2D9282;
@@ -180,7 +186,7 @@ body {
 }
 
 .post-date {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: bold;
     line-height: 1.2;
     color: #E5E5E6;
