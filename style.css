@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     background-color: #22252c;
     color: #CACACD;
-    padding: 10px 10px;
+    padding: 10px 15px;
     border: none;
     position: fixed;
     z-index: 2;
@@ -124,7 +124,7 @@ body {
     margin: 0px;
     text-decoration: none;
     display: block;
-    background-color: #E14658;
+    background-color: #E14658CC;
     padding: 10px auto;
 }
 
@@ -150,8 +150,8 @@ body {
 }
 
 .proj-shortcuts {
-    right: 15px;
-    bottom: 15px;
+    right: 5px;
+    bottom: 5px;
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
@@ -168,13 +168,13 @@ body {
 }
 
 .proj-shortcuts-top, .proj-shortcuts-bot {
-    padding: 5px 5px;
+    padding: 3px 3px;
     border-radius: 5px;
 }
 
 .proj-shortcuts-top:hover, .proj-shortcuts-bot:hover {
     background-color: #e14658;
-    padding: 5px 5px;
+    padding: 3px 3px;
     border-radius: 5px;
 }
 
@@ -234,7 +234,7 @@ body {
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
-    background-color: #E14658;
+    background-color: #E14658CC;
 }
 
 #about-text {
