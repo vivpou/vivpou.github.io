@@ -101,11 +101,12 @@ body {
 /* PROJECT PAGES */
 .proj-header {
     text-align: center;
-    margin: 0px 0px;
-    padding: 20px 5px;
+    margin: 0px auto;
+    padding: 0px 0px;
     text-decoration: none;
     display: block;
     color: #E14658;
+    position: fixed;
     /*
     margin: 0px 0px 0px 0px;
     width: 100%;
