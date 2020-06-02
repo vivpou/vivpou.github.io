@@ -11,6 +11,7 @@ body {
 
 .main {
     margin-left: 200px;
+    margin-right: -200px;
     padding: 0px;
     height: 100%;
 }
@@ -102,7 +103,8 @@ body {
 /* PROJECT PAGES */
 .proj-header {
     margin: 0;
-    /*height: 200px;*/
+    height: 200px;
+    width: 100%;
     text-decoration: none;
     font-family: Consolas, monaco, monospace;
     display: block;
@@ -142,7 +144,7 @@ body {
 }
 
 .posts {
-    margin: auto;
+    margin: 200px 0px 20px 20px;
     padding: 20px 50px;
     text-decoration: none;
     font-size: 18px;
