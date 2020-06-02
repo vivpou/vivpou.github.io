@@ -142,8 +142,8 @@ body {
 }
 
 .proj-shortcuts {
-    float: right;
-    bottom: 25px;
+    right: 15px;
+    bottom: 15px;
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
