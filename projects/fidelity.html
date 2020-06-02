@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
     </div>
 
     <div id="main">
-      <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
       
       <!-- Project Header -->
       <div class="proj-header">
@@ -36,23 +36,44 @@
         </div>
 
         <div class="proj-status">
-            <p><strong>STATUS: </strong>In-Progress</p>
+            <p>STATUS: In-Progress</p>
         </div>
         <div class="proj-dates">
-            <p><strong>Started: June 2020</strong></p>
+            <p>June 2020-Present</p>
         </div>
+      </div>
 
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
-            <p><a href="#NEWEST">To top (newest entries)</a></p>
-            <p><a href="#OLDEST">To bottom (oldest entries)</a></p>
+            <div class="proj-shortcuts-top">
+                <p><a href="#">&uArr;<br>To newest</a></p>
+            </div>
+            <div class="proj-shortcuts-bot">
+                <p><a href="#">To oldest<br>&dArr;</a></p>
+            </div>
         </div>
-    </div>
 
-    <!-- Blog posts -->
-    <div class="posts">
-        <div id= "MON-DAY-YEAR-PROJ">
-            ENTRY
+        <!-- Blog posts -->
+        <div class="posts">
+            <div id= "June-11-2019-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p>DATE</p>
+                    </div>
+                    <div class="post-dow">
+                        <p>DoWy</p>
+                    </div>
+                    <div class="post-title">
+                        <p>Title</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                      Entry
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -66,6 +87,17 @@
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
+      }
+
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
       }
     </script>
 
