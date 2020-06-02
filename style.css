@@ -141,13 +141,14 @@ body {
     color: #FFFFFF;
 }
 
-.proj-header .proj-shortcuts a {
+.proj-shortcuts a {
     float: right;
+    bottom: 0;
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
     color: #fff;
-    background-color: #339989;
+    background-color: #e14658;
     text-decoration: none;
     border: none;
     border-radius: 3px;
