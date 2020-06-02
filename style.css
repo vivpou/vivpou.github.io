@@ -142,7 +142,7 @@ body {
     color: #FFFFFF;
 }
 
-.proj-shortcuts a {
+.proj-shortcuts {
     float: right;
     bottom: 0;
     text-align: center;
