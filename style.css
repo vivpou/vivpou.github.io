@@ -41,6 +41,7 @@ body {
     font-size: 36px;
     padding: 0px 10px;
     margin-left: 50px;
+    margin-right: 5px;
     border-radius: 5px;
   }
   
@@ -124,25 +125,28 @@ body {
     text-decoration: none;
     display: block;
     background-color: #E14658;
-    line-height: 1.2;
+    padding: 10px auto;
 }
 
 .proj-title {
-    font-size: 36px;
+    font-size: 40px;
     color: #FFFFFF;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    line-height: 1.0;
 }
 
 .proj-status {
     font-size: 24px;
     color: #FFFFFF;
     font-family: Consolas, monaco, monospace;
+    line-height: 1.0;
 }
 
 .proj-dates {
     font-size: 20px;
     color: #FFFFFF;
     font-family: Consolas, monaco, monospace;
+    line-height: 1.2;
 }
 
 .proj-shortcuts {
@@ -188,31 +192,31 @@ body {
 .post-date {
     font-size: 20px;
     text-decoration: bold;
-    line-height: 1.2;
+    line-height: 1.0;
     color: #E5E5E6;
 }
 
 .post-dow {
     font-size: 16px;
     text-decoration: none;
-    line-height: 1.2;
+    line-height: 1.0;
     color: #E5E5E6;
 }
 
 .post-title {
     font-size: 20px;
     text-decoration: bold;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #FFFFFF;
 }
 
 .post-body {
-    margin: auto 20px;
+    margin: 0px 10px 20px;
     padding: 25px 50px 10px 20px;
     text-align: left;
-    text-indent: 5%
+    text-indent: 5%;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     color: #FFFFFF;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
