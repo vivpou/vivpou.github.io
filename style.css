@@ -105,6 +105,8 @@ body {
     padding: 20px 5px;
     text-decoration: none;
     display: block;
+    color: #E14658;
+    position: fixed;
     /*
     margin: 0px 0px 0px 0px;
     width: 100%;
