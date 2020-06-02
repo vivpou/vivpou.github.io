@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 50px;
+    padding: 8px 8px 8px 65px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -51,6 +51,7 @@ body {
     color: #CACACD;
     padding: 10px 15px;
     border: none;
+    position: fixed;
   }
   
   .openbtn:hover {
@@ -71,7 +72,7 @@ body {
 
 /* HOME PAGE */
 #main-title h2 {
-    margin-top: 20%;
+    margin-top: 15%;
     text-align: center;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 64px;
@@ -90,7 +91,7 @@ body {
 #status {
     text-align: center;
     max-width: 700px;
-    padding: 45px 5px; 
+    padding: 25px 5px; 
     margin: auto;
     text-decoration: none;
     font-size: 28px;
@@ -197,4 +198,5 @@ body {
 
 #github-link a {
     color: #FFFFFF;
+    text-decoration: underline;
 }
