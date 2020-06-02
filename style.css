@@ -114,11 +114,10 @@ body {
 
 
 /* PROJECT PAGES */
-/*
+
 .proj-header {
     text-align: center;
-    margin: 0px auto;
-    padding: 0px 0px;
+    margin: 0px;
     text-decoration: none;
     display: block;
     color: #E14658;
@@ -174,7 +173,7 @@ proj-header .proj-shortcuts {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin: 0px 0px;
+    margin: 0px 0px 10px 0px;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 36px;
@@ -192,7 +191,7 @@ proj-header .proj-shortcuts {
     background-color: #262830;
     padding: 25px 50px;
     display: block;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 #github-link {

@@ -36,10 +36,10 @@
         </div>
 
         <div class="proj-status">
-            <p><strong>STATUS: </strong>Complete</p>
+            <h2>STATUS: Complete</h2>
         </div>
         <div class="proj-dates">
-            <p><strong>June-August, March 2019</strong></p>
+            <h2>June-August, March 2019</h2>
         </div>
 
         <!-- shortcuts to top and bottom -->
@@ -92,6 +92,17 @@
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
+      }
+
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
       }
     </script>
 
