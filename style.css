@@ -108,7 +108,7 @@ body {
     display: block;
     background-color: #E14658;
     line-height: 1.2;
-    /*position: fixed;*/
+    position: fixed;
 }
 
 .proj-header .proj-title {
@@ -145,13 +145,11 @@ body {
     margin: auto;
     padding: 20px 50px;
     text-decoration: none;
-    z-index: 3;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     display: block;
     background-color: #262830;
     color: #FFFFFF;
-    position: fixed;
     text-decoration: none;
     overflow: scroll;
 }
