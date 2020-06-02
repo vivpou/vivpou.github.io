@@ -37,7 +37,6 @@ html {
     }
 }
 
-/*
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #2B2B36;
@@ -57,7 +56,7 @@ html {
     color: #fff;
     background: #E14658;
 }
-*/
+
 
 /* HOME PAGE */
 #main-title h2 {
@@ -82,7 +81,6 @@ html {
     margin-top: 40%;
     max-width: 700px;
     margin: auto;
-    padding: 20px 5px;
     text-decoration: none;
     font-size: 24px;
     font-family: Consolas, monaco, monospace;
@@ -112,16 +110,6 @@ html {
     display: block;
     color: #E14658;
     position: fixed;
-    /*
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    text-decoration: none;
-    font-family: Consolas, monaco, monospace;
-    display: block;
-    background-color: #E14658;
-    line-height: 1.2;
-    position: fixed;
-    */
 }
 
 .proj-header .proj-title {
@@ -150,8 +138,6 @@ proj-header .proj-shortcuts {
 
 .proj-header .proj-shortcuts a {
     text-align: center;
-    margin: 25px;
-    padding: 10px;
     line-height: 1.0;
     font-size: 12px;
     color: #E14658;
@@ -161,7 +147,6 @@ proj-header .proj-shortcuts {
 
 .posts {
     margin: 200px 0px 20px 20px;
-    padding: 20px 50px;
     text-decoration: none;
     font-size: 18px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -171,13 +156,6 @@ proj-header .proj-shortcuts {
     text-decoration: none;
     overflow: scroll;
 }
-
-/* .proj-text a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-*/
-
 
 
 /* ABOUT PAGE */
