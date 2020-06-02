@@ -9,29 +9,58 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <!-- CSS Style Sheet link -->
+    <!-- Custom CSS and JS Style Sheet link -->
     <link href="./style.css" type="text/css" rel="stylesheet">
+    <script type="text/JavaScript" src="style2.js"></script>
+
+    <!-- Scrollbar Custom CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Title -->
     <title>Vivian's Blog</title>
   </head>
 
   <body>
-    <!-- Menu Navigation -->
-    <div class="nav">
-      <div id="current">
-        <a href="./index.html">Home</a></li>
-      </div>
-      <a href="/projects/gamified.html">Gamified Task Manager</a></li>
-      <a href="/projects/fidelity.html">Fidelity</a></li>
-      <a href="/projects/greencrew.html">Sustainable Claremont</a></li>
-      <a href="./about.html">Blog Info</a>
-    </div>
+    <!-- Sidebar Menu -->
+    <div class="wrapper">
+      <nav id="sidebar">
+        <ul class="components">
+        <li>
+          <div id="current">
+              <a href="./index.html">Home</a></li>
+            </div>
+          </li>
+          <li>
+            <a href="/projects/gamified.html">Gamified Task Manager</a></li>
+          </li>
+          <li>
+            <a href="/projects/fidelity.html">Fidelity</a></li>
+          </li>
+          <li>
+            <a href="/projects/greencrew.html">Sustainable Claremont</a></li>
+          </li>
+          <li>
+            <a href="./about.html">Blog Info</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="main">
+    <div class="content">
+      <!-- Toggle Sidenav -->
+      <nav class="navbar navbar-expand navbar-light bg-light">
+          <div class="container-fluid">
+  
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Toggle Sidebar</span>
+              </button>
+  
+          </div>
+      </nav>
 
+      <!-- Main Page Text -->
       <div class="home-page">
-        <!-- Welcome Text -->
+        
         <div id="main-title">
           <h2>Vivian's Project Blog</h2>
           <p>Follow me as I detail the processes and my own personal growth over longer non-academic projects on this site!<br><br></p>
@@ -51,10 +80,18 @@
 
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS
+    <!-- Optional JavaScript for Bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    -->
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- jQuery Custom Scroller CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
   </body>
 </html>

@@ -2,57 +2,60 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/* BACKGROUND */
-body {
-    background-color: #2B2B36;
-}
-
-.main {
-    margin-left: 200px;
-    padding: 0px;
-    height: 100%;
-}
-
 /* NAVIGATION */
-.nav {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 200px;
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/*visible sidebar*/
+#sidebar {
+    width: 250px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #22252C;
-    padding-top: 20px;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+/*hidden sidebar*/
+#sidebar.active {
+    margin-left: -250px;
 }
 
-.nav a {
-    padding: 10px 10px 8px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Consolas, monaco, monospace;
-    color: #FBFAFB;
+/*media query based on screen size*/
+@media (max-width: 768px) {
+    /*hidden*/
+    #sidebar {
+        margin-left: -250px;
+    }
+    /*visible*/
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #2B2B36;
+}
+
+#sidebar #current {
+    color: #fff;
+    background: #E14658;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
     display: block;
 }
-
-.nav #current {
-    background-color: #E14658;
-    color: #FFFFFF;
+#sidebar ul li a:hover, a:active {
+    color: #fff;
+    background: #E14658;
 }
-
-.nav a:hover, .active {
-    background-color: #E14658;
-    color: #FFFFFF;
-}
-
-/* change padding when screen is smaller
-@media screen and (max-height: 450px) {
-    nav {padding-top: 10px;}
-    nav a {font-size: 15px;}
-}
-*/
 
 
 /* HOME PAGE */
