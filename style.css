@@ -18,9 +18,7 @@ body {
     background-color: #22252c;
     overflow-x: hidden;
     padding-top: 60px;
-    padding-right: 25px; 
     transition: 0.5s;
-    padding-top: 60px;
   }
   
   .sidebar a {
@@ -92,9 +90,10 @@ body {
 #status {
     text-align: center;
     max-width: 700px;
+    padding: 45px 5px; 
     margin: auto;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
@@ -110,6 +109,7 @@ body {
 
 #website a {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 
@@ -173,7 +173,7 @@ proj-header .proj-shortcuts {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin: 0px 0px 10px 0px;
+    margin: 0px;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 36px;
@@ -191,7 +191,7 @@ proj-header .proj-shortcuts {
     background-color: #262830;
     padding: 25px 50px;
     display: block;
-    margin: 10px;
+    margin: 10px 25px;
 }
 
 #github-link {
