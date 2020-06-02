@@ -195,14 +195,9 @@ proj-header .proj-shortcuts {
     font-size: 18px;
     color: #FFFFFF;
     background-color: #262830;
-    padding: 50px 50px;
+    padding: 25px 50px;
     display: block;
-    margin: auto;
-
-    /* 
-    position: relative;
-    margin: auto;
-    */
+    margin: 10px auto;
 }
 
 #github-link {
