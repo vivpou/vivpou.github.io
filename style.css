@@ -46,13 +46,12 @@ body {
   }
   
   .openbtn {
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
     background-color: #22252c;
     color: #CACACD;
     padding: 10px 15px;
     border: none;
-    border-radius: 3px;
     position: fixed;
     z-index: 2;
   }
@@ -80,15 +79,15 @@ body {
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 64px;
     color: #FBFAFB;
-    line-height: 1.0;
+    line-height: 1.2;
 }
 
 #main-title p {
     text-align: center;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #FFFFFF;
-    line-height: 1.0;
+    line-height: 1.2;
 }
 
 #status {
@@ -106,9 +105,11 @@ body {
 
 #website {
     text-align: center;
+    padding-top: 10px;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     font-size: 16px;
     color: #FFFFFF;
+    line-height: 1;
 }
 
 #website a {
