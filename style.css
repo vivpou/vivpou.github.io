@@ -101,8 +101,7 @@ body {
 /* PROJECT PAGES */
 .proj-header {
     margin: 0px 0px 0px 0px;
-    height: 200px;
-    width: 100% - 20;
+    width: 100%;
     text-decoration: none;
     font-family: Consolas, monaco, monospace;
     display: block;
@@ -170,7 +169,7 @@ proj-header .proj-shortcuts {
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin: auto;
+    margin: 0px 0px;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 36px;
