@@ -42,6 +42,7 @@ body {
     font-size: 36px;
     padding: 0px 10px;
     margin-left: 50px;
+    border-radius: 5px;
   }
   
   .openbtn {
@@ -51,6 +52,7 @@ body {
     color: #CACACD;
     padding: 10px 15px;
     border: none;
+    border-radius: 3px;
     position: fixed;
     z-index: 2;
   }
@@ -144,25 +146,24 @@ body {
     text-align: center;
     line-height: 1.0;
     font-size: 12px;
-    color: #E14658;
-    background-color: #FFFFFF;
+    color: #fff;
+    background-color: #339989;
     text-decoration: none;
-    border: 5px solid #E14658;
+    border: none;
     border-radius: 3px;
     text-align: center;
     position: fixed;
 }
 
 .posts {
-    margin: 200px 0px 20px 20px;
+    margin: auto 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     display: block;
     background-color: #262830;
     color: #FFFFFF;
     text-decoration: none;
-    overflow: scroll;
 }
 
 
