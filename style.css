@@ -47,11 +47,12 @@ body {
     color: #FFFFFF;
 }
 
-/* change padding when screen is smaller */
+/* change padding when screen is smaller
 @media screen and (max-height: 450px) {
     nav {padding-top: 10px;}
     nav a {font-size: 15px;}
 }
+*/
 
 
 /* HOME PAGE */
