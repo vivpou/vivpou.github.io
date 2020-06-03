@@ -8,7 +8,7 @@ NEW POST TEMPLATE:
                         <p>DoW</p>
                     </div>
                     <div class="post-title">
-                        <p>Title</p>
+                        <p><strong>Title</strong></p>
                     </div>
                 </div>
                 <div class="post-body">
@@ -87,7 +87,7 @@ NEW PROJECT TEMPLATE:
                         <p>DoW</p>
                     </div>
                     <div class="post-title">
-                        <p>Title</p>
+                        <p><strong>Title</strong></p>
                     </div>
                 </div>
                 <div class="post-body">

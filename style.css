@@ -89,7 +89,7 @@ body {
 #main-title h2 {
     margin-top: 15%;
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 64px;
     color: #FBFAFB;
     line-height: 1.2;
@@ -97,7 +97,7 @@ body {
 
 #main-title p {
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     line-height: 1.2;
@@ -120,7 +120,7 @@ body {
 #website {
     text-align: center;
     padding-top: 10px;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     line-height: 1;
@@ -140,7 +140,6 @@ body {
     text-decoration: none;
     display: block;
     background-color: #E14658EB;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     border-radius: 0px 0px 1px 1px;
 }
 
@@ -148,12 +147,14 @@ body {
     padding-top: 30px;
     font-size: 40px;
     color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 0.8;
 }
 
 .proj-status {
     font-size: 22px;
     color: #FBFAFB;
+    font-family: Consolas, monaco, monospace;
     line-height: 0.6;
 }
 
@@ -161,6 +162,7 @@ body {
     padding-bottom: 10px;
     font-size: 24px;
     color: #FBFAFB;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.1;
 }
 
@@ -225,7 +227,7 @@ body {
     padding-bottom: 0px;
     font-size: 22px;
     line-height: 0.8;
-    font-family: Consolas, monaco, monospace;
+    font-family: Verdana, Geneva, sans-serif;
     color: #FFFFFF;
 }
 
@@ -237,13 +239,13 @@ body {
     font-size: 18px;
     display: block;
     color: #FBFAFB;
-	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif; 
+	font-family: Verdana, Geneva, sans-serif; 
     background-color: #262830;
     border-radius: 0px 4px 4px 4px;
 }
 
 .post-body p {
-    text-indent: 5%;
+    text-indent: 50px;
 
 }
 
@@ -273,7 +275,7 @@ body {
     padding-bottom: 50px;
     text-decoration: none;
     font-size: 40px;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: #FFFFFF;
     display: block;
     border-radius: 0px 0px 1px 1px;
@@ -288,7 +290,7 @@ body {
     font-size: 18px;
     display: block;
     color: #FFFFFF;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     background-color: #262830;
     border-radius: 4px;
 }
