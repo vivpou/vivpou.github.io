@@ -236,8 +236,8 @@ body {
     text-decoration: none;
     font-size: 18px;
     display: block;
-    color: #FFFFFF;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #FBFAFB;
+	font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif; 
     background-color: #262830;
     border-radius: 0px 4px 4px 4px;
 }
