@@ -124,29 +124,27 @@ body {
     margin: 0px;
     text-decoration: none;
     display: block;
-    background-color: #E14658CC;
-    padding: 10px auto;
+    background-color: #E14658EB;
+    padding: 30px auto;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
 }
 
 .proj-title {
     font-size: 40px;
     color: #FFFFFF;
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
     line-height: 1.0;
 }
 
 .proj-status {
-    font-size: 24px;
-    color: #FFFFFF;
-    font-family: Consolas, monaco, monospace;
+    font-size: 22px;
+    color: #E5E5E6;
     line-height: 1.0;
 }
 
 .proj-dates {
     font-size: 20px;
     color: #FFFFFF;
-    font-family: Consolas, monaco, monospace;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .proj-shortcuts {
@@ -179,10 +177,10 @@ body {
 }
 
 .post-header {
-    margin: 25px 20px;
+    margin: 25px 0px 20px 20px;
     width: auto; 
     text-align: left;
-    padding: 20px 30px 10px 10px;
+    padding: 15px 10px;
     display: inline-block;
     font-family: Consolas, monaco, monospace;
     background-color: #2D9282;
@@ -190,7 +188,7 @@ body {
 }
 
 .post-date {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: bold;
     line-height: 1.0;
     color: #E5E5E6;
@@ -211,8 +209,8 @@ body {
 }
 
 .post-body {
-    margin: 0px 10px 20px;
-    padding: 25px 50px 10px 20px;
+    margin: 0px 20px 20px;
+    padding: 30px 20px;
     text-align: left;
     text-decoration: none;
     font-size: 16px;
@@ -238,7 +236,7 @@ body {
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
     display: block;
-    background-color: #E14658CC;
+    background-color: #E14658;
 }
 
 #about-text {
