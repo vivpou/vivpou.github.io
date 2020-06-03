@@ -147,7 +147,7 @@ body {
 }
 
 .proj-dates {
-    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 20px;
     color: #FFFFFF;
     line-height: 1.1;
@@ -246,7 +246,7 @@ body {
     text-align: center;
     margin-top: 20px;
     border-radius: 1px 1px 0px 0px;
-    padding: 10px 100px;
+    padding: 20px 10%;
     color: #E5E5E6;
     background-color: #2C5F5C;
     text-decoration: none;
