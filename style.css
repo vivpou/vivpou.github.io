@@ -18,7 +18,7 @@ body {
     background-color: #22252c;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.2s;
+    transition: 0.4s;
   }
   
   .sidebar a {
@@ -27,7 +27,7 @@ body {
     font-size: 18px;
     color: #fff;
     display: block;
-    transition: 0.1s;
+    transition: 0.2s;
   }
   
   .sidebar a:hover, .active {
