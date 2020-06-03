@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 12px 25px 12px 30px;
+    padding: 12px 25px 12px 40px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -159,7 +159,7 @@ body {
 
 .proj-dates {
     padding-bottom: 10px;
-    font-size: 24px;
+    font-size: 22px;
     color: #FBFAFB;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     line-height: 1.1;
