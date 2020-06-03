@@ -153,14 +153,14 @@ body {
 
 .proj-status {
     font-size: 22px;
-    color: #E5E5E6;
-    line-height: 0.8;
+    color: #FBFAFB;
+    line-height: 0.6;
 }
 
 .proj-dates {
     padding-bottom: 10px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #FBFAFB;
     line-height: 1.1;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .post-date {
-    padding-top: 15px;
+    padding-top: 20px;
     font-size: 20px;
     line-height: 0.2;
     font-family: Consolas, monaco, monospace;
@@ -223,8 +223,8 @@ body {
 
 .post-title {
     padding-bottom: 0px;
-    font-size: 24px;
-    line-height: 1.0;
+    font-size: 22px;
+    line-height: 0.8;
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
 }
@@ -253,7 +253,7 @@ body {
     width: 100%;
     bottom: 0;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 1px 1px 0px 0px;
     padding: 30px 12%;
     color: #E5E5E6;
