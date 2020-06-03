@@ -205,20 +205,19 @@ body {
     display: inline-block;
     background-color: #2D9282;
     border-radius: 10px 10px 0px 0px;
+    font-family: Consolas, monaco, monospace;
 }
 
 .post-date {
     padding-top: 20px;
     font-size: 20px;
     line-height: 0.2;
-    font-family: Consolas, monaco, monospace;
     color: #E5E5E6;
 }
 
 .post-dow {
     font-size: 18px;
     line-height: 0.2;
-    font-family: Consolas, monaco, monospace;
     color: #E5E5E6;
 }
 
@@ -226,7 +225,6 @@ body {
     padding-bottom: 0px;
     font-size: 22px;
     line-height: 1.0;
-    font-family: Verdana, Geneva, sans-serif;
     color: #FFFFFF;
 }
 
