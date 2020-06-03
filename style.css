@@ -22,7 +22,7 @@ body {
   }
   
   .sidebar a {
-    padding: 12px 25px 12px 20px;
+    padding: 12px 25px 12px 30px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
@@ -89,7 +89,7 @@ body {
 #main-title h2 {
     margin-top: 15%;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     font-size: 64px;
     color: #FBFAFB;
     line-height: 1.2;
@@ -97,7 +97,7 @@ body {
 
 #main-title p {
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     font-size: 20px;
     color: #FFFFFF;
     line-height: 1.2;
@@ -120,7 +120,7 @@ body {
 #website {
     text-align: center;
     padding-top: 10px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     font-size: 16px;
     color: #FFFFFF;
     line-height: 1;
@@ -147,7 +147,7 @@ body {
     padding-top: 30px;
     font-size: 40px;
     color: #FFFFFF;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     line-height: 0.8;
 }
 
@@ -162,7 +162,7 @@ body {
     padding-bottom: 10px;
     font-size: 24px;
     color: #FBFAFB;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     line-height: 1.1;
 }
 
@@ -233,7 +233,7 @@ body {
 
 .post-body {
     margin: 0px 5% 10px 5%;
-    padding: 20px 30px;
+    padding: 30px 35px;
     text-align: left;
     text-decoration: none;
     font-size: 18px;
@@ -246,7 +246,6 @@ body {
 
 .post-body p {
     text-indent: 50px;
-
 }
 
 /* PROJECT FOOTER */
@@ -275,7 +274,7 @@ body {
     padding-bottom: 50px;
     text-decoration: none;
     font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
     color: #FFFFFF;
     display: block;
     border-radius: 0px 0px 1px 1px;
