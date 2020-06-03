@@ -1,22 +1,22 @@
 NEW POST TEMPLATE:
-  <div id= "June-11-2019-SC">
-      <div class="post-header">
-          <div class="post-date">
-              <p>DATE</p>
-          </div>
-          <div class="post-dow">
-              <p>DoW</p>
-          </div>
-          <div class="post-title">
-              <p>Title</p>
-          </div>
-      </div>
-      <div class="post-body">
-          <p>
-            Entry
-          </p>
-      </div>
-  </div>
+              <div id= "Mon-Day-Year-PR">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>DATE</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>DoW</p>
+                    </div>
+                    <div class="post-title">
+                        <p>Title</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                      Entry
+                    </p>
+                </div>
+            </div>
 
 
 NEW PROJECT TEMPLATE:
@@ -55,14 +55,14 @@ NEW PROJECT TEMPLATE:
       <!-- Project Header -->
       <div class="proj-header">
         <div class="proj-title">
-            <h1>PROJECT NAME</h1>
+            <h1>Project Name</h1>
         </div>
 
         <div class="proj-status">
-            <p>STATUS: In-Progress</p>
+            <p>STATUS: In Progress</p>
         </div>
         <div class="proj-dates">
-            <p>START DATE-Present</p>
+            <p>Month Year-Present</p>
         </div>
       </div>
 
@@ -78,13 +78,13 @@ NEW PROJECT TEMPLATE:
 
         <!-- Blog posts -->
         <div class="posts">
-            <div id= "June-11-2019-SC">
+            <div id= "Mon-Day-Year-PR">
                 <div class="post-header">
                     <div class="post-date">
-                        <p>DATE</p>
+                        <p><strong>DATE</strong></p>
                     </div>
                     <div class="post-dow">
-                        <p>DoWy</p>
+                        <p>DoW</p>
                     </div>
                     <div class="post-title">
                         <p>Title</p>
@@ -96,7 +96,12 @@ NEW PROJECT TEMPLATE:
                     </p>
                 </div>
             </div>
+        </div>
 
+        <div class="proj-footer">
+            <p>
+                Project Summary
+            </p>
         </div>
     </div>
 
