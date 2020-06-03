@@ -48,8 +48,8 @@ body {
   .openbtn {
     font-size: 24px;
     cursor: pointer;
-    background-color: #22252c;
-    color: #CACACD;
+    background-color: #e14658;
+    color: #FFFFFF;
     margin-top: 20px;
     margin-left: 15px;
     padding: 10px 15px;
@@ -57,10 +57,11 @@ body {
     border-radius: 3px;
     position: fixed;
     z-index: 2;
+    opacity: .85;
   }
   
   .openbtn:hover {
-    background-color: #e14658;
+    background-color: #22252c;
   }
   
   #main {
@@ -137,17 +138,17 @@ body {
     padding-top: 30px;
     font-size: 40px;
     color: #FFFFFF;
-    line-height: 1.0;
+    line-height: 0.8;
 }
 
 .proj-status {
-    font-size: 22px;
+    font-size: 20px;
     color: #E5E5E6;
-    line-height: 1.0;
+    line-height: 0.8;
 }
 
 .proj-dates {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     font-size: 20px;
     color: #FFFFFF;
     line-height: 1.1;
@@ -164,10 +165,11 @@ body {
     border: none;
     border-radius: 5px;
     position: fixed;
+    opacity: .85;
 }
 
 .proj-shortcuts a{
-    color: #CACACD;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -221,11 +223,11 @@ body {
 }
 
 .post-body {
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 10px 30px;
     padding: 20px 30px;
     text-align: left;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     color: #FFFFFF;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -244,9 +246,9 @@ body {
     width: 100%;
     bottom: 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 1px 1px 0px 0px;
-    padding: 20px 15%;
+    padding: 20px 10%;
     color: #E5E5E6;
     background-color: #2C5F5C;
     text-decoration: none;
@@ -275,7 +277,7 @@ body {
     padding: 20px 30px;
     text-align: left;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     color: #FFFFFF;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
