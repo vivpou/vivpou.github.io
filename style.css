@@ -119,8 +119,10 @@ body {
 
 
 /* PROJECT PAGES */
+/* PROJECT HEADER */
 .proj-header {
     text-align: center;
+    top: 0;
     margin: 0px;
     text-decoration: none;
     display: block;
@@ -147,6 +149,7 @@ body {
     line-height: 1.1;
 }
 
+/* SHORTCUT BUTTONS */
 .proj-shortcuts {
     right: 5px;
     bottom: 5px;
@@ -176,6 +179,7 @@ body {
     border-radius: 5px;
 }
 
+/* PROJECT POSTS */
 .post-header {
     margin: 25px 0px 20px 20px;
     width: auto; 
@@ -225,11 +229,27 @@ body {
 
 }
 
+/* PROJECT FOOTER */
+.proj-footer {
+    display: block;
+    bottom: 0;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 50px;
+    color: #E5E5E6;
+    background-color: #2C5F5C;
+    text-decoration: none;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-size: 14px;
+}
+
+
 
 /* ABOUT PAGE */
 #about-header {
     text-align: center;
-    margin: 0px 0px;
+    top: 0;
+    margin: 0px;
     padding: 20px 5px;
     text-decoration: none;
     font-size: 36px;
@@ -242,7 +262,7 @@ body {
 #about-text {
     text-align: left;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
     background-color: #262830;
     padding: 25px 50px;
