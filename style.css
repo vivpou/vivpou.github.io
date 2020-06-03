@@ -27,7 +27,7 @@ body {
     font-size: 18px;
     color: #fff;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   
   .sidebar a:hover, .active {
@@ -58,6 +58,21 @@ body {
     border-radius: 3px;
     z-index: 2;
     opacity: .85;
+  }
+
+  .home-openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #e14658;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    z-index: 2;
+    opacity: .85;
+
   }
   
   .openbtn:hover {
