@@ -8,7 +8,7 @@ NEW POST TEMPLATE:
                         <p>DoW</p>
                     </div>
                     <div class="post-title">
-                        <p><strong>Title</strong></p>
+                        <p>Title</p>
                     </div>
                 </div>
                 <div class="post-body">
@@ -46,7 +46,7 @@ NEW PROJECT TEMPLATE:
       <a href="./gamified.html">Gamified Task Manager</a></li>
       <a href="./fidelity.html">Fidelity</a></li>
       <a href="./greencrew.html">Sustainable Claremont</a></li>
-      <a href="../about.html">Blog Info</a>
+      <a href="../about.html">Info</a>
     </div>
 
     <div id="main">
@@ -87,7 +87,7 @@ NEW PROJECT TEMPLATE:
                         <p>DoW</p>
                     </div>
                     <div class="post-title">
-                        <p><strong>Title</strong></p>
+                        <p>Title</p>
                     </div>
                 </div>
                 <div class="post-body">
