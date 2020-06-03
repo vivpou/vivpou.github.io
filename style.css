@@ -152,13 +152,13 @@ body {
 }
 
 .proj-status {
-    font-size: 24px;
+    font-size: 22px;
     color: #E5E5E6;
     line-height: 0.8;
 }
 
 .proj-dates {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 24px;
     color: #FFFFFF;
     line-height: 1.1;
@@ -196,7 +196,7 @@ body {
 
 /* PROJECT POSTS */
 .post-header {
-    margin: 25px 5% 0px 5%;
+    margin: 50px 5% 0px 5%;
     width: auto; 
     text-align: left;
     padding-left: 15px;
@@ -224,7 +224,7 @@ body {
 .post-title {
     padding-bottom: 0px;
     font-size: 24px;
-    line-height: 0.6;
+    line-height: 1.0;
     font-family: Consolas, monaco, monospace;
     color: #FFFFFF;
 }
@@ -270,7 +270,7 @@ body {
     text-align: center;
     margin: 0px;
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     text-decoration: none;
     font-size: 40px;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
