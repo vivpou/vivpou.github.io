@@ -150,19 +150,19 @@ body {
     line-height: 0.8;
 }
 
-.proj-status {
-    font-size: 22px;
-    color: #E5E5E6;
-    font-family: Consolas, monaco, monospace;
-    line-height: 0.6;
-}
-
 .proj-dates {
     padding-bottom: 10px;
     font-size: 22px;
     color: #FBFAFB;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-    line-height: 1.1;
+    line-height: 0.6;
+}
+
+.proj-status {
+    font-size: 22px;
+    color: #FBFAFB;
+    font-family: Consolas, monaco, monospace;
+    line-height: 1.0;
 }
 
 /* SHORTCUT BUTTONS */
@@ -203,7 +203,7 @@ body {
     padding-left: 15px;
     padding-right: 23px;
     display: inline-block;
-    background-color: #2D9282;
+    background-color: #2D796F;
     border-radius: 10px 10px 0px 0px;
     font-family: Consolas, monaco, monospace;
 }
@@ -255,7 +255,7 @@ body {
     border-radius: 1px 1px 0px 0px;
     padding: 30px 12%;
     color: #E5E5E6;
-    background-color: #2C5F5C;
+    background-color: #274244;
     text-decoration: none;
     font-family: Consolas, monaco, monospace;
     font-size: 16px;
@@ -283,7 +283,7 @@ body {
     padding: 20px 30px;
     text-align: left;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     color: #FFFFFF;
     font-family: Verdana, Geneva, sans-serif;
