@@ -151,7 +151,6 @@ body {
 }
 
 .proj-dates {
-    padding-bottom: 10px;
     font-size: 22px;
     color: #FBFAFB;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
@@ -163,6 +162,7 @@ body {
     color: #FBFAFB;
     font-family: Consolas, monaco, monospace;
     line-height: 1.0;
+    padding-bottom: 10px;
 }
 
 /* SHORTCUT BUTTONS */
@@ -267,8 +267,8 @@ body {
 #about-header {
     text-align: center;
     margin: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-decoration: none;
     font-size: 40px;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
