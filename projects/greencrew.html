@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#">&uArr;<br>To newest</a></p>
+                <p><a href="#April-19-2020-SC">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-10-2019-SC">To oldest<br>&dArr;</a></p>
@@ -55,21 +55,158 @@
 
         <!-- Blog posts -->
         <div class="posts">
+            <div id= "April-19-2020-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>APRIL 19, 2020</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>Tuesday</p>
+                    </div>
+                    <div class="post-title">
+                        <p>The Final Update</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                        Nicole sent over the additional trees last night. There ended up only being 8 trees to add to the calculations and map. The process was identical to what I had done for the other 176 trees, but with much less waiting time and no complications! In total, it took me less than 2 hours to add reformat, run calculations, add the trees to appropriate maps, and update the shade study summary document.
+                    </p>
+                    <p>
+                        I think this will be my final update for this project! I learned a lot throughout this project and it was a good learning experience to come back to some code that I had not worked with for a while to see how important good user guides are and how functionality can change when updates occur. I am looking forward to having the opportunity to learn and apply new skills with Fidelity in a few months!
+                    </p>
+                </div>
+            </div>
+
+            <div id= "March-24-2020-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>MARCH 24, 2020</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>Tuesday</p>
+                    </div>
+                    <div class="post-title">
+                        <p>Finished For Now</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                        Today I finished the report. :) This was a pretty quick process of transferring the data from the Tree Benefit Analysis into a more readable format. I decided it might be beneficial to report the benefits by project as well as the summation of both projects. The ArcGIS shade canopy map portion of the report mainly included screenshots of the maps as requested. I also included some of the biodiversity statistics as returned by the tool we designed over the summer to accompany the map visuals. While I was taking the screenshots, I noticed some inconsistencies in the canopy sizes. Upon closer inspection this was an easy fix regarding changing the bounds of the time slider. 
+                    </p>
+                    <p>
+                        After sending the report to Nicole, she informed me that there were about 11 more trees to add to the map and the Tree Benefit Analysis calculations. I am hopeful that adding these 11 trees to the existing calculations and the existing map should not take too long.
+                    </p>
+                </div>
+            </div>
+
+            <div id= "March-23-2020-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>MARCH 23, 2020</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>Monday</p>
+                    </div>
+                    <div class="post-title">
+                        <p>Back On Track!</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                        Today was a nice change of pace. With the exception of a few minor hiccups, today went as planned! :) I was able to successfully export the data from Google Sheets into ArcGIS and have ArcGIS recognize the data as desired. It took a couple minutes to reacquaint myself with ArcGIS and follow the user guides to make sure I was doing the correct steps in the correct order. It took me about 1.5 hours to create and format the maps for the individual projects of CAL FIRE and Match so that they matched the appearance of the maps from the summer for the other projects.
+                    </p>
+                    <p>
+                        It took some trial and error to add these trees to the Total Tree Map (with all of Sustainable Claremont’s trees across all projects). Initially, I thought I might have to re-export the entire spreadsheet of all 1000+ of Sustainable Claremont’s trees and have ArcGIS re-analyze the entire collection of trees. I was hoping to avoid this, since re-analyzing so many trees uses many ArcGIS credits, of which we only have a limited number. After some online searching, I was able to find a way around this re-analysis by adding the existing CAL FIRE and Match maps as layers onto the Total Tree Map. This worked really well, and I just had to spend a little bit of time adjusting the CAL FIRE and Match tree markers to match the key of the Total Tree Map. Finally, I spent a couple minutes altering the appearance and making sure that the embedded map was correctly updated in the Sustainable Claremont website.
+                    </p>
+                    <p>
+                        At this point I have the Tree Benefit Analysis done from yesterday and the maps done from today. All that is left to do is to write up the summary report tomorrow.
+                    </p>
+                </div>
+            </div>
+
+            <div id= "March-22-2020-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>MARCH 22, 2020</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>Sunday</p>
+                    </div>
+                    <div class="post-title">
+                        <p>The Struggle Continues + Some Accomplishments</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                        I started today by finishing up with running all the new trees through the Tree Benefit Analysis tool. This took about 2 hours, which was about twice as long as I was anticipating it taking, but I finally have the calculations needed for the first section of the shade study summary! During these two hours, I made sure that I understood how our ArcGIS spreadsheets worked, since Christina primarily worked with the ArcGIS Input spreadsheet over the summer. 
+                    </p>
+                    <p>
+                        Unfortunately, today was not all smooth sailing either. I ran into some issues with the formatting for ArcGIS Input to ArcGIS Output. The data for the dates, benefits, and tree canopy growth rate was successfully processed from the original spreadsheet into ArcGIS Input. However, the coordinates, projects, and species were not successfully copied. Additionally, the ArcGIS Output sheet was not updating the dates and canopy size in the desired 5-year increments over 25 years. Instead, the data from ArcGIS Input was just being copied into ArcGIS Output 5 times. :(
+                    </p>
+                    <p>
+                        I’m still not quite sure what changed from the summer’s version of the code to cause this bug. Ultimately, there were a couple of problems with incorrect variables and function calls, which were a bit difficult to pin down, but pretty easy to fix. This bug-fixing and code-testing process ate up a couple of hours, but I’m glad that the code works as desired now.
+                    </p>
+                    <p>
+                        With the run time issues, it took about another hour to get all of the tree data processed into ArcGIS readable format. Tomorrow, I should be able to enter the newly-processed data into ArcGIS and produce the desired shade canopy maps. Here’s to hoping tomorrow goes smoothly!
+                    </p>
+                </div>
+            </div>
+
+            <div id= "March-21-2020-SC">
+                <div class="post-header">
+                    <div class="post-date">
+                        <p><strong>MARCH 21, 2020</strong></p>
+                    </div>
+                    <div class="post-dow">
+                        <p>Saturday</p>
+                    </div>
+                    <div class="post-title">
+                        <p>An Unexpected Obstacle</p>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>
+                        (Unfortunately, I was not able to work on the project yesterday as I had hoped.)
+                    </p>
+                    <p>
+                        Today has been unexpectedly frustrating. I take back what I said on Thursday about everything being straightforward. :/ I tried to run about 30 trees for 40 years, which had a run time of 70-120 seconds last summer, but now has a run time of more than 600 seconds. I tested various groups of 30 trees, including the trees from the summer, but all groupings had this issue with run time. This is an extremely significant deterioration in run time from last year. Since this deterioration was so significant, I thought it would be worthwhile to put some time into researching the root of this problem. Checking the edit history showed that the code had not been edited since last summer. To double check, I restored our code from July 2019, but the run time did not improve.
+                    </p>
+                    <p>
+                        Based on the release notes for Google Apps Script, it seems that in February 2019 Apps Script was made to support the V8 runtime. This seems to be the most likely reason why our run time has changed so significantly, since the other updates seem to add relatively simple functionalities, which does not significantly affect our code. I’m not sure why this update would slow down our run time since it seems that V8 just enables modern JavaScript features and syntax in Apps Script. Perhaps this added capability slows down our parsing and fetching process? I spent some time trying to find a workaround in order to get our code to function as it did last year, but unfortunately did not produce anything concrete.
+                    </p>
+                    <p>
+                        The other possibility for this increase in run time is that I am running our code on a much less powerful machine (my personal laptop) than I used over the summer (the CS department’s computer).  This is also a pretty likely possibility for the slowed runtime. Given that the deadline for the map and report are fast approaching and I am not sure how to isolate exactly where this unfortunate downgrade is coming from, I think I will just have to work with this slower run time.
+                    </p>
+                    <p>
+                        I started the slow process of entering the 30 trees at a time for 40 years and waiting for the code to run, but I will continue this process with the rest of the trees tomorrow. 
+                    </p>
+                </div>
+            </div>
+
             <div id= "March-19-2020-SC">
                 <div class="post-header">
                     <div class="post-date">
                         <p><strong>MARCH 19, 2020</strong></p>
                     </div>
                     <div class="post-dow">
-                        <p>DoW</p>
+                        <p>Thursday</p>
                     </div>
                     <div class="post-title">
-                        <p>Title</p>
+                        <p>Getting Started Again!</p>
                     </div>
                 </div>
                 <div class="post-body">
                     <p>
-                        Entry
+                        Today I got to work on the ArcGIS map and use the Tree Benefit Analysis tool again. Nicole asked me to update the map and to summarize the shade study in time for their report by the end of March. I’ve taken some time to settle in at home and process the current events, but I’m eager to get working! For updating the ArcGIS map, I anticipate that the work will be pretty similar to what I did over the summer in terms of making new maps for the new projects. For the shade study, I anticipate this to be relatively straightforward, since I can use the tool we developed to calculate the results. Then I should be able to put together a summary document of the results in a few hours. Of course, everything seems straightforward before jumping into a project. :)
+                    </p>
+                    <p>
+                        In total, there are 176 trees for me to analyze and add to the map. These trees are part of two projects: CAL FIRE and Match. While looking at the data, it looks like the CAL FIRE projects has trees not only in Claremont, but also in the neighboring cities of Rancho Cucamonga and Pomona. It’s exciting to see how Sustainable Claremont is expanding its impact beyond Claremont.
+                    </p>
+                    <p>
+                        I spent a few hours today getting reacquainted with our tools and formatting the given data to be compatible with the way that our code processes data. I found that our written user guides from the summer were pretty helpful for me to relearn the inner workings of our tools. To be honest, I didn’t anticipate that I would be the “user” who would be needing the guides, but it makes me glad that Christina and I were careful about thoroughly detailing the tools and how to use them.
+                    </p>
+                    <p>
+                        With all the data formatted correctly, tomorrow I should be able to start running the data through the Tree Benefit Analysis tool and the ArcGIS Input tool!
                     </p>
                 </div>
             </div>
