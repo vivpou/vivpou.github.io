@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-08-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#June-14-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,90 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-14-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 14, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>Almost Functioning Components</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  In today’s meeting we caught up on the progress from our subgroups and started talking about how we might piece our components together. I’ll give a quick walkthrough of where we are with each screen. Wayne and Allen have started on the home screen and have some basic functionality done, which is exciting! The user can enter their name and scroll to choose an ‘avatar’ (currently just some placeholder pictures). We plan to have this screen show up only when the user opens the app for the first time. Then Kip updated the group on where out subteam is regarding the task screen (Read Friday’s entry to read the details of our status). Next, I updated the group on where Kip and I got in terms of the navbar (read Saturday’s entry for details on that). Lastly, Elissa updated us on the current status of the character design. We’ve decided to go with a chibi-style character template and the design that Elissa shared looks great!
+                </p>
+                <p>
+                  The next item of the meeting was a quick note on React dependencies from Kip. This was just to make sure that everyone knew that we need to run npm install when we pull from github since we use different libraries. She also drew our attention to the fact that we should be careful about noting the difference between React and React Native.
+                </p>
+                <p>
+                  Next was the exciting part! We got to talk about how we might pull our components together into the cohesive app. We agreed that for our 3 screens, we wanted to have the Todo list in the center as the first thing that users would see when they logged in, and then have the quest and character screens on either side. We also talked about having the ability to swipe between screens in addition to using the navbar, similar to the way that Snapchat is formatted. We agreed that while this would be a nice feature to have, it was not an immediate priority, since our goal currently is to have a functioning prototype, and we will add the bells and whistles later. For now, we have the functioning navbar that Kip and I created, and if we are able to complete a functioning prototype before the end of summer, Kip and I can work on this additional feature. Lastly, we decided on a color scheme. We have chosen to keep a generally white background, with pastel pinks, purples, and blues. We talked about how we might implement the ‘dark mode’ option later on, since a lot of users prefer dark mode. Again, since this is not an essential feature, we will add this if after we get an initial functioning prototype. 
+                </p>
+                <p>
+                  Lastly, we determined what we wanted to do before the next meeting. We will continue working in our subgroups from last week to continue to improve our tools. Allen and Wayne talked about how they will be adding a screen where users can customize their avatars, continue fixing up the makeProfile screen, and add an alert that navigates users to the main screen. Our tasklist subteam will continue working on the mechanism for adding new tasks and work towards getting a functioning prototype. Kip and I are happy with where the NavBar’s functionality is currently, but we will spend some time individually researching how to implement the swipe feature so that if we get the opportunity to work past a functional prototype, we will be more prepared to implement it. Elissa plans to continue working on character design and I’m excited to see what she comes up with! 
+                </p>
+                <p>
+                  Additionally, we have started brainstorming names and logos for this app. We don’t plan to call the final version ‘Gamified Task Manager’ so hopefully we can come up with a memorable name and a matching logo design. During the remaining time in the meeting we brainstormed as a group for about 10 minutes, but we plan to brainstorm on our own time within a shared document. Then during our next meeting, we will discuss our ideas together. That’s all for this week!
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-13-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 13, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Functioning Navbar!</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today, Kip and I met to work on the Navbar. We used existing code that came with an online template. However, there were some bugs relating to the Task Screen that we had to fix before we could get going with the Navbar. After about half an hour of trial and error, we were able to get the nav bar to appear in its default form. From here, we changed the Navbar to have appropriate items for our app, which includes a todo list screen, a quest screen, a character appearance screen, and a settings screen. We mentioned following the convention of having only 3 screens, since this is standard for many apps (such as Snapchat and Tinder), so it would be more familiar and user-friendly if our app also followed this app. Our Navbar currently has 4 items, but we can move the settings into an upper right corner or some other location such that our Navbar has 3 items. This is someth	ing that we will bring up during tomorrow’s team meeting to get more insight. Kip and I also changed some colors such that when the user is on a screen, the icon for that screen will appear purple (this is a temporary color which we can change later when we have more solidly decided on aesthetics). At this point, we had a functioning version of a Navbar when we ran our code in Expo!
+                </p>
+                <p>
+                  Something that is still confusing to me is the LinkingConfiguration.js file. It seems like this file is what allows the Navbar icons to actually link to other screens, but this is just my best guess. I will spend some time doing some online research to see if I can find anything more concrete. As is, our Navbar works pretty well! If the team has additional feedback about the appearance or setup of the navbar regarding colors, icon placement, icon appearance, or number of items, this should be a pretty easy fix for Kip and I to implement. I am overall very happy with the current state of the Navbar!
+                </p>
+                <p>
+                  Today I also spent some time becoming more familiar with our Github setup. Previously, I have only worked in the master branch when pushing and pulling, but with the help of Kip’s documentation, I was able to successfully set up VS Code to work in the developer branch! I spent some time making sure that I had the correct libraries downloaded and that I could view a test version of the app on my phone via Expo. With this set up, I will be able to work on components more independently as we move forward with development!
+                </p>
+                <p>
+                  Tomorrow is our next team meeting. I’m excited to see what progress the rest of the team has made. :) Additionally, I am looking forward to asking some of the questions that came up when Kip and I were working on the Navbar regarding color schemes, Navbar format, and general setup.
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-12-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 12, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Blog Schedule Update </p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Up to this point in the week, I have been trying to do some individual learning with React Native and some of the more advanced React concepts. However, I am finding it a bit difficult to balance my internship and my role on this project. My original plan was that I would be able to dedicate some time to the project throughout the work week after my internship hours ended. However, I am finding it a bit exhausting to be working on code for so many hours a day. :( A more balanced approach might be to work on this project on Friday evenings, Saturday afternoons, and attending meetings on Sunday. I’m switching to this approach from this point onward so I can enjoy both my internship and this project without overworking myself. So from now on, I’ll be posting progress updates on Fridays and Saturdays, then I’ll post meeting updates on Sundays.
+                </p>
+                <p>
+                  This evening I met with Allen and Kip to work on the todo list screen. We had a lot of trouble with this portion and fixing the bugs. One of these problems was because of confusion between React and React Native. Since we are new to app building, we often look to online resources for guidance and inspiration, especially in these beginning stages. However, this code is oftentimes written in React, and since we are still getting familiar with React Native, it is easy to forget to translate React code into React Native. This leads to problems with syntax, for example switching from div to View, etc. We spent quite some time fixing these types of bugs, but ultimately were able to eliminate these syntax errors! We also had some issues with text inputs, which Allen mentioned was also a point of trouble when she and Wayne were working on the Home Screen. This is an issue we will need to look into in more detail, since it is an essential part of our app design. Another issue we had was with Asynchronous Storage. To be honest, I am not completely sure what this means. I will look into this and possible ways to fix this issue before our next meeting so that I can follow along a bit better and hopefully offer some insight.
+                </p>
+                <p>
+                  We currently have very basic functionality for this screen, where the user can input text into a text box, but it is still not in the form that we are aiming for. We would like the text input prompt to occur when the user clicks a button for ‘Add Task’ and we would like the text to appear in a to do list instead of a plain text box. This is something that we can definitely work towards, but I am very happy with the progress we have been able to make in our first meeting!
+                </p>
+            </div>
+          </div>
+          
             <div id= "June-08-2020-GTM">
                 <div class="post-header">
                     <div class="post-date">
