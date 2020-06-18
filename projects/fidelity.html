@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-17-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-18-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,40 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-18-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 18, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Exploring Algorithms</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today was a bit of a roller coaster when it comes to where my research has taken me. I spent my morning learning about the Support Vector Machines (SVM) algorithm that Himanchu mentioned yesterday. A brief summary of what I learned is that SVMs plot data into an N-dimensional space, then the algorithm creates a hyperplane that categorizes the data appropriately. This is a very popular ML supervised algorithm and is preferred to a lot of other classification models because of the kernel function, which can map the data to higher dimensions in order to better fit the data if the initial dimensions don’t allow for the data to be categorized well enough by the existing Support Vector Classifiers. I followed a toy example for using SVMs to classify if a recipe was for cupcakes, muffins, or scones based on the percentage of butter and sugar in the recipe. (Apparently cupcakes have pretty high amounts of both butter and sugar, muffins have low amounts of both, and scones have a lot of butter but not a lot of sugar). 
+                </p>
+                <p>
+                  The SVM algorithm seemed to have a lot of promising qualities, especially since it was not too computationally or memory expensive and had high accuracy. However, upon reading more detailed documentation and articles,  quite a few sources mentioned that it works best with smaller data sets. From what I understand, the data I am working on does not seem to be a small data set, so I'm not sure if SVM is the best algorithm. I looked into other algorithms used for classification. The two that seem most promising are Naive Bayes and Random Forest. (Other algorithms like Tree Decision and K-Nearest Neighbors don’t seem right for this project based on incompatibility with accuracy or categorical data).
+                </p>
+                <p>
+                  Naive Bayes has the pros of requiring less computational power, accurately working on large datasets, being fast, being pretty easy to implement (supposedly), and being best suited for text classification so it could be used for the sentiment analysis application that David mentioned last time. However, some tradeoffs are that it makes the strong assumption about the features to be independent and implements zero frequency, which means if the category of any categorical variable is not seen in training data set then model assigns a zero probability to that category and then a prediction cannot be made, so might not be able to fulfill the 'flexible and dynamic' part. Random Forest has the pros of having high accuracy, flexibility, and less variance. Also it’s supposedly not too difficult to implement, works well in handling missing values and detecting outliers, and can identify the most important feature among available features (not sure how relevant this is for the current project). However, it has high computational and memory cost. Additionally, as the number of trees increases, the algorithm can be slow. So, it's not necessarily a problem if the data set itself is large (i.e. a lot of rows in the spreadsheet), but it could be a problem if there are a lot of categories to classify the data into. I’ll ask about the order of magnitude of categories tomorrow!
+                </p>
+                <p>
+                  I spent a little bit more time looking at Deep Learning concepts, but I think my priority is learning these categorization algorithms for now. Tomorrow, I plan to ‘get to work’ earlier in the morning so I can ask Himanshu what his opinion is for SMV if my data set is of a larger scale or if he has additional suggestions for algorithms that I should look into.
+                </p>
+                <p>
+                  This morning, I also had a short meeting with Janice who is the Vice President of IT Management. We talked about my goals for this internship and she gave me a lot of advice and insight about Fidelity as a place to consider working full time. She emphasized how Fidelity cares for its employees through benefits, a flexible environment, and lots of opportunities for mobility within the company. She suggested some ways to get more involved with the culture as well. This has definitely given me a lot to think about when considering if I’ll consider Fidelity as a future employer! :)
+                </p>
+                <p>
+                  I sent an email to David, Cameron, Daniel, Anuj, Kiran, and Rajiv about the current rule-based system for classifying data, so hopefully I’ll get a response tomorrow to clarify those questions and help me find the best suited algorithm for this project! I also have a check-in with Korey from University Talent to talk about how the internship is going so far, so it’ll be nice to catch up with her. I plan to spend tomorrow looking more into Random Forest and Naive Bayes from some different sources. I keep seeing Principal Component Analysis (PCA) mentioned as an algorithm for data analysis and predictions, so I plan to look into if that’s another feasible algorithm tomorrow. Another full day of research and learning new things ahead!
+                </p>
+            </div>
+          </div>
+
           <div id= "June-17-2020-FI">
             <div class="post-header">
                 <div class="post-date">
