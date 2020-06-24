@@ -58,18 +58,33 @@
           <div id= "June-24-2020-FI">
             <div class="post-header">
                 <div class="post-date">
-                    <p><strong>DATE</strong></p>
+                    <p><strong>JUNE 24, 2020</strong></p>
                 </div>
                 <div class="post-dow">
-                    <p>DoW</p>
+                    <p>Wednesday</p>
                 </div>
                 <div class="post-title">
-                    <p>Title</p>
+                    <p>More Accurate But Less Accurate</p>
                 </div>
             </div>
             <div class="post-body">
                 <p>
-                  Entry
+                  I signed on a bit earlier this morning and got in touch with Himanshu. He told me that he used to have the Fidelity local set up, but it is currently decommissioned since the machine they were running it on got decommissioned. This is unfortunate, but I think that further down the line, when I have a better prototype, I can look into more resources and see if there are viable options about Fidelity servers. Perhaps I can reach out to my mentor group, especially since Nancy has added more developers to the chat! Himanshu also suggested that I use Spyder instead of Jupyter within the Anaconda suite, since Spyder is better suited for sunning scripts and applications and is more GUI centric so it would be better for my classification tool.
+                </p>
+                <p>
+                  I sat in on the scrum call this morning and things were a lot clearer after talking to Rajiv and Poornima yesterday! I still don’t understand the details of what is being discussed, but I can follow along and get a general idea of what the conversations are about. I heard a few new terms, but I was able to google them after the meeting and answer those questions.
+                </p>
+                <p>
+                  For the rest of the morning and early afternoon, I worked on transferring my code from Jupyter to Spyder. This went pretty smoothly, since they both run Python. I also ran my code on a larger sample size of 20,000 rows. This was pretty slow to run even after I removed some of the graphics being created. Something I will work on tomorrow is creating separate files for running the Linear SVC and the RandomForestClassifier algorithms so that I can evaluate if either of these algorithms is significantly faster than the other. My current code runs all 4 algorithms (Linear SVC, MultinomialNB, Logistic Regression, RandomForestClassifier) in one file, which could be what is making the program so slow. In larger data sets, Linear SVC and RandomForestClassifier are pretty close in accuracy, so if there is a large discrepancy between the algorithms in speed then this will be the determining factor in which algorithm I ultimately choose to run with. The results of running my program on 20,000 rows is promising! I got up to about 97% accuracy, which I am very happy with. :) However, the code for 20,000 rows takes about 6 minutes to run, which I am not happy about. :( 
+                </p>
+                <p>
+                  When examining the graphics for the 20,000 row data set, I noticed that a very large proportion (about 60%) of the data is classified as ‘UNSPECIFIED’ which could throw off the data by a significant amount. I added a few lines of code to filter out all the data which was ‘UNSPECIFIED’ in order to get more representative results. Doing this cleaning brought the accuracy for 20,000 rows down from 97% to 93%. While the accuracy is technically lower, the previous version 97% accurate tool was ‘classifying’ some data as ‘UNSPECIFIED’ which is not very helpful for a classifying tool. So even if the accuracy score is technically lower, the fact that data is actually being classified correctly 93% is still great for now! For fun, I tried running my code on the total 200,000 row sample set. This took a very long time to run (40+ minutes), but I was curious to see how much data was actually unclassified and how accurate I could get. It turns out that out of about 200,000 rows, about 150,000 rows were ‘UNSPECIFIED’ which was really surprising. I was able to get an accuracy level of about %. While I was waiting for my code to run, I looked up some more in-depth information about some of the pieces being used within the program such as TF-IDF (Term Frequency, Inverse Document Frequency) vectorization for turning text into vectors to feed into the algorithms and more information on algorithms like Logistic Regression that I am not as familiar with. I added some comments to my code as well and fixed up the formatting.
+                </p>
+                <p>
+                  This afternoon, I also attended a WLG (Women’s Leadership Group) Q&A with Eric Bocan, an Executive Sponsor for the Westlake location’s WLG. He discussed mobility, mentorship, and returning to the office. This wasn’t an event targeted toward interns so it was really interesting to be able to hear his advice for full-time employees and gave me some things to think about for longer-term career goals.
+                </p>
+                <p>
+                  Tomorrow, I will continue working on my code. Specifically, I will split the LinearSVC and RandomForestClassifier algorithms into separate documents so I can evaluate their speeds separately. I will also look more into writing my predictions into an output document. The problem I am running into is that the current method for making predictions doesn't preserve the ids of the objects, so it is hard to map the prediction to the correct row and id in the spreadsheet.
                 </p>
             </div>
           </div>
