@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-14-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#June-21-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,68 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-21-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 21, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>New Features, New Names</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Another productive team meeting! We started off by catching up on what each subteam was up to. Allen and Wayne talked about how they tried to change the format of the LogIn Screen to allow navigation onto a different screen using a ‘Next’ button. Since it didn’t really work, they plan to continue working on it this week. They were also able to fix the text box, so that it correctly underlines the user’s name. They mentioned that they looked more into asynchronous storage, but without much luck. Allen, Kip, and I talked about what we accomplished this week with the Check/Uncheck functionality and what we still needed to accomplish with moving tasks around and implementing a ‘Habits’ page (see yesterday’s post for more details!). Kip and I brought up what we discussed for the top nav/statistics bar. As a group we agreed that we would have our ‘View Character’ button in the left corner with an image of the user’s avatar as the icon; we would have our settings in the right corner; we would have some way to measure progress or view inventory in the middle. We are thinking that we can measure progress with collecting coins or a general progress bar. Unfortunately, Elissa was not able to make it to today’s meeting, but she mentioned that she worked on separating the avatar into clean katers so that each layer can be changed differently and layered smoothly.
+                </p>
+                <p>
+                  As a team, we also brainstormed some ideas for collection items and themes so that we are ready to start prototyping quest elements when the time comes. We are thinking of just using coins for our functional prototype for simplicity’s sake, and we can change from coins to some other item later on. As mentioned in a previous entry, we were thinking that users earn coins from completing tasks. There was some discussion about if these coins would be used to directly buy quests and buy items or if users would unlock quests once they had enough coins and win items from those unlocked quests. For the second option, in order to keep the customization element of the app, we were thinking of allowing users to choose from 3 options of items to unlock instead of just giving them a specified item for each quest unlocked. We then talked about what we wanted for our quest format. We mentioned a storyline initially and we were thinking that the quests could move through different countries or regions of the world. I really like this idea since it allows users to explore diverse cultures and shows representations of many different parts of the world. This might allow users to learn new things through our app as well! :)
+                </p>
+                <p>
+                  Some other topics we discussed were design research and storage options. Allen proposed that we look into popular apps and see if we are inspired by some of those features. For example, we liked the swipe navigation found on Snapchat and Tinder. Looking into other apps for features that we enjoy might allow us to make our app more user-friendly. Allen and Wayne also brought up Firebase as a storage option, since it seems easier to implement and use. I don’t know much about Firebase, but I can definitely look into it more on my own time. We spent a little while brainstorming names and came up with some fun options, but we aren’t totally sure about a name yet. We will likely continue having 5-10 minute brainstorming sessions every week during our meetings!
+                </p>
+                <p>
+                  Finally, we talked about what we wanted to improve or incorporate into each subteam’s component for the coming week. Allen and Wayne mentioned working on the ‘Next’ button and the Firebase storage for the LogIn screen. Our Task List subteam will work on automatically moving completed tasks to the bottom of the list and adding a delete button. If we have time, we can work on allowing users to move tasks on their own and adding the habits page, otherwise we will implement this further down the line. Kip and I will work on the swipe functionality since it seems relatively straightforward to implement. We will also work on a template/preliminary version of the top nav bar. I’m excited to keep working on the app and see what progress we can make for next week!
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-20-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 20, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Small Steps In Many Areas</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today most of the progress was with the TaskScreen portion of the app. Allen, Kip, and I met for about 2-3 hours to work on the TaskScreen. Allen found a tutorial online that had a lot of useful information about how to make a shopping list app. We were able to apply a lot of ideas from this tutorial to our To Do List screen. From the tutorial we were able to fix our text input problem, so now we have a fully functioning button where users can type in their tasks and add it to the todo list! The tutorial’s template also fixed our issue from last week where the list items were just text boxes. Now, each list item appears as a separate object with its own properties. 
+                </p>
+                <p>
+                  Once we had the list items, we wanted to make some alterations for what happens when you complete a task. The original/tutorial version would just allow users to delete the task once they were finished, but we thought it would be more rewarding and thus more motivating if users were able to check off tasks without deleting them so they could see how many tasks they were finishing. We spent the majority of today’s meeting implementing a check box. When the user clicks an empty check box to signify that they have completed the task, then the box becomes checked and the text is grayed and struck through. Users can also uncheck boxes to ‘un-complete’ them, which returns the text to its original state and returns the box to its empty state. We had some confusion due to repeated variable names and unclearly named functions, but once we had a better grasp of what each function and variable’s purpose was, we were able to get our code running smoothly!
+                </p>
+                <p>
+                  An additional feature that we would like to add is that when the user completes a task it should automatically move to the bottom of the list. We think this will keep the screen organized and allow users to easily keep track of which tasks they still need to complete, while still being able to see their progress and how many tasks they have completed. We would also like to allow users to move tasks around so that they can organize the list in a format that they like or in the order that they plan to complete the tasks. We also need to re-implement the ability to delete tasks in case users want to remove tasks from the list. We may implement a button that clears all completed tasks as well. 
+                </p>
+                <p>
+                  Additionally, today we talked about how we might want to make a habits page in addition to our to do list. If there are tasks that users need to complete every day, then it may be tedious to re-input those tasks every day, so we want to make a different page that refreshes the same ‘habit’ tasks each day. Additionally, we want to implement a feature that keeps track of how many days in a row that the habits have been completed. This ‘streaks’ feature would be a good motivator for users to keep up daily habits. We may do this with a calendar feature like Fitbit’s daily exercise tracking feature. Once we finish implementing the todo list page we will work on the habits page since it will have similar features to our to do list page that we can build off of.
+                </p>
+                <p>
+                  Today I also found a source that shows how to implement swipe functionality to a navbar. Kip and I can try implementing this swipe feature next week. This week we have spent time thinking about what we might want for a top ‘statistics’ bar. Since our app has quest features, we want to implement a way for users to see their progress which would live at the top of the screen. Since we are adding a habits screen, we want to move the ‘view character’ feature to be part of the top navigation so that we can keep our 3-screen plan, while still allowing users to quickly access and customize their character. The top navigation is also where we would put our settings bar. I am also thinking about how we might consider using a swipe down feature for viewing the character, since just having a small button to view the character might de-emphasize the character customization aspect of the app. These are all things that we will discuss with the team tomorrow.
+                </p>
+                <p>
+                  Lastly, today I spent some time individually brainstorming app names, but most of the names are pretty basic and don’t stand out or emphasize why our app is different from exiting task managers, like ListQuest or TaskList. I think that it might be easier to brainstorm names as a group and talk through some ideas. Looking forward to seeing the group’s progress tomorrow!
+                </p>
+            </div>
+          </div>
+
           <div id= "June-14-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
