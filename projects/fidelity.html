@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-19-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-24-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,93 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-24-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>DATE</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>DoW</p>
+                </div>
+                <div class="post-title">
+                    <p>Title</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Entry
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-23-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 23, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Tuesday</p>
+                </div>
+                <div class="post-title">
+                    <p>Things Are Starting To Make Sense</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I spent most of my day today in and out of meetings. This was kind of a nice change from last week, where I spent most of my time doing individual research. I didn’t make too much progress with my preliminary version of the NLP classification tool, but I got to know what the APT team was working on in a lot more depth, so I still had a full day of learning. I started my morning again with the Scrum call, then almost immediately after had a meeting about an update program. I wasn’t too sure what was going on in these calls since there were a lot of unfamiliar terms and acronyms being thrown around. Since I was confused, I reached out to Poornima to ask if she had time in her schedule for me to ask her some questions about what she was working on, clarify some terms, and give an overview of the workflow.
+                </p>
+                <p>
+                  Rajiv and I also had our weekly 1:1 this morning. He explained more about the inner workings of how Fidelity uses databases and applications of how databases. I think this explanation put into perspective some of the tools that are being discussed in APT meetings. Rajiv even showed some real-time code examples, which was really nice especially since I don’t have experience with databases or SQL. I was able to demo what I worked on yesterday with my 75% accurate tool that compares a few NLP algorithms on the test data set of 200 rows. Rajiv suggested that I show Kiran what I have accomplished so far so I can get some feedback and ask questions, so he set up a meeting for the afternoon.
+                </p>
+                <p>
+                  I had my meeting with Poornima this afternoon. She gave a very comprehensive overview of the Jira workflow and the APT production calendar. She also explained what happens at each stage of the project from start to finish (To-Do, Design, Development, User Acceptance Testing, Pending Migration, Certified), which will help me follow along with understanding the scrum calls. I also asked some questions about some terms and acronyms that I heard but did not understand. A lot of these terms have to do with SQL databases, so I will look more into the terminology on my own time as they come up. Poornima answered a lot of my existing questions about terminology though. I was especially confused about what dependencies, packages, modules, decommissioning, retiring, and schemas were in the context of the team, but it’s much clearer now! Poornima mentioned that when she first joined Fidelity, these terms were also very new to her and how it was almost like picking up a new language. This made me feel a lot better about being lost and asking so many questions and encouraged me that I might be able to understand the meetings by the end of the summer.
+                </p>
+                <p>
+                  My last meeting today was demo-ing my tool for Kiran and Rajiv. Kiran and Rajiv seem happy with the progress I have made so far and it was nice to get some feedback after working on it mostly alone for the last few days. Some of the feedback mentioned from the meeting was that I might need to look into using a Fidelity local server. Currently I am running my code in Jupyter notebooks as part of the Anaconda suite, but it would be a lot more secure and a lot easier to implement company-wise if I was able to set up a local server. Since I don’t have prior experience with local servers, Rajiv suggested that I reach out to Himanshu, since he implemented a local server for his NLP tool. Further down the line, I would also like to ask Himanshu if he has time to take a look at my tool and give me some feedback based on his NLP expertise, since I am new to NLP and may not be doing things in the most efficient way. Lastly, Kiran suggested that I put my predictions into a formatted spreadsheet before showing it to the business side so that it is more of a finished prototype and we can really see how the tool would look in action. These suggestions are all things I plan to get started on tomorrow.
+                </p>
+                <p>
+                  In between meetings I made some small tweaks to my tool in an effort to improve accuracy. I tried adding additional spreadsheet information so that I am training my tool on information from 5 different columns instead of just 3. This improved the accuracy from about 75% to 80%, which was exciting! I also tried running my data on a 2,000 row data set instead of the 200 row data set that I was initially using. This brought the accuracy up to 88%! :) However, I noticed that when I made the jump from 2000 rows from 200 rows, my program was noticeably slower. Efficiency is definitely something I will have to work on improving before I try to run this model on the large amount of data used in Spend (~200,000 rows). These initial improvements in accuracy is very exciting, but I anticipate that fine-tuning the model is going to take a lot more time and research than just adding information. I anticipate having to look into the algorithm’s inner workings and parameters to do this fine-tuning.
+                </p>
+                <p>
+                  Tomorrow I don’t have many meetings, so I can work more on my code. I still have the warnings about ‘minimum split size’ that I was working with and it seems like this is coming from the fact that my data is relatively imbalanced and some categories have very few data members. I’m not yet sure how to address this issue without just feeding my model more robust training data. I’ll also try to wake up earlier so I can reach Himanshu and ask for his advice on local servers. I’m eager to see if I can understand more of tomorrow’s scrum call now that Poornima and Rajiv have filled me in on some of the high-level concepts and terminology.
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-22-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 22, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Monday</p>
+                </div>
+                <div class="post-title">
+                    <p>Somewhat Functioning First Attempt</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I started off my morning by joining the Scrum call again. I think I’m getting a better idea of what is happening now that I have been attending calls for about a week. Honestly, I’m still pretty lost, especially since my project is a bit disconnected from the database work that they are discussing. I think that if tomorrow’s scrum call is still just as confusing, I will reach out to Poornima and meet with her to ask questions about what the team is working on and what she is working on. Hopefully, this will give me more insight into what the scrum calls are about so that I can follow the calls more closely.
+                </p>
+                <p>
+                  For most of the morning, I was trying to download nltk packages. The nltk library is quite large, so it took over an hour to completely download once I passed the right authentifications. While I was waiting during this time, I watched some videos about neural networks. I understand a bit more about hidden layers and activation functions. The downloads finished before I completed the videos, but I have bookmarked them so that I can watch them if I am waiting around or if I need a break from writing code. :) The Fidelity mentor chat was also pretty active this morning, so I talked to Jenna, Benjamin, Anushka, and some of the people Nancy added on Friday. Kaitlin added her mentee, Chelsea, so it was nice to meet someone new. Someone from the CTG interns made a group chat, so I’m hoping to get to know some interns within my business unit beyond just the introductions we had on Tuesday.
+                </p>
+                <p>
+                  Once the nltk packages finished downloading, I tried getting to work using the libraries. I found a tutorial for using SVM and Naive Bayes on text classification instead of on numbers, which fixed the problem that I was having on Friday with using strings instead of floats. However, this tutorial was not accurate at all when applied to my data. SVM was only about 3% accurate and NB was about 3.5% accurate. I messed around with some parameters to try and see if I could get it working more accurately, but did not have much success.
+                </p>
+                <p>
+                  I took a break from coding and talked to Nancy for a little bit about internships, college, and studying abroad. Since I noticed that a lot of people on my team are male, I wanted to ask Nancy about her experience in tech at Fidelity with the gender ratio. She mentioned that while there are more men than women overall, the ratio depends a lot on which team you are on. She mentioned that she was on a team where all the leadership was women and she mentioned that her LEAP class was pretty evenly distributed between men and women. This was reassuring to me and I think I just happen to be in groups that are more male-dominated. For example, our CTG intern group has about 20 people, but just 5-6 out of the 20 are women. The people that I have been in contact with on my team are also primarily male, with the exception of Janice and Poornima. WISTEM also has an event next week, but unfortunately this conflicts with a meeting. I’m looking forward to talking to Nancy more in the coming weeks and getting her advice on the internship and beyond. :)
+                </p>
+                <p>
+                  Later in the afternoon, I found a different tutorial for Text classification, which used SVM, NB, RF, and logistic regression. This method took a while for me to implement since my data has more moving parts than the sample data. It ended up being worth it, since it’s much more accurate than the tutorial I was working with this morning! Each method is about 60-75% accurate. Of course, I will need to work on getting the model to be much more accurate before the Business group can use it since even 75% accuracy isn’t exactly reliable, but this is a good starting point compared to 3%! This tutorial has a lot more ways to visualize the data, which made the models seem much less ‘black box’ and made it a lot easier for me to see what was going on behind the code. The data set that David sent me last week has about 200,000 rows, but I am starting with 200 rows so that it's more manageable as I work through initial bugs and formatting, but the size of the data is something I will keep in mind as I move forward. There are still some changes I need to make to the tutorial’s parameters in order to fit my data. This is because the data I am working with has a lot of different categories and sometimes categories in the test data are not present in the training data, which means the model doesn’t know what to do with them. The large number of categories also makes the data visualization tools a bit difficult to read, so I may spend some time seeing if I can improve readability. There are some other warnings that I need to work through regarding ‘minimum split size’, but I’m not sure exactly what this means, so this is an area that I need to research more tomorrow as well.
+                </p>
+                <p>
+                  Tomorrow I have my 1:1 with Rajiv, so I plan to update him on what I have been able to accomplish up to this point and what I hope to do next. I will also reach out to Poornima tomorrow so I have a better idea of what’s going on during the scrum meetings and so I can finally meet her face-to-face. I should have reached out to her sooner, but all the new information last week was a bit overwhelming so it totally slipped my mind. In terms of the text classification tool, I plan to address the warnings and research (and maybe even implement?) ways that I can improve accuracy.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-19-2020-FI">
             <div class="post-header">
                 <div class="post-date">
