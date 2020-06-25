@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-24-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-25-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-25-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 25, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Writing Outputs</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I’m definitely getting more used to scrum calls :). This morning, I understood a lot more of the terminology and was able to follow along with the general flow of the meeting. However, I am still a bit lost during the more in-depth discussion of certain components. As I listen in to the calls and get more familiar with the components hopefully I will be able to understand more of these in-depth conversations as well, but it’s nice not to feel completely lost anymore.
+                </p>
+                <p>
+                  This morning I worked on choosing an algorithm to stick with. As I mentioned yesterday, I split LinearSVC and RandomForestClassifier into separate documents so that could compare their speeds. LinearSVC is definitively faster than RandomForestClassifier, so I will be using LinearSVC as my algorithm for finding predictions from now on. I also captured the images of data visualizations from yesterday’s code in case I want to view them or display them during meetings so that I don’t have to re-run my code. It’s actually pretty astounding looking at the graphs and seeing how much of the sample data is unspecified! (~70%).
+                </p>
+                <p>
+                  In the afternoon there was a 2 hour workshop about the economics of Fidelity. This workshop was meant especially for interns to learn more about the inner financial workings of how Fidelity operates. Some of the content was familiar from the Financial Economics and Macroeconomics courses that I took in school, but there was also a lot to learn. Especially interesting to me was seeing how the concepts that I learned in Economics classes were applicable to running a business and investing in different assets. My particular project isn’t really involved with investing, but I think that it’s important to know how other parts of Fidelity work even if I am not directly involved in them.
+                </p>
+                <p>
+                  For the rest of the day, I worked on how to write output predictions into Excel. This process was a bit frustrating, since I found that a lot of sources were outdated or certain functions were no longer functional. Eventually, after quite a lot of trial and error, I was able to successfully get my predictions correctly formatted into an Excel sheet. I first thought it would be interesting to make predictions for the ‘UNSPECIFIED’ items, since these items were cleaned out from the original data. Since these items were previously classified as ‘UNSPECIFIED’ I don’t have a way to cross-reference and make sure that these items have been put into the correct category. When I looked at the data, it seemed like most of the categorizations were not wildly inaccurate. However, since I have only been working with this data for about 2 weeks, I don’t have the intuition for where the data should really be classified, so I will check with Kiran or the Business team. During Tuesday’s meeting with Rajiv and Kiran, they mentioned that it might be good to print out the actual vs. the predicted test data, so I spent a little while tweaking my code to have this functionality. Looking at this data, it seems like my code does a pretty good job, but there are some instances where the categorization is completely different than what it should be. I will need to brainstorm and research ways to fix this issue. Currently, I am thinking about a hierarchy or weighting, since some categories are more relevant to classification than others. But I am not sure how feasible this method would be with the algorithm I am using.
+                </p>
+                <p>
+                  Tomorrow, I have almost no meetings! I plan to look into improving the accuracy of my classification tool as mentioned above. Today I spent a lot of time getting my code to function, but I have a lot of random variables or irrelevant comments floating around, so I will also spend some time cleaning up my code and making it more readable tomorrow. If I have time or if I get stuck, I might also start googling or asking around about setting up a Fidelity server and making my tool scalable like Rajiv mentioned. If possible, I will look into getting my code to be more efficient, but after today, I think some of the speed issues were from running so many models at once, so it may not be as big of an issue as I originally thought.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-24-2020-FI">
             <div class="post-header">
                 <div class="post-date">
