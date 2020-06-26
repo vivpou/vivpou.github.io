@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-25-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-26-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-26-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 26, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Ready For Next Steps</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I didn’t have any meetings today, so I was able to focus on my code and gain some insight on where to go next. This morning, I worked on formatting my outputs. I decided to have separate spreadsheets for the ‘UNSPECIFIED’ predicted outputs and comparing the predictions for the randomly sampled defined output to their actual values. I also included some conditional formatting in the defined output page to more easily spot where my predictions did not match the actual values. I decided to run both the ‘UNSPECIFIED’ code and the defined prediction code on 200, 2000, 20k, and the total 200k data set to see how the predictions improved as the data set got larger. It’s a bit hard to make concrete observations on the ‘UNSPECIFIED’ data but it seems like the data is better categorized for a larger data set. However, there are definitely still misclassifications. For example, there are a couple instances where software gets classified as hardware. For the defined outputs, the predictions are definitely better with a larger data set. A data set of 200 is about 93% accurate and a data set of 200k is about 98% accurate. However, with my current method of ‘random sampling’ some of this data is the training data, so the results are misleadingly high. Next week I may look into asking for more data or splitting off a section of the sample data specifically for testing, which would not be included in the training data.
+                </p>
+                <p>
+                  I also captured some visualizations of where the ‘UNSPECIFIED’ predictions were getting categorized. I wanted to see if this matched the distribution of the defined data set to see if the imbalance of the training data set was affecting the predictions. From what I can tell, it doesn’t seem like the imbalance is affecting the predictions too much, but if incorrect predictions into the same categories continue, I will look further into this.
+                </p>
+                <p>
+                  In the afternoon, I worked on improving the accuracy of my code. I looked into the parameters for LinearSVC, but it doesn’t seem like I can feasibly implement a hierarchy system for classifying the data without sacrificing a lot of efficiency. While looking into parameters I stumbled across a method called SGDClassifier, which is for Stochastic Gradient Descent. This uses the same logic as Linear SVMs but using gradient descent to find the optimal parameters. I implemented a version of SGDClassifier using its default parameters and it seems to be almost equally efficient compared to LinearSVC. I’ll need to look more into how I can possibly change the parameters for both LinearSVC and SGDClassifier to improve the accuracy. 
+                </p>
+                <p>
+                  I think that I currently have a pretty efficient and accurate prototype, where it is 95% accurate on a 35,000 row training data set and can make predictions for 200,000 rows in just over 2 minutes. Of course, these can both have room for improvement, but I would like to check in and get some feedback on where I am before pouring time into small accuracy and efficiency changes, in case I need to make any larger adjustments. I might ask Rajiv or Kiran what they think on Monday. Also, since I have the output method set up, I’m wondering if I should prepare to show the business team where I am so far or if I should make more progress regarding scalability before I demo my code to them. I’ll ask Rajiv about this on Monday. Since the machine that Himanshu used to create his server was decommissioned, I needed new resources for setting up a server. After asking Rajiv for additional resources, he directed me to Don, a Systems Engineer. I haven’t had the chance to send out a message to him yet, but I plan to do this first thing Monday morning.
+                </p>
+                <p>
+                  I’m honestly a bit surprised at the progress that I’ve been able to make this week and having great connections like Kiran, Rajiv, David, and Nancy has definitely helped a lot. As I get further into the project, I anticipate that there will be less robust resources and more challenges, since I am still in the initial building phase of the project so far. I’m looking forward to learning more about servers and showing others the progress that I’ve made. :)
+                </p>
+            </div>
+          </div>
+          
           <div id= "June-25-2020-FI">
             <div class="post-header">
                 <div class="post-date">
