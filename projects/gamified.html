@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-21-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#June-25-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,31 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-25-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 25, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Swipeable Navigation</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  A short navbar update entry for today. Kip and I worked on implementing the swipe feature to the bottom navigation bar for about an hour and talked through some items for the top statistics bar. We worked based on the tutorial found last Saturday and though there were a couple obstacles, it was pretty straightforward!
+                </p>
+                <p>
+                  Initially, we had implemented the navigation bar using createBottomTabNavigation (from two weeks ago). This allowed us to create a clickable bottom navigation bar, but did not allow for swiping. We tried to see if we could implement swiping using creatBottomTabNavigation or even with createMaterialBottomTabNavigation for a while, but did not have any luck. It turns out that in order to have a swipeable bottom navigation bar, we needed to use createMaterialTopTabNavigation and specify that placement should be at the bottom. Admittedly, this seems a little messy, but createMaterialBottomTabNavigation does not allow for swiping. :( The ‘Material’ aspect of the createMaterialTopTabNavigation also allows for the animation of sliding screens when swiping. With the swiping functionality enabled, users still have the functionality to click the buttons on the bottom navigation bar to get to different screens. Once functional, to keep the navigation bar clean, we decided to remove the labels and only display icons on the navigation bar. Since there are only 3 screens and we will display the name at the top of each screen, we felt that the labels were unnecessary. After some quick formatting changes, we finished up our new swipeable bottom navigation bar. :)
+                </p>
+                <p>
+                  In the last part of our meeting, we talked about the top statistics bar. Unfortunately, we did not have time to implement the top statistics bar template, but since none of the screens or elements for the top statistics bar have been started yet and we are finished with the bottom navigation bar, we should  have plenty of time to work on the top statistics bar next week. I also brought up being able to swipe down to get to the view character screen and we agreed we could bring it up on Sunday’s meeting to get the rest of the team’s thoughts.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-21-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
