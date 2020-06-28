@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-25-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#June-28-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,72 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "June-28-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 28, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>Planning For Next Steps</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Entry
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-27-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 27, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Fixing Buttons</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Last night, Kip was able to fix the dependency issues with the packages by reinstalling all the necessary packages. :) With these issues fixed, we were able to get working on what we had set out to work during our last meeting. Our aim for this session was to move the check box to the left of the task text and implement a button to allow users to delete tasks. This setup is similar to how other apps allow users to add and delete items, so hopefully this setup will make it more intuitive for users.
+                </p>
+                <p>
+                  The first step was to move the checkbox from the left side of the text to the right side of the text. This proved to be a bit more challenging than we originally anticipated. The first, most straightforward step to move the position of the checkbox’s code to be before the text’s code. Since React Native renders items left to right, this would move the checkbox item to the left of the text as desired.  However, this led to some problems with flexbox widths. Somehow, the boxes had expanded to the full width of the screen, which meant that the checkbox and the text were left-aligned on separate lines. It took quite a while of experimenting with flexboxes and different parameters like flex-wrap, justifyContent, flex-direction, align-items, align-content, etc. Eventually, we were able to create appropriately sized boxes by hard-coding widths and putting an additional container around the text boxes to control the size of it’s flexbox without affecting the layout of the text. With the correctly sized text boxes, we were able to move the checkbox button and the text onto the same line using flex-direction.
+                </p>
+                <p>
+                  Our next step was to create a button that allows users to delete tasks from their list using an ‘X’ button. The tutorial that we worked off of last week included a function for a delete button, so we were able to re-implement this button pretty quickly and easily. Lastly, we translated our hardcoded widths to flex values in order to make our layout more flexible to different sizes of screens without running into formatting issues. We also quickly made some aesthetic changes regarding colors and spacing.
+                </p>
+                <p>
+                  We discovered that the edit feature was no longer functioning after we made our changes today. This will be our first priority for next week since it's an essential part of our Task list’s functionality. I’m not quite sure what happened between last week and this week, but we’ll look more into this next week. Unfortunately, we weren’t able to implement the feature where completed tasks move to the bottom of the list automatically or allow users to move the items manually. We may try to get completed tasks to move to the bottom of the list next week, since this is pretty important in terms of usability. 
+                </p>
+            </div>
+          </div>
+
+          <div id= "June-26-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 26, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Dependency Issues</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today Allen, Kip, and I worked for about an hour on the Task List screen, but weren’t able to make much progress. :( Unfortunately, we kept getting error messages about incorrect or unfound packages and dependencies. We spent a lot of time trying to debug but with no luck. Kip said that she would look into the errors and we’ll reconvene tomorrow morning.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-25-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
