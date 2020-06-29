@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-26-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-29-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,40 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "#June-29-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 29, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Monday</p>
+                </div>
+                <div class="post-title">
+                    <p>Deciding On An Algorithm</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning, after the scrum meeting I fixed my method of random sampling. Last week, some of the data that I was writing prediction outputs for was duplicated from the training data, which meant that my results were misleadingly high. I fixed my method so that I removed some data randomly using the .sample() and .drop() functions at the beginning before the model was trained to save for testing and writing predictions. This allowed for more realistic results. For a set of 200 rows, the model was about 70% accurate and for a set of all 200k rows, the model was about 95% accurate. This matches the accuracy levels seen last week for Linear SVC when comparing algorithms. There is still quite some work to do for fine-tuning the model to be even more accurate.
+                </p>
+                <p>
+                  There was also a panel with some of the executive leadership at Fidelity to answer questions from interns. We got to hear from Abby Johnson (President and CEO) and members of her senior leadership team on topics like current events, advice to their younger selves, professional growth, business strategies, etc. It seemed like the members of the senior leadership team were pretty close and made conversation and jokes throughout the webinar, which was a pleasant surprise since a lot of the webinars so far have been pretty strictly following a pre-set schedule. A lot of the leadership also mentioned their experience working at companies prior to joining Fidelity and I think that these were often the most insightful topics. A lot of the advice they gave had to do with taking risks and opportunities when possible and not ‘sweating the small stuff’ during college and the beginning of your career. This was nice to hear, especially coming from a group of people who have achieved such great things in their careers. Hearing about leadership roles from this panel definitely got me thinking about more managerial roles and job opportunities in my future.
+                </p>
+                <p>
+                  Today I also got in touch with Don from the System Engineering team about setting up a Fidelity server. I gave him a brief overview of my project and the scalability concerns I was having and asked if he had any insights. However, since setting up a server is a pretty technical matter, he asked to set up a meeting with Rajiv and I to talk through some of the more technical aspects before offering advice or recommendations. It seems like both Rajiv and Don are pretty busy this week, so the first reasonable availability that I could find was for Thursday afternoon. I’m looking forward to working towards some of the next steps and looking into how I might be able to scale my tool. I’ve never worked with servers before, so this is another new field that I can look into this summer.
+                </p>
+                <p>
+                  For the rest of the afternoon I worked more on my code and prepared what I have so far for my 1:1 with Rajiv tomorrow and for the business procurement team at some point in the future if needed. I decided to take down the times for the algorithms that I was initially considering so that I had a clear reason for choosing LinearSVC. I went back to RandomForestClassifier and decided to try some other parameters, since LinearSVC and RF have similar accuracy levels. I remember reading about how having a large number of trees can greatly impact the run time, so I tried RF on the original 200 trees, then cut it to 100, then down to 25. At 25 trees, RF takes about 3:30 minutes to run, which is a lot faster than the original 25 minutes to run at 200 trees. However, this is still considerably slower than LinearSVC which only takes 1:45 minutes to run. I then ran SGDClassifier, which had a comparable runtime to LinearSVC on smaller samples of about 200 rows, but when I increased the sample size it was even slower than LinearSVC. According to quite a few sources, LinearSVC seems to be more suitable to larger scale samples than SGDClassifier. With this analysis done, I feel solid in my choice of LinearSVC for the model’s algorithm in order to maximize both accuracy and efficiency.
+                </p>
+                <p>
+                  I’m still looking into LinearSVC parameters, but I haven’t come up with anything that seems to fit the data that I am using. I may need to rework the structure of my data or keep looking for algorithms to get a meaningful increase in accuracy while maintaining the current level of efficiency. For now, I’m going to keep looking, but reworking the structure of the data is an option that I will keep in mind. I also finally had the opportunity to look into the source that David recommended last week. A lot of the information confirms the choices I have made with SVC and text classification, but it also gave me some new things to think about like using word2vec instead of tf-idf or looking into more deep learning/unsupervised options. I’ll look into these more during my free time and see if I can feasibly work these aspects into my existing structure.
+                </p>
+                <p>
+                  I was scheduled to have my 1:1 with Nancy today, so I compiled some questions about career focus and mobility in tech, but this seems to be a busy week for her, so we’ve rescheduled for Wednesday morning. I also compiled some notes about the broad view of what I’ve accomplished so far, demonstrations of outputs, and further questions for my 1:1 with Rajiv tomorrow. I’ll also continue looking into ways to expand my code using the topics in David’s article or LinearSVC parameters tomorrow. I’m looking forward to meeting with Rajiv to see if he has feedback for next steps I can take.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-26-2020-FI">
             <div class="post-header">
                 <div class="post-date">
