@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-29-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#June-30-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,40 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "#June-30-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JUNE 30, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Tuesday</p>
+                </div>
+                <div class="post-title">
+                    <p>Parameter Fine-Tuning</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I started my morning with 3 back-to-back meetings with the FPAIT APT team. We started with the usual daily scrum call, where I am  able to follow along but I’m still not familiar with the specifics. I think that unless I get directly involved with the database system it will be difficult for me to understand the ins and outs of the daily scrum calls, but it’s still nice to check and see what the team is up to. Next, there was an end-of-month meeting discussing what was accomplished in June. This gave a broad view of what the team had accomplished during the month and what still needed work in July. One part of the meeting that stuck out to me was at the end of the meeting when we had a couple minutes to “shout out a coworker” which was when team members could praise others for exceptional work. I thought this was a nice way to celebrate team members and to break up an otherwise formal meeting especially because the current remote work environment can make it hard to feel connected to other associates. Lastly, there was a meeting about the current update. After last week’s meeting with Poornima, I had a better understanding of what the update was about and what aspects were being discussed, but again I’m not too familiar with the specifics of the update components.
+                </p>
+                <p>
+                  I spent the remainder of my morning and early afternoon exploring parameters for LinearSVC. Since I decided on LinearSVC as my algorithm of choice for today, I wanted to experiment with changing the default values of the parameters to see if I could improve the accuracy at all. I found that the parameters that maximize output vary depending on the size of the data set. I initially experimented with values for my 2k row data set, but when I applied the same parameters to the total 200k data set, it actually decreased the accuracy. Ultimately, I found that the variables that affect the accuracy of my data are C, fit_intercept, and intercept_scaling. Other variables like tolerance, verbose, and max_iter generally don’t affect the accuracy or the default value consistently produces the most accurate results. Ultimately, changing the parameters didn’t make a huge difference, since it just increased my accuracy from 95% to 96%, but on a larger scale this small percentage change could be a difference of hundreds or thousands of values being correctly categorized. I’m pretty happy with the progress I’ve made for now. :)
+                </p>
+                <p>
+                  This afternoon there was a ‘Lunch and Learn’ panel with Personal Investing and how they’ve been responding to market volatility and Covid-19. Since my project and my team are not directly involved with the markets or investing, it was interesting to learn about a completely different field under the same company. I think I’ll continue to make an effort to attend a variety of ERG events since it seems like a good way to get to know what’s happening in other branches of Fidelity.
+                </p>
+                <p>
+                  Today I also got involved with the Digital Champions program in the intern group, which is designed to help promote engagement, plan events, be a technological leader, and give real-time feedback. There are a couple options for how to get involved, and I think I can realistically commit to the 21-Day challenge which has daily 5-10 minute tasks and the Elite 21-Day challenge which has daily 10-20 minute tasks. The other more intense programs might not be realistic for my current workload, but if I find myself with free time I’ll definitely look into them! There were a couple of quick tasks today about navigating Microsoft Teams and Outlook and I’m excited to see what else is in store.
+                </p>
+                <p>
+                  For the rest of the afternoon, I looked into different methods for vectorizing text. I am currently using TF-IDF (Term Frequency-Inverse Document Frequency) which pulls out the most ‘important’ words for each category in a document based on its frequency of appearance for a category compared to the entire document. I’ve come across other vectorization methods like word2vec and gloVe during my research phase in the first week and in the article that David sent. Ultimately, it seems like TF-IDF works best if you have a large labeled data set (which I do). Word2vec and gloVe are strongly favorable only if you have sparse training data, but when you have >10k rows of training data, TD-IDF outperforms other methods, so I will stick with TF-IDF. I also experimented with TD-IDF's parameters to see if I could further increase the accuracy, but it seems as though the values I have been using are optimal. For now I think I’m done experimenting with parameters to increase accuracy, but I’ll see if Rajiv has further suggestions for how to improve accuracy and/or efficiency tomorrow.
+                </p>
+                <p>
+                  It seems like the end of the month is a busy time for a lot of people! Rajiv rescheduled our meeting for tomorrow morning, so I look forward to updating him on my findings and my progress then. I also have my meeting with Nancy tomorrow, where I’ll ask the questions that I compiled yesterday. Since I’m happy with my progress with my classification tool for now, I plan to spend my time tomorrow looking into servers. I don’t have prior experience setting up or using servers, so I’d like to learn more before my meeting with Don on Thursday so that the meeting is as productive as possible and I can follow along with any suggestions he has without needing to ask for clarification on the more basic terms.
+                </p>
+            </div>
+          </div>
+
           <div id= "#June-29-2020-FI">
             <div class="post-header">
                 <div class="post-date">
@@ -64,7 +98,7 @@
                     <p>Monday</p>
                 </div>
                 <div class="post-title">
-                    <p>Deciding On An Algorithm</p>
+                    <p>Deciding On LinearSVC</p>
                 </div>
             </div>
             <div class="post-body">
