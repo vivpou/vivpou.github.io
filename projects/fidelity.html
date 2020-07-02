@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-01-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-02-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-02-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 2, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Agile Frameworks</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning the scrum meeting was cancelled, so I was able to finish the LinkedIn learning course about servers (that I started yesterday) earlier than expected. Through this course, I have been able to come up with more concrete questions that I can ask Don during our meeting. Unfortunately, something came up during the afternoon for Don, so I rescheduled our meeting for Monday morning. I’m planning to ask questions about what kind of server setup I should consider (Microsoft server?), what role of server I might need (file, hyper-v, document?), and how I can configure an IP address.
+                </p>
+                <p>
+                  For the rest of the morning I worked on increasing the efficiency of my Spend classification tool by saving and loading the model. The original code was both training and writing predictions each time I ran the program. I thought it might be more efficient if I could save the trained model so that only the predictions would need to be calculated on run since the model should be trained the same way each time. There are a couple of ways to save a model, but the two that I researched were pickle and joblib. Ultimately, I decided to go with joblib, since it's better suited for larger arrays. It was pretty straightforward to implement joblib and save the trained model to a new .sav file. There were a couple of steps relating to loading in variables from the training file before being able to make new predictions in a new file, but overall it was a pretty smooth transition. With this implementation, I can train the model once on a large amount of data to get the most accurate results. Then, when needed, the program will have a separate file to write predictions based on the already-trained model more efficiently. I think this should aid with the previous problem with sacrificing accuracy for efficiency or vice versa so that we get the best of both worlds. :) In terms of runtime, the old version of the program took 3:30 minutes to write predictions for 200k rows. The new version takes 1:30 minutes to write these same predictions. This is a pretty significant efficiency boost and hopefully this will make the tool more scalable!
+                </p>
+                <p>
+                  Today I also got to take a virtual tour of FCAT/Innovation Center. I learned about how FCAT works with new emerging technologies and builds tools to help Fidelity associates and customers succeed. There was a lot of emphasis on touchless interaction and VR technology. I’d be interested in exploring some of the areas mentioned during this tour, which seem to be increasing in importance, like cybersecurity and AI. I have some exposure to AI this summer with NLP for Spend classification, but I would be interested in being more immersed with AI and exploring other applications.
+                </p>
+                <p>
+                  For the rest of the afternoon, I learned about different types of Agile frameworks. I found a course yesterday that compared DA (Disciplined Agile) and Spotify Agile and explained which framework might be best suited for different enterprises since Rajiv mentioned how Fidelity is moving toward a Spotify Agile framework. After completing this course, I found another course on the basics of Scrum, which is what my team currently uses. I was able to get through most of the course today and I plan to finish the last piece on Monday. Since Scrum is widely used not only in Fidelity but in many organizations, I’m excited to be able to apply what I’ve learned in the short-term and long-term future.
+                </p>
+                <p>
+                  I have tomorrow off for Independence Day, but I’m excited to come back on Monday and get some feedback from Don about how to use servers and from Kiran about my progress with the Spend tool. I also have my meeting with Nancy on Monday, where I might ask more about FCAT or about how mobility works within Fidelity, especially in tech. Next week I get to show my progress to some of the business team as well, so I’m excited to hear their feedback and move forward!
+                </p>
+            </div>
+          </div>
+
           <div id= "July-01-2020-FI">
             <div class="post-header">
                 <div class="post-date">
