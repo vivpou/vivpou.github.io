@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#June-28-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#July-05-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,75 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-05-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 5, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>Title</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Entry
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-04-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 4, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Title</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning Kip and I worked for about two hours on creating a template for our top statistics/navigation bar and fixing up the bottom navigation bar. Initially, we wanted to create the top navigation bar using createMaterialTopNav like we had done to create the bottom navigation bar previously. However, since we wanted to include a progress bar in the middle, which wouldn’t navigate to a new screen, we decided to just create icons with onPress navigation to our Character and Settings screens. We also weren’t sure if we would face issues with having two navigation bars on the same screen, so implementing our top navigation in this way would also avoid this problem.
+                </p>
+                <p>
+                  Initially, we faced a lot of problems with getting the top navigation bar to be visible on the screen. Our first approach was similar to how we implemented our bottom navigation using stack navigator and importing screens, but for some reason this was not working. We messed around with moving it’s position on the stack navigator, importing screens, and deleting screens. We found out that if we hid the bottom navigation, we could see our top navigation bar. For the sake of being able to work on the template, we temporarily commented out the other screens so we could see the top navigation. Using a lot of the insights from last week’s TaskList work session regarding adding containers and flexbox properties, we were able to correctly format the icons for the character screen, progress bar, and settings screen onto the same line with the desired screen. Once we were happy with the formatting, we had to go back to fixing the issue of not being able to see the top navigation when the bottom navigation. Kip came up with the idea of loading the top navigation in the bottom navigation screen, to avoid the problem of only being able to see one at a time. This worked as desired and we were able to have the top and bottom navigation at the same time and both functional! We were able to add the onPress navigation to the Character and Settings screen using onPress and navigation.navigate so that users could click on the icons and be directed to the right screen.
+                </p>
+                <p>
+                  We also spent a few minutes fixing up our bottom navigation since we had moved the settings and character screens to the top navigation. We also added a ‘Habits’ page to the bottom navigation and found a corresponding icon. In terms of next steps, we might need to implement a button to go back to the original screens from the Character and Settings screens. Currently, users can only navigate back to the main app from the Character and Settings screens by swiping left, but this might not be very intuitive. We also might be able to start working on the settings screen next week or in the near future, which might include features like changing user ID or color schemes. 
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-03-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 3, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Fixing Async Storage</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today Kip, Allen, Wayne, and I met up to work through some issues with Async storage. Allen and Wayne have been primarily working with this issue, so they started off the meeting by sharing what they had tried and what they were having issues with. Next, we compiled some articles that walked through how to use Async storage with React Native and tried following along with these tutorials. We ran into quite a few obstacles along the way, but ultimately, with some tweaks, new dependencies, and new files we were able to figure out how to use Async storage to save a user ID. Hopefully this will help Allen and Wayne with their Login screen progress, and we can apply the same ideas of Async storage to other aspects of the app like coins, quests, characters, etc. so that our app works in the way that we want.
+                </p>
+                <p>
+                  The last step was to run some tests to make sure we were correctly saving the userID and that we would be able to retrieve the userID when needed. We had some trouble with this portion initially since AsyncStorage returns objects as promises, so we were not able to see the userID as a string. Eventually, using await and .getItem(), we were able to create an alert that welcomes the user to the app using their userID! We probably won’t have this alert in the final app, but this is a good way to test that the userID is stored and retrievable.
+                </p>
+                <p>
+                  Today I also realized that it might be useful to apply some of the project management strategies that I’ve learned through my Fidelity internship to this project. In my internship, my team uses a backlog to keep track of features to implement during their Agile sprints. Our app project doesn’t use sprints, but I think that organizing a backlog of features that have yet to be implemented could be helpful. The backlog is organized according to the MoSCoW Prioritization, which has 4 categories: Must Have, Should Have, Could Have, Won’t Have. Must Haves are items that are vital in order for the product to be considered successful/functional. For our app, these would be the minimum features that we would need for our prototype by the end of the summer. Should Haves are items that are high-priority but not essential. So for our app these would be the items that make our app unique and would be the first things we would work on adding to the prototype, but are not essential for functionality. Could Haves are items that would be nice or are desirable, but are not necessary for the app. These features might be included in the first updates of our app. Won’t Haves are items that were brainstormed but may end up being rejected because they aren’t feasible or no longer align with the vision of our app. I’m planning to bring up MoSCoW prioritization during Sunday’s meeting and seeing what the rest of the team thinks.
+                </p>
+            </div>
+          </div>
+
           <div id= "June-28-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
@@ -72,13 +141,13 @@
                   Today we had a bit of a smaller meeting than usual. Allen and I brainstormed some names, but weren’t able to make a lot of progress from last week and felt a bit stuck. When Wayne showed up, we decided to brainstorm themes for the app or components of the app. We thought that having a more solid theme idea might help us find a direction for brainstorming names instead of just having basic names about “List” or “Task.” We were able to come up with quite a few themes surrounding travel, customization, and animals. Next week when we have more of the team together, we might expand on some of these themes and ideas or narrow down which ones we think best fits the vision for our app. Once we have a theme, we hope to have more productive and creative brainstorming ideas.
                 </p>
                 <p>
-                  Next we went around and updated as well as we could for the different components. Allen and Wayne have fixed the ‘Next’ button! This means that users can navigate from the home screen to the main app. However, while this works on Allen’s phone, we found that it doesn’t show up on other devices. Allen and Wayne will look into what is causing this issue, but they suspect that it is because of the hardcoded top and bottom margins. Allen and I talked about our progress on the Task List screen with moving the checkbox to the left of the task and implementing a ‘Remove’ button for each task. We also mentioned that we weren’t able to implement the automatic moving of the text for completed tasks and that the edit feature isn't working. I provided updates on me and Kip’s progress with implementing the swipeable navigation. I also mentioned that I added a hand-drawn template for the top statistics bar in our Visual Documentation, but we weren’t able to complete a template in code. I brought up the idea of swiping down to get to the view character screen to bring more emphasis to the character customization aspect of the app and it seems like Allen and Wayne are on board with the idea, so I will look into ways to implement this further down the line.
+                  Next we went around and updated as well as we could for the different components. Allen and Wayne have fixed the ‘Next’ button! This means that users can navigate from the home screen to the main app. However, while this works on Allen’s phone, we found that it doesn’t show up on other devices. Allen and Wayne will look into what is causing this issue, but they suspect that it is because of the hardcoded top and bottom margins. Allen and I talked about our progress on the Task List screen with moving the checkbox to the left of the task and implementing a ‘Remove’ button for each task. We also mentioned that we weren’t able to implement the automatic moving of the text for completed tasks and that the edit feature isn't working. I provided updates on me and Kip’s progress with implementing the swipeable navigation. I also mentioned that I added a hand-drawn template for the top naviagtion bar in our Visual Documentation, but we weren’t able to complete a template in code. I brought up the idea of swiping down to get to the view character screen to bring more emphasis to the character customization aspect of the app and it seems like Allen and Wayne are on board with the idea, so I will look into ways to implement this further down the line.
                 </p>
                 <p>
                   Allen brought up our Visual Documentation folder to make sure that we were keeping track of our app progress as we continued working on the app. We also discussed some tips or advice for working remotely together. Mainly, we wanted to make sure that subteam members were being vocal about changes they were making to the code or what they were researching during team meetings to make sure that everyone is on the same page.
                 </p>
                 <p>
-                  We briefly reiterated what we planned to do next week. Allen and Wayne will make sure that the ‘Next’ button is visible on all screen sizes. The Task List subteam will work on fixing ‘Edit’ functionality and implementing the feature that moves completed tasks to the bottom of the list. Kip and I will create a template for the top statistics bar. Since we don’t yet have a View Character or Settings screen, we will create placeholder screens so that we can test that the buttons lead to the correct screens. Although the subteams are making good progress with these current screens, there are still quite a few screens that we haven’t started working on yet. We may have to start implementing these screens pretty soon in order to have a functioning prototype by the end of the summer. Allen and Wayne mentioned that they could start working on the Quest Screen once they finish the Home Screen. Kip and I will start working on the Settings Screen once the Navigation components are finished. Our Task List subteam will work on the Habits page once we have finished the main To Do Screen.
+                  We briefly reiterated what we planned to do next week. Allen and Wayne will make sure that the ‘Next’ button is visible on all screen sizes. The Task List subteam will work on fixing ‘Edit’ functionality and implementing the feature that moves completed tasks to the bottom of the list. Kip and I will create a template for the top naviagtion bar. Since we don’t yet have a View Character or Settings screen, we will create placeholder screens so that we can test that the buttons lead to the correct screens. Although the subteams are making good progress with these current screens, there are still quite a few screens that we haven’t started working on yet. We may have to start implementing these screens pretty soon in order to have a functioning prototype by the end of the summer. Allen and Wayne mentioned that they could start working on the Quest Screen once they finish the Home Screen. Kip and I will start working on the Settings Screen once the Navigation components are finished. Our Task List subteam will work on the Habits page once we have finished the main To Do Screen.
                 </p>
                 <p>
                   An issue that we have run into a couple of times is Async storage. Since this component will appear in quite a few parts of our app, we feel that we should all be involved in this process. Allen and Wayne have primarily been working through our storage issues thus far. They will fill us in on what has and hasn’t worked so far with what they’ve tried. We plan to meet next Saturday to hopefully make some progress and talk through the issues. Excited for more progress next week and the possibility of getting started on new screens!
@@ -147,13 +216,13 @@
             </div>
             <div class="post-body">
                 <p>
-                  A short navbar update entry for today. Kip and I worked on implementing the swipe feature to the bottom navigation bar for about an hour and talked through some items for the top statistics bar. We worked based on the tutorial found last Saturday and though there were a couple obstacles, it was pretty straightforward!
+                  A short navbar update entry for today. Kip and I worked on implementing the swipe feature to the bottom navigation bar for about an hour and talked through some items for the top naviagtion bar. We worked based on the tutorial found last Saturday and though there were a couple obstacles, it was pretty straightforward!
                 </p>
                 <p>
                   Initially, we had implemented the navigation bar using createBottomTabNavigation (from two weeks ago). This allowed us to create a clickable bottom navigation bar, but did not allow for swiping. We tried to see if we could implement swiping using creatBottomTabNavigation or even with createMaterialBottomTabNavigation for a while, but did not have any luck. It turns out that in order to have a swipeable bottom navigation bar, we needed to use createMaterialTopTabNavigation and specify that placement should be at the bottom. Admittedly, this seems a little messy, but createMaterialBottomTabNavigation does not allow for swiping. :( The ‘Material’ aspect of the createMaterialTopTabNavigation also allows for the animation of sliding screens when swiping. With the swiping functionality enabled, users still have the functionality to click the buttons on the bottom navigation bar to get to different screens. Once functional, to keep the navigation bar clean, we decided to remove the labels and only display icons on the navigation bar. Since there are only 3 screens and we will display the name at the top of each screen, we felt that the labels were unnecessary. After some quick formatting changes, we finished up our new swipeable bottom navigation bar. :)
                 </p>
                 <p>
-                  In the last part of our meeting, we talked about the top statistics bar. Unfortunately, we did not have time to implement the top statistics bar template, but since none of the screens or elements for the top statistics bar have been started yet and we are finished with the bottom navigation bar, we should  have plenty of time to work on the top statistics bar next week. I also brought up being able to swipe down to get to the view character screen and we agreed we could bring it up on Sunday’s meeting to get the rest of the team’s thoughts.
+                  In the last part of our meeting, we talked about the top naviagtion bar. Unfortunately, we did not have time to implement the top naviagtion bar template, but since none of the screens or elements for the top naviagtion bar have been started yet and we are finished with the bottom navigation bar, we should  have plenty of time to work on the top naviagtion bar next week. I also brought up being able to swipe down to get to the view character screen and we agreed we could bring it up on Sunday’s meeting to get the rest of the team’s thoughts.
                 </p>
             </div>
           </div>
@@ -172,7 +241,7 @@
             </div>
             <div class="post-body">
                 <p>
-                  Another productive team meeting! We started off by catching up on what each subteam was up to. Allen and Wayne talked about how they tried to change the format of the LogIn Screen to allow navigation onto a different screen using a ‘Next’ button. Since it didn’t really work, they plan to continue working on it this week. They were also able to fix the text box, so that it correctly underlines the user’s name. They mentioned that they looked more into asynchronous storage, but without much luck. Allen, Kip, and I talked about what we accomplished this week with the Check/Uncheck functionality and what we still needed to accomplish with moving tasks around and implementing a ‘Habits’ page (see yesterday’s post for more details!). Kip and I brought up what we discussed for the top nav/statistics bar. As a group we agreed that we would have our ‘View Character’ button in the left corner with an image of the user’s avatar as the icon; we would have our settings in the right corner; we would have some way to measure progress or view inventory in the middle. We are thinking that we can measure progress with collecting coins or a general progress bar. Unfortunately, Elissa was not able to make it to today’s meeting, but she mentioned that she worked on separating the avatar into clean katers so that each layer can be changed differently and layered smoothly.
+                  Another productive team meeting! We started off by catching up on what each subteam was up to. Allen and Wayne talked about how they tried to change the format of the LogIn Screen to allow navigation onto a different screen using a ‘Next’ button. Since it didn’t really work, they plan to continue working on it this week. They were also able to fix the text box, so that it correctly underlines the user’s name. They mentioned that they looked more into asynchronous storage, but without much luck. Allen, Kip, and I talked about what we accomplished this week with the Check/Uncheck functionality and what we still needed to accomplish with moving tasks around and implementing a ‘Habits’ page (see yesterday’s post for more details!). Kip and I brought up what we discussed for the top naviagtion bar. As a group we agreed that we would have our ‘View Character’ button in the left corner with an image of the user’s avatar as the icon; we would have our settings in the right corner; we would have some way to measure progress or view inventory in the middle. We are thinking that we can measure progress with collecting coins or a general progress bar. Unfortunately, Elissa was not able to make it to today’s meeting, but she mentioned that she worked on separating the avatar into clean katers so that each layer can be changed differently and layered smoothly.
                 </p>
                 <p>
                   As a team, we also brainstormed some ideas for collection items and themes so that we are ready to start prototyping quest elements when the time comes. We are thinking of just using coins for our functional prototype for simplicity’s sake, and we can change from coins to some other item later on. As mentioned in a previous entry, we were thinking that users earn coins from completing tasks. There was some discussion about if these coins would be used to directly buy quests and buy items or if users would unlock quests once they had enough coins and win items from those unlocked quests. For the second option, in order to keep the customization element of the app, we were thinking of allowing users to choose from 3 options of items to unlock instead of just giving them a specified item for each quest unlocked. We then talked about what we wanted for our quest format. We mentioned a storyline initially and we were thinking that the quests could move through different countries or regions of the world. I really like this idea since it allows users to explore diverse cultures and shows representations of many different parts of the world. This might allow users to learn new things through our app as well! :)
@@ -212,7 +281,7 @@
                   Additionally, today we talked about how we might want to make a habits page in addition to our to do list. If there are tasks that users need to complete every day, then it may be tedious to re-input those tasks every day, so we want to make a different page that refreshes the same ‘habit’ tasks each day. Additionally, we want to implement a feature that keeps track of how many days in a row that the habits have been completed. This ‘streaks’ feature would be a good motivator for users to keep up daily habits. We may do this with a calendar feature like Fitbit’s daily exercise tracking feature. Once we finish implementing the todo list page we will work on the habits page since it will have similar features to our to do list page that we can build off of.
                 </p>
                 <p>
-                  Today I also found a source that shows how to implement swipe functionality to a navbar. Kip and I can try implementing this swipe feature next week. This week we have spent time thinking about what we might want for a top ‘statistics’ bar. Since our app has quest features, we want to implement a way for users to see their progress which would live at the top of the screen. Since we are adding a habits screen, we want to move the ‘view character’ feature to be part of the top navigation so that we can keep our 3-screen plan, while still allowing users to quickly access and customize their character. The top navigation is also where we would put our settings bar. I am also thinking about how we might consider using a swipe down feature for viewing the character, since just having a small button to view the character might de-emphasize the character customization aspect of the app. These are all things that we will discuss with the team tomorrow.
+                  Today I also found a source that shows how to implement swipe functionality to a navbar. Kip and I can try implementing this swipe feature next week. This week we have spent time thinking about what we might want for a top naviagtion bar. Since our app has quest features, we want to implement a way for users to see their progress which would live at the top of the screen. Since we are adding a habits screen, we want to move the ‘view character’ feature to be part of the top navigation so that we can keep our 3-screen plan, while still allowing users to quickly access and customize their character. The top navigation is also where we would put our settings bar. I am also thinking about how we might consider using a swipe down feature for viewing the character, since just having a small button to view the character might de-emphasize the character customization aspect of the app. These are all things that we will discuss with the team tomorrow.
                 </p>
                 <p>
                   Lastly, today I spent some time individually brainstorming app names, but most of the names are pretty basic and don’t stand out or emphasize why our app is different from exiting task managers, like ListQuest or TaskList. I think that it might be easier to brainstorm names as a group and talk through some ideas. Looking forward to seeing the group’s progress tomorrow!
