@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-02-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-06-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-06-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 6, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Monday</p>
+                </div>
+                <div class="post-title">
+                    <p>Servers and Lemmatization</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning I had my meeting with Don to discuss the possibility of using a server for my project. Don mentioned that I should consider a few items before jumping into using a server, namely the scope/computational power of the project, how many people will be using the application, and how much maintenance is needed. He gave two examples of servers: VM and C2C. A VM server is very powerful and does not require much maintenance, but it takes a few months to get approved, which might not be viable for my project. Additionally, since my project would not be used enterprise-wide a VM server would be overkill. A C2C server only takes a few hours to get approved and would be more appropriate for the scope of my project, but it would require a lot more maintenance. I think this is something I will need to discuss more with Rajiv and Kiran before deciding if a server is really necessary for this project. A more likely solution is that I’ll find a way to get my program onto the desktops of those who will be using my tool. Don also talked to me about the LEAP program for newly hired associates Fidelity and how this allows for accelerated career growth and an easier transition in Fidelity. I’ve heard a lot of great things about Fidelity’s LEAP program and Fidelity’s work culture as a whole and it’s given me a lot to think about when it comes to thinking about my future career path.
+                </p>
+                <p>
+                  I also worked on a new format for writing outputs today, where the newly predicted purchase codes can be written directly into the corresponding column of an existing spreadsheet. I’m still not sure what the format the final product will be interacting with, but if it is contained in an Excel spreadsheet like the sample that I was sent, then this would be a good feature to have implemented. Otherwise, I can work with the new format once I get confirmation from the Business team.
+                </p>
+                <p>
+                  Today I also worked on implementing lemmatization as part of the text preprocessing. Lemmatization allows different forms of a word to be grouped together and analyzed as a single item. For example, run, running, and ran would all be grouped together using lemmatization. Previously, I was relying solely on the TF-IDF system for transforming the descriptions into vectors to be used in the LinearSVC classification model. However, I remembered that lemmatization was mentioned in the article that David sent over, so I thought I might try and implement this as part of the text preprocessing before being transformed using TF-IDF to see if it would further increase my accuracy. Ultimately, it seems like it increases the accuracy of my largest 200k dataset by .12% which doesn’t seem like much, but this could amount to hundreds of rows in the long run. It doesn’t seem to positively impact the accuracy of smaller data sets as much, but I think that since Spend data is generally larger data sets, I will keep this lemmatization implementation. I think lemmatization will prove to be a more helpful feature if I am given more data to train my model, since it works better with more training data
+                </p>
+                <p>
+                  Today I also updated Rajiv and Kiran on my project. It seems like accuracy (95-96%) and efficiency (2-3 minutes for 200k rows) of my tool so far is pretty good, so I don’t need to worry too much about researching new ways to increase accuracy and efficiency. They also mentioned that the Business team will likely be most interested in the feature where my model is able to make predictions for the unspecified purchase codes, since this is what they are having the most trouble with. Kiran was also able to take a quick look at the predictions my model was making for the unspecified data and confirm that they were in the correct general categories. I’ll get more feedback on the accuracy of these predictions from the Business team on Wednesday. Rjiv and Kiran also recommended that I start looking into how I might read information from a database instead of an Excel spreadsheet. Rajiv mentioned that Himanshu has experience in this area, so I might reach out to him and ask if he has any recommendations or insight for the best packages or methods for this. Lastly, Kiran recommended that I be prepared to explain some background information on my code and algorithms to the business team on Wednesday so that they understand the process used for categorizing the data.
+                </p>
+                <p>
+                  Tomorrow, I’ll reach out to Himanshu about reading information from databases. I’ll also put together a list of topics I need to cover, questions I have, and demonstrations to prepare for my meeting with the Business team on Wednesday to make sure that I hit all the points that I need to and that I don’t forget any of the questions that have come up. Otherwise, I’m pretty happy with where I am with this tool in terms of presenting an update to the Business team!
+                </p>
+            </div>
+          </div>
+
           <div id= "July-02-2020-FI">
             <div class="post-header">
                 <div class="post-date">
