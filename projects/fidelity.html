@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-07-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-08-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-08-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 8, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Wednesday</p>
+                </div>
+                <div class="post-title">
+                    <p>Update Meeting!</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning there was no scrum call since the whole APT team was gathered for a Bi-Monthly team meeting. Janice led the meeting and there were plenty of new faces. A couple of teams talked about the broad overviews of their projects and what they’re currently working on. Rajiv and Ramya from our team explained the database-related work that our team is doing. It was interesting to see how this larger meeting differed from the usual scrum calls, which are much smaller and much more detailed. This call discussed longer-term plans, was more like a presentation than a discussion, and had a lot more people.
+                </p>
+                <p>
+                  Today I also had the opportunity to explain my progress to some familiar faces from the business team. David, Cameron, Daniel, Kiran, Rajiv, and Mallikarjuna were present at this meeting. Kiran and Rajiv were already pretty much caught up from Monday’s meeting, but this was the first time that David, Cameron, and Daniel were able to see the code that I had been writing. Kiran invited Mallikarjuna onto the meeting and it was nice to have a fresh perspective. Since the last meeting was when I was still in the initial research phase of the project, I covered pretty much all the code, algorithms, and applications of the model. Based on Kiran’s suggestions from Monday, I started off by explaining the high-level concepts of how my tool worked and explained that I was using a widely-known machine learning algorithm. I then walked through the basic outline of my code, with more focus on TF-IDF since this was how the model was making its own ‘rules’ about how to categorize data. From here, I showed how I applied the model to make predictions for defined purchase codes and compared these predictions to the actual purchase codes. At this point, I answered a couple of questions about TF-IDF and LinearSVC. I then moved on to explain how my code made predictions for unspecified purchase codes. David brought up that I could also look into predicting a different field called commodity codes using purchase codes as part of the training description. Since the sample data I currently have does not include the commodity codes and I don’t yet have access to the database, David and Daniel offered to send me an updated spreadsheet with commodity codes until I had access to the spreadsheet. Kiran and Rajiv also brought up how we were working reading directly from a database and using a server. We discussed these points for a little while, but it seems like we’ll discuss this in more detail as the tool becomes more advanced and more applicable. Overall, it seems like I’m headed in the right direction with what I’ve done so far! It doesn’t seem like the accuracy or efficiency of the tool need to be improved very much. The next steps are to alter my code to make predictions for commodity codes and once I have access to the database, I’ll be able to work on reading from the database directly.
+                </p>
+                <p>
+                  I also had a meeting with my new FYPN mentor Derick today. We mostly talked through introductions about my previous CS experience, his work history at Fidelity, and his academic history. I mentioned that I was interested in AI and he offered to reach out to some team members to see if I could shadow or get connected with them. He also told me about some interesting ways that Fidelity is using robotics. Since he’s more involved with data science and he mentioned that he got an MBA, I am excited to ask him more about his career path and choices, since I’m considering getting an MBA at some point. We have weekly meetings set up, but I hope to message him between meetings as well.
+                </p>
+                <p>
+                  For the rest of the day, I worked on predicting commodity codes as David suggested. For now, I’ve removed the lemmatization steps since it was causing some warnings with the stop words. Once I have a prototype that can successfully predict commodity codes, I plan to work through these smaller errors with text preprocessing. I made a few alterations to my purchase code prediction program, but I’m receiving errors about being unable to allocate memory for my data. :( It seems like my data is too large to convert to an array with the added commodity code column. I can train my model on 50k rows, but I run into errors for anything larger. I’m still working through these errors, but I might need to reach out to get help or override some settings to truly resolve them.
+                </p>
+                <p>
+                  Tomorrow, I have my 1:1 with Nancy, where I plan to ask about mobility, getting placed on teams, and adjusting to new teams. There’s also a webinar about Diversity and Inclusion for interns in the afternoon which I plan to attend. I might reach out to Derick if I come up with any questions throughout the day about his work. Otherwise, I’ll continue to work on getting the commodity code predictions and hopefully I’ll be able to work around the memory errors.
+                </p>
+            </div>
+          </div>
+
           <div id= "July-07-2020-FI">
             <div class="post-header">
                 <div class="post-date">
