@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-09-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 9, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Fixing Stopwords</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I had a morning meeting with Nancy today. We caught up on work and I told her about my presentation yesterday. I mentioned that I get a little nervous giving presentations and she offered to help me practice for presentations in the future. If she has free time, I’ll probably take her up on this offer since I think it’ll help me be less nervous about presenting in the future. She also mentioned that as part of the LEAP program, everyone had to give a 20 minute presentation about a topic of their choice. This sounds pretty intimidating, but all of my presentations are academically oriented, so maybe it would be easier or just different to give a presentation about a hobby. Nancy suggested that we could even do a 5-10 minute version of this with our intern group if people aren’t too busy. I also asked Nancy more about her experience with the LEAP program. I’ve been hearing a lot of great things about LEAP and since Nancy took part in the program not too long ago, I thought it would be informative to hear her thoughts. From what she shared, it sounds like a lot of fun! It seems like a great way to get adjusted to the work environment, bond with other associates, and learn new skills. I think that I would definitely consider joining the LEAP program in the future if I was given that opportunity. :)
+                </p>
+                <p>
+                  For the rest of the morning, I worked through some of the issues I was having yesterday with combining stopwords and lemmatization. I ended up directly altering the stopwords file from NLTK to include the lemmatized stopwords. This means that the new stopwords are hardcoded in, which might not be the most sustainable solution, but I wasn't able to find an alternate solution that wouldn’t mess with the efficiency of my existing program. Additionally, excess stop words that aren’t covered by this process shouldn’t be too big of a deal. Since I’m using TF-IDF, stopwords likely have a high document frequency, so they shouldn’t cause too many errors with the categorization. I reimplemented lemmatization into the commodity prediction program and it seems to be running smoothly.
+                </p>
+                <p>
+                  In the afternoon, there was a webinar about Diversity and Inclusion. It was eye-opening and inspiring to hear about the experiences of associates from minority groups, specifically Black associates, in light of recent events and the discussions being raised about racial inequality after George Floyd’s murder. Associates discussed their experiences with microaggressions in the workplace, how they raised their voices to speak against injustices in their personal and professional lives, and inspired us to take action against racial injustice.
+                </p>
+                <p>
+                  Throughout the rest of the day, I continued trying to work around the memory errors I was getting regarding allocating memory for a large array. There were a few times where the code ran successfully for 100k rows, and I got an accuracy of about 98% which is great! However, it doesn’t run without error consistently for anything greater than 50k rows. After some online research, it seems like I could override this error by changing some file size settings. However, in order to change these settings, I need administrator access. I messaged Rajiv about this error and asked if there was any way to get an admin to bypass these settings, or if it would be better for me to just stick with training on 50k rows even if it is less accurate. It seems like Rajiv was stuck in back-to-back meetings today, so I wasn’t able to get a response today. In my downtime, I decided to test how accurately the model could predict with 50k rows of training data. On 100k rows, the model is 93% accurate and on all 235k rows the model is only 74% accurate. So as predicted, more training data definitely leads to better results.
+                </p>
+                <p>
+                  During my downtime in the afternoon, I also watched a course comparing Waterfall and Agile frameworks. I think this helped me understand more of the benefits of using Agile. I’m hoping to get access to the database via Kiran or an administrator settings override via Rajiv in the near future, but I understand that they are busy. I’ll ask Rajiv if he has suggestions for other tasks I can undertake or other areas for me to look into while I am waiting on these components to move forward with my tool. Otherwise, I can look into more career development courses on LinkedIn learning via Fidelity central. At the end of the work day, I came up with a question for Derick about his decision to get an MBA, which I plan to message him about tomorrow. I also made a collage of my interests for an ice breaker for my mentor group chat with Nancy in the afternoon. I hope to make progress with the Spend classification soon, but in the meantime I can busy myself with networking and career development!
+                </p>
+            </div>
+          </div>
+
           <div id= "July-08-2020-FI">
             <div class="post-header">
                 <div class="post-date">
