@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-05-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#July-12-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,76 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-12-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 12, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>DoW</p>
+                </div>
+                <div class="post-title">
+                    <p>Title</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Entry
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-11-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 11, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>A Number of Issues</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Allen, Kip, and I worked on the Task List Screen fow a while, but we weren’t able to make much progress. At the beginning, we fixed some simple errors with deleting old imports and removing old unnecessary screens from the very beginning phases of this project. Most of our issues will need to be brought up in tomorrow’s meeting before we proceed, since we’re a little stuck at the moment.
+                </p>
+                <p>
+                  Our main task today was trying to fix the automatic moving feature (where completed tasks move to the bottom of the list and uncompleted tasks move to the top of the list) so that it worked alongside changing the appearance of completed tasks (crossed out, checked box, and grayed out). Last week we were having issues since we wanted to return two changes of state but were only able to return one in our onPress function. Today, we tried to tackle this issue by changing the ‘completed’ state without the onPress function and only change the state of the items’ position using onPress. To do this, we used setState within the function called by onPress and changed the property ‘completed’ after onPress was called. While this definitely cleaned up our methods and removed code duplication, this did not resolve our issue. Tasks are still able to automatically move to the top or bottom of the list, but the appearance does not change. I think that we might come back to the automatic moving feature if we can’t get past it. While it would be very nice to have and would help usability, the to do list is still functional without it. I’ll bring this up in tomorrow’s meeting.
+                </p>
+                <p>
+                  We also tried to fix our editing functionality. Since the tutorial that we initially followed had an edit button, we used the existing functions that allowed for editing, but tried to implement it for when users click on the text instead of clicking on a separate button. By removing the button and just allowing users to click on the text, we hoped to keep the appearance more streamlined and avoid confusing users with too many symbols for buttons. Essentially, we moved the original onPress call to an onPress call for the user’s text. This worked to some extent. It seems like clicking the text allows for editing, but there are a lot of intermediate warnings and errors about ‘Focus’ and ‘Blur’ that also show up when trying to add new tasks. We tried troubleshooting this by using ‘Pressable’ instead of ‘TouchableOpacity’ but we still got the same error messages. We think these errors might be due to version mismatches between Javascript and React Native or due to incorrect dependencies within our libraries. We plan to talk through these errors in our next meeting, since it seems like multiple subteams are running into dependency issues. :(
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-10-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 10, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Back Buttons and Settings Screen</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today Kip and I made some really good progress with implementing the back buttons and the settings screen. :) Initially we had some issues with navigating to the Character Screen and Settings Screen from the top navigation. It seems like during one of our work sessions either with the navigation or with the task list, we had deleted the Character Screen and the Settings Screen from the stack navigator while we were deleting the Habits Screen, Task Screen, and Quest Screen from the stack navigator. The Habits, Task, and Quest screens are loaded with the bottom navigation bar, so they don’t need to be loaded in the stack navigation, but since Character and Settings are loaded separately, they need to be included in the stack navigator. Additionally, there are some dependency issues with the swiping functionality for the bottom navigation, so we have temporarily disabled swipe. While swiping between screens is a nice feature to have, it’s not totally necessary for the functionality of our app. Given the current state of the app, we will worry about reimplementing the swipe functionality once we have a fully functional initial prototype.
+                </p>
+                <p>
+                  Next, we worked on adding back buttons to the Character and Settings screen. This ended up being pretty straightforward since there is an existing navigation.goback() function that we could use. We ended up implementing the back button by placing an icon in the top left corner of the screen with an onPress function that called navigation.goback(). We spent some time messing around with the formatting so that the button was large enough, in the safe area view, and with an appropriate icon. With this button added to both the Settings and Character screen, it should be more intuitive for users to navigate.
+                </p>
+                <p>
+                  Lastly, we worked on the Settings screen’s functionality. We started by discussing what we actually wanted the screen’s layout to look like. We decided to model our settings screen off of Apple, Instagram, and Snapchat’s settings screen. Since this layout is standard across many apps, it should be more intuitive for users to navigate. This layout has rows with text describing each setting aligned left with a right chevron aligned right end if that setting navigates to a screen. Currently, the only setting we can actually implement is changing the user ID. Since this is such a simple setting to change, we thought it would be unnecessary to navigate to a new screen. Instead, we opted to have an alert pop up where users can type in and save a new username. We were able to get the alert pop up working, but have not implemented the text input functionality. Something we will keep in mind is that alerts with text inputs are not consistently compatible for Android. Our whole app team uses iPhones so we may need to reach out to someone with an android device to check our app’s functionality. Next week, Kip and I will finish up the implementation for changing userIDs. We will also start tackling the Character Screen. As a team, we haven’t discussed the details of what the Character screen will look like, so we plan to bring this up at the next meeting so we know what to work on next time.
+                </p>
+            </div>
+          </div>
+
+
           <div id= "July-05-2020-GTM">
             <div class="post-header">
                 <div class="post-date">

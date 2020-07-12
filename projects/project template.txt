@@ -17,6 +17,7 @@ NEW POST TEMPLATE:
                     </p>
                 </div>
             </div>
+            
 
 
 NEW PROJECT TEMPLATE:
