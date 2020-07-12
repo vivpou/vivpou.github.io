@@ -61,15 +61,27 @@
                     <p><strong>JULY 12, 2020</strong></p>
                 </div>
                 <div class="post-dow">
-                    <p>DoW</p>
+                    <p>Sunday</p>
                 </div>
                 <div class="post-title">
-                    <p>Title</p>
+                    <p>Changing Git Practices</p>
                 </div>
             </div>
             <div class="post-body">
                 <p>
-                  Entry
+                  Today we had a pretty quick meeting, but we addressed a lot of important topics. Our first item was deciding between the clothes theme and the food theme. I personally was leaning toward the clothes theme. After thinking about the pros and cons of each theme, I think the audience for the food theme is too niche and might not reach our target audience. Our food theme idea (where users can unlock recipes) relies on our audience enjoying cooking and being willing to follow recipes, being an adventurous eater who wants to try new foods, and having the ingredients that the recipes require. On the other hand, the clothing theme would allow us to reach anyone who is interested in clothes or character customization, which encompasses a larger audience and more of our intended audience. What makes our app unique is that it ‘gamifies’ in a way that is different from the stereotypically masculine gamified task managers currently on the market.
+                </p>
+                <p>
+                  Once we decided on the clothing theme, we were able to discuss the layout and components of our character screen. Once Kip and I finish the userID update feature, we will get started on developing the character customization screen, but we wanted to ask the team for ideas of what this screen should include. We plan to use a similar layout to other character customization screens where you view your character on the majority of the screen but you have a menu of your inventory of clothing/customization options. The menu is split up by categories (ex: hats, shirts, jackets, pants, shoes, etc.) that users can view one at a time. Since we are using a mobile layout, we will put this menu at the bottom of the screen to take advantage of the vertical layout. We plan to implement characters using Bitmoji for now, since Elissa is taking a break from visual design. 
+                </p>
+                <p>
+                  Next, we talked about some general code change procedures. Up to this point, when subteams run into errors coming from other screens members will often comment out the other screens, but this can be frustrating when the next subteam has to comb through and uncomment the screens they want to work on. We talked about subteams uncommenting any screens that they may have commented out at the end of the work session and raising issues they’ve encountered in the groupchat. We also discussed that we were moving from npm to yarn for our libraries, since it is generally faster and less overwhelming. Kip mentioned that she will try rebuilding the app on an older, more stable version of React Native to try and fix our dependency issues. Currently, React is in version 0.63.0, but since this is a .0 version, there are many bugs that come with new features. Kip brought up that an older version will be more stable, which is our priority at this point. We will also change our git practices to create branches for each sub team's features to avoid the issue of commenting and uncommenting screens between teams. This should lead to a more sustainable workflow. :)
+                </p>
+                <p>
+                  We also discussed how if we run into dependency issues or other larger issues in our subteams, we can bring them up in our group chat. If we are not able to resolve them, we will have allotted times to work through issues during our weekly meeting. Hopefully, this will help us move more smoothly and debug errors more efficiently. Working through the issues as a team ensures that everyone is on the same page and it allows everyone to contribute and see how more complicated  errors can be resolved.
+                </p>
+                <p>
+                  Finally, we caught up on our progress from last week and what we plan to do this week. Allen and Wayne have made progress with the Quest screen in showing the current level that the user is on using check marks. They are currently using a grid layout to display the levels and are considering storing the level progress in async storage. Next week, they plan to look into interactive images for moving between different chapters/clusters of levels as well as general background images. Kip talked about where we are stuck with the Task List screen (see yesterday’s post for details). I brought up pausing on the automatic moving function since we have been struggling with it for a few weeks and changing the appearance of completed tasks is more important. Automatic moving is a ‘should have’ function while crossing out completed tasks is a ‘must have’ function. We agreed that we can put automatic moving on the back burner, especially so we can focus on getting the edit feature working. Kip and I talked about how we have a functioning ‘back’ button for our Character and Settings screen and talked through our progress with the Settings screen’s change userID function (see Friday’s post for details). We brought up how text input alerts aren’t always compatible with Android, but as a team we agreed that we can just worry about IOS for now. Next week, Kip and I will finish implementing the text input alert for the change userID function. We will also start working on a template for the Character screen and do some research on how to implement Bitmojis for our characters. It seems like we’re getting closer and closer to a functioning prototype!
                 </p>
             </div>
           </div>
