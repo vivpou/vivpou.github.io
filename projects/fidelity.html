@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-10-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-14-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,68 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-14-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 14, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Tuesday</p>
+                </div>
+                <div class="post-title">
+                    <p>Multilevel Commodity Classification</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I spent most of my morning getting the predictions for Level 0, 1, and 2 commodity codes working on 1k rows of data. Since I don’t have the memory allocation errors fixed yet, I’m training on about 3k rows and testing on 1k rows. This allowed me to work through more basic bugs and fix formatting before I move on to larger data sets. It seems like my model predicts Level 1 and Level 2 pretty accurately (97%), but has some trouble with Level 0 predictions (72%). I’m not sure if there is some fundamental flaw with my program or if this is due to a lack of robust training data. Once I fix my memory allocation error and am able to train on more data, I’ll be able to see if I need to go back and fine tune my model to work with Level 0 predictions.
+                </p>
+                <p>
+                  Later this morning, I had my 1:1 with Rajiv. We talked about my current status with the project. I updated him on the information that Kiran gave me yesterday, where I’m stuck, and what I plan to do next. He suggested a method of implementing manual rules, which relies on a field in the database that informs whether or not rules have been defined for a column. He also tried to help me troubleshoot the memory allocation error I was running into. Ultimately, I’ll have to go to techworks to see if they can bypass the administration access or provide me with some other workaround. A few interns in the CTG group were talking about final presentations and Rajiv confirmed that there is a brief presentation where interns talk about what they learned throughout the summer, so I might start preparing for that.
+                </p>
+                <p>
+                  Around noon, there was an info session about the LEAP program, which is meant for new college graduates joining Fidelity as Full-stack Software Engineers, Data Engineers, or Systems Engineers. I’ve heard a lot of great things about the LEAP program from Nancy, Rajiv, and others, so I was excited to learn more. The LEAP program is meant to train new associates and make the onboarding process smoother. Something I found particularly helpful is that you know your manager ahead of time and you can tailor your learning opportunities based on what team you will be on. I might ask Nancy more about her experience with LEAP, since I’d like to know more about LEAP or similar onboarding programs.
+                </p>
+                <p>
+                  In the afternoon, I caught up with Derik. I asked him about how he started at Fidelity and how he got to the position he is working in today. His experience is different from Nancy’s so it was cool to hear a different perspective. He also talked about the workflow his team uses, which is different from our team’s workflow. Given the nature of his projects and his smaller team, they use less of an Agile sprint methodology and instead run longer projects. I wasn’t aware of how new Agile was to Fidelity (introduced 2 years ago) so I was under the impression that most teams were using Agile. It was eye-opening to see how different teams with different needs might use other methodologies that work better for the projects that they are working on. Derek also mentioned that the AI club has some interesting resources and articles, so I might look into some articles to discuss in our next meeting!
+                </p>
+                <p>
+                  I contacted techworks about my memory allocation error, but I think they misunderstood my question, so I’ll try calling again tomorrow to resolve my issue. I also contacted Kiran to clarify what implementation he wanted for manually adding rules and I’m hoping to hear back from him tomorrow. I started thinking about what I might include in my end-of-internship presentation and I might start working on my presentation tomorrow if I have downtime. I’m usually not a big fan of presentations, but I’m eager to share my project with other interns and to learn about what they’ve all been working on.
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-13-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 13, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Monday</p>
+                </div>
+                <div class="post-title">
+                    <p>New Requests</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning started off pretty similar to how I left off last week. After attending the scrum meeting, I spent the rest of my morning completing the machine learning course that I started on Friday. A lot of this course was a good review from the beginning research phases of my project and showed ways that I could apply different concepts. Some new concepts that I learned were about regression and reinforcement learning. These concepts are not directly applicable to my Spend classification project, but I think that these general concepts are good to know. Additionally, Derek set up a meeting with one of his coworkers in data analytics and insights for Wednesday, so I completed a course on data analytics so I will be able to ask more thoughtful questions during our meeting and so I can understand the kind of work he does more easily. Lastly, I completed a course on how to be a better mentee. Mentor relationships are heavily emphasized at Fidelity as being a good way to network and grow in your professional life, so I wanted to learn more about best practices for how to get the most out of my mentor relationships. There are a few other LinkedIn Learning courses that I can complete, but for now I think I’ll take a break from these courses, since they’re getting a bit monotonous.
+                </p>
+                <p>
+                  This afternoon, I caught up with Nancy for our 1:1. I mentioned where I was stuck with my project since I was waiting on responses from a few people. Nancy suggested that in addition to LinkedIn learning, I could also spend my downtime networking or even ask my team if they need any help. I set up a quick networking meeting with Benjamin from our intern group on Nancy’s suggestion. Nancy and I also talked about our group and how we could connect more. After the meeting, I spent some time trying to find games we could play together, and I have a few good options!
+                </p>
+                <p>
+                  This afternoon, I also attended a Virtual Career Showcase for the Emerging Leaders Group (ELG), which is a cohort for onboarding those with liberal arts undergraduate degrees. While I am more interested in joining the LEAP program, I thought it would be interesting to hear about other programs and get an idea of other options that exist. This showcase was pretty interesting and it seems similar in format and length to the LEAP program, but of course the contents are different.
+                </p>
+                <p>
+                  Later in the afternoon, I caught up with Kiran briefly. He mentioned that he brought up my project to Janice and a few members of the India development team. It seems like people are pretty interested in my project! :) This is really exciting to me and I’m glad that people are interested in the work that I am doing. Kiran mentioned that I could consider doing a demonstration of my tool for some members of the India development team later this week if we can find a time that works with everyone’s schedules. Kiran also brought up my project with his boss, who had a few suggestions for where to expand on this project. Previously, Daniel and David mentioned predicting the Level 2 commodity codes, but Kiran’s boss mentioned that it would be helpful if I could also predict the Level 1 and Level 0 commodity codes. These predictions would be printed in adjacent columns to the existing correct data in the spreadsheet or database. This is something that I can work on integrating. Kiran also mentioned that it would be helpful to be able to add manual rules somewhere. This implementation is something that I will have to think about more deeply since it doesn’t work smoothly with my existing model. I may have to add a file for where you can hardcode rules and apply the corresponding commodity codes, but I’m afraid this will harm the efficiency of the project. The last thing Kiran mentioned was that we might be implementing my project with Snowflake, so I might look into taking an introductory Snowflake course.
+                </p>
+                <p>
+                  I worked on expanding the current code for Level 2 commodities to work on Level 1 and Level 0 commodities, but I’m still struggling with some preliminary errors. I plan to continue working on Level 0, 1, and 2 predictions tomorrow and start thinking about how to implement manual prediction rules. I also have my 1:1 with Rajiv tomorrow, where I plan to bring up the memory allocation errors I was running into last week. Fidelity also has its LEAP program showcase tomorrow, where I’m eager to learn more about since I’ve heard so much about it!
+                </p>
+            </div>
+          </div>
+        
           <div id= "July-10-2020-FI">
             <div class="post-header">
                 <div class="post-date">
