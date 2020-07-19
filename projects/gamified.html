@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-12-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#July-18-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,37 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-18-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 18, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>To Do List Basic Functionality Fixed</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Allen and I were able to get a lot done with the Task List screen’s functionality today! Kip wasn’t able to make it, but we updated her using screen recordings in our group chat and we’ll update her and Wayne on our progress in more detail during tomorrow’s team meeting. Our main approach for today was to go back to the tutorial we originally followed when we first started working on the To Do List. This would allow us to fix our issues with editing tasks, which was our main concern for the week. From there, we worked on reimplementing the feature that allows users to cross out/check off completed tasks, since the original tutorial did not include this functionality.
+                </p>
+                <p>
+                  Our first step was to directly reference the tutorial’s functions and implementations for editing. We reverted the changes we made to the edit functions and we used the tutorial’s system for editing tasks. This is where users click a button to start editing a task and click another button to save their edits. This worked pretty smoothly with the exception of some formatting issues, which we fixed by rearranging View containers. We previously discussed before that we did not want to have a separate button for editing text (which is what the tutorial had). Instead, we wanted users to be able to click the text directly to edit it. This implementation avoids the clutter of too many buttons and is similar to how other apps work, so it should be relatively intuitive for users. This was a relatively easy change to make. We moved the onPress function originally assigned to the edit button and reassigned it to the text of each task. We deleted the now redundant edit button. We needed to keep the save button since there were specific functions that need to be called once a user finishes editing their task in order to save their changes. The save button only appears when a user is editing a task and disappears once the user presses the save button so thankfully it does not contribute to any clutter of having too many buttons.
+                </p>
+                <p>
+                  Next, we needed to reimplement the feature that allowed users to cross out/check off completed tasks and get rid of our automatic moving feature, since we deemed it unnecessary for our end-of-summer basic prototype. The original tutorial was not compatible with our cross out/check off functionality, so we made some changes that mirrored the changes we originally made to first implement the cross out/check off function before trying to add automatic moving. This mainly consisted of adding a property to each item that indicated whether the item was completed or not and removing some variables that would be redundant with this new property. We kept a lot of the same ideas from our previous implementation since we knew it had worked before. After some debugging, we eventually got the cross out/check off feature working again! This time the cross/out/check off functionality is compatible with our editing feature, which was our main goal for this week.
+                </p>
+                <p>
+                  We spent some time at the end formatting the save button’s position, changing some colors to be more in line with our app’s color palette, and fixing some minor overlapping. Also notable is that Kip was successful in rebuilding the app last Sunday after our team meeting and she added some great documentation for creating new branches. This was really helpful for Allen and I when we were developing today! We didn’t need to worry about messing things up on the developer branch, since we were working on our own separate branch. Additionally, since Kip rebuilt the app onto an older and thus more stable version of React Native, we no longer had the errors with Touchable Opacity’s ‘Focus’ and ‘Blur’ properties which was a great relief. The work that Kip has done was greatly appreciated and very helpful for this week’s development and for long-term future development. :)
+                </p>
+                <p>
+                  Tomorrow, Kip and I will work on the Settings screen and start thinking about the Character screen. Following that, we will have our team meeting where we can catch up on our progress. I’m excited to share what we accomplished with the To Do List screen and maybe we can work on the Habits screen next!
+                </p>
+            </div>
+          </div>
+        
           <div id= "July-12-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
