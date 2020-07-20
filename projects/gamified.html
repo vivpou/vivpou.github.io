@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-18-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#July-19-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,43 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-19-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 19, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>Settings, Libmoji, and Async Storage</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today has been a busy day for our Gamified Task Manager! This morning Kip and I fully implemented the change UserID functionality and started working on the character screen using Libmoji. We had our weekly team meeting today where we discussed a lot of important logistics for how the levels will work and what components will need to be in Async Storage.
+                </p>
+                <p>
+                  Kip and I’s first item of business was to fix some git issues that popped up when I tried to compile the app. I was still running into some version mismatch errors between javascript and React Native. Kip advised that it would be best to just delete and re-clone the version from github onto my device. The problem was likely coming from package.json version mismatches, so re-cloning the whole fixed this error. Kip also merged the changes from the branch that Allen and I made yesterday. Since our branch was not throwing any errors, according to our new git practices, we wanted to merge this new branch. At this point, our app was compiling and was up to date with all the features Allen and I implemented yesterday.
+                </p>
+                <p>
+                  Next, Kip and I worked on the change user ID functionality. We used React Native’s ‘Alert.prompt’ feature to implement an alert that allows users to input text for their new user ID. From here, we made sure that the input from the user was saved as the new user ID using our existing Async storage functions. We spent some time adding a console.log that printed the new userID to make sure that the ID was being correctly saved and stored.
+                </p>
+                <p>
+                  Lastly, we started working on the Character screen. Previously, I found a react native library called Libmoji. This allows us to implement Bitmojis without users having an existing Bitmoji account so that our app is accessible to all users. We spent most of our time today reading through the Libmoji documentation and trying to familiarize ourselves with the different features in Libmoji. At the end we were able to render a randomly generated bitmoji onto the top half of our character screen. The bottom half will be used for the clothing inventory. In the coming weeks, Kip and I will try and work more with Libmoji to see if we can use it for our app purposes. However, the documentation for Libmoji is not very complete, so it may prove to be more challenging than anticipated.
+                </p>
+                <p>
+                  Following Kip and I’s work session, we had our team meeting with Allen and Wayne. Since Allen and Wayne are pretty far along with the Quest Screen, we started talking about more of the logistics of how the app works. In our last meeting we agreed that our theme would be traveling the world and collecting clothes. Based on the limitations of Bitmoji’s clothing options, we may not be able to implement the ‘travel’ aspect as much as we want. :( We agreed that for now we would assign Task points for each task completed. Once a user has enough task points they can unlock quest levels and collect clothing items from that level. Wayne brought up the idea of weighted tasks, which I think would make our app more interesting and encourage users to complete more tasks. One way we might implement weighted tasks is by assigning them as ‘Very Important’, ‘Important’, ‘Should Do’, and ‘If Time’. Then users can place their tasks in the appropriate categories and we’ll assign weights based on the category. However, this is a Should/Could Have item and not a Must Have item, so for now we will stick with the same weight for each task. We also talked about how as the levels progress, we could increase the amount of task points needed to unlock each level. But again, this is something that we will implement once we have a functioning prototype, so for now we will stick with the same number of points to unlock each level. We also agreed that when users collect the required amount of task points, the next level will automatically unlock, but in order to collect the clothing item from that level, the user has to click the level on the quest screen and click to collect the item. For now we will just have one assigned item that the user gets per level, but with this clickable implementation, it wouldn’t be too difficult to expand the implementation to let users choose between multiple clothing options when unlocking each level later on.
+                </p>
+                <p>
+                  Next, we talked through each subteam’s progress and next steps. Allen and Wayne were able to add a background, but unfortunately it seems like using interactive images won’t be possible for our app. They also implemented chapters to break up groups of levels. Next week they plan to make the levels clickable and look into how they might pull level numbers out of Async storage. Allen updated the team on our progress with the Todo screen (see yesterday’s post for details) where we now have edit and cross out/check off functionality. Next week, we will work on incrementing XP by a set amount when a task is checked off and updating the amount of XP in Async storage so that other screens like the Top Nav bar and Quest screen can use the information. We also want to be able to calculate the level number based on total XP collected. Kip and I talked through how we finished implementing the change user ID functionality and how we are now able to render random Bitmojis. Next week Kip and I will work on pulling information from Async storage to display the correct progress level on our Top Navigation progress bar. We will also implement a display for what level the user is at on our Top Navigation. Lastly, we will work more with Libmoji to see if there is a way to customize a Bitmoji’s features like eye shape, hair color, etc. instead of rendering random Bitmojis.
+                </p>
+                <p>
+                  During this week in particular, each of the subteams made pretty significant progress towards a functioning prototype, and as each screen gets closer to completion we will have to start thinking about how the screens come together. As the screens interact more, we’ll work more with Async storage and our weekly meetings will discuss more detailed next steps. I’m excited to see what we can accomplish for next week!
+                </p>
+            </div>
+          </div>
+        
           <div id= "July-18-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
