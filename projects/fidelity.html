@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-21-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-27-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -54,7 +54,122 @@
         </div>
 
         <!-- Blog posts -->
-        <div class="posts">
+        <div class="posts">          
+          <div id= "July-27-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 27, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Monday</p>
+                </div>
+                <div class="post-title">
+                    <p>Creating Tables</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today I worked on importing information from the table David originally gave me to a new Oracle database. The table that I was given access last week to did not have all the fields that I was originally using to train my model and make predictions. I asked Kiran about the missing fields and he advised me to just import the existing data to Oracle and analyze from there. My model will be working at the same scale as it has been since the data is exactly the same but it will be writing to Oracle instead of Excel. I was looking forward to working with more data to see how my model’s accuracy and efficiency scales, but for now this will be good for making the transition from Excel to Oracle. However, I ran into some errors with creating the table and importing data, since I did not have to correct permissions. I messaged Kiran about it this morning and he got back to me by the early afternoon. He put me in contact with Venugopal who is a Database Administrator, who he was able to solve the issues I was running into by the end of the day! Tomorrow I will finish importing all the data from Excel to Oracleand work out the syntax and smooth out any wrinkles that pop up with reading from and writing to Oracle.
+                </p>
+                <p>
+                  In my downtime today, I transferred my saved model code that reads from and writes to Excel into new files that read from and write to Oracle in anticipation for future work. I also watched some videos on Fidelity Central about the kind of work FCAT is doing and strategies moving forward. It was interesting to hear about a whole other side of Fidelity that I am not familiar with or involved with. While I was waiting, I also attended a webinar about ‘Understanding Gen Z’ which was interesting. I don’t know if I agree with everything that was said about Gen Z during the webinar, but it was fun to hear what the older generations think. It seemed to fall in line with a lot of the opinions about Gen Z from the older generations via mainstream media and from adults throughout my life.
+                </p>
+                <p>
+                  I also had my 1:1 with Nancy today. Mostly, we talked about current events and connected about our personal lives. Nancy also brought up the Power To Wow presentation exercise, which is planned for Thursday. This exercise is where we can present about any topic we want, whether or not it is related to our work. I started brainstorming, but have not decided on a topic yet. In my downtime between now and Thursday I’m hoping to work on this presentation. It seems like a fun exercise and I’m looking forward to hearing what the rest of our group will present about.
+                </p>
+            </div>
+          </div>
+          
+          <div id= "July-24-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 24, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Manual Rules</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  oday I mainly focused on implementing two different ways to apply manually defined rules. I spent my morning finishing the first implementation that I started yesterday afternoon which uses stopwords and dictionaries. This implementation works by defining manual rules as keys in a dictionary of terms and their associated mapping for each level of commodity code as corresponding values. Then, in parallel with the predictions, if any of the dictionary keys are found in the total description field, the corresponding values from the dictionary are assigned to each commodity code level, otherwise a prediction is made based on the trained LinearSVC model as usual. It took some trial and error to get this working and formatted in the correct way but I was able to finish it by the end of the morning. However, as mentioned yesterday, this implementation applies manual rules based on the total combined description column, so if someone only wants to define a manual rule for one field without regard for other fields, then this implementation fails to capture the nuance. As a result, I spent the rest of the day implementing another way to apply manually defined rules. This method relies on for loops and if statements instead of dictionaries and stopwords like the previous version. This implementation explicitly states that only if one field is exactly equal to a manual rule, then the code will map specific values for each commodity code level prediction. Using for-loops and if-statements in this method allows for more user-defined nuance. Additionally, it makes it easier for users to see what they are exactly defining. It would be possible to implement dictionaries later on, but I would need to make a separate dictionary for each column field and loop through each dictionary. This seems unnecessarily complicated, but depending on how many manual rules are expected, I’m open to feedback if there are more efficient ways to implement this method. With both these implementations done, I plan to get feedback from Rajiv on Tuesday during our 1:1.
+                </p>
+                <p>
+                  Today there was also an info session with some data analysts and software engineers that work directly with AI. The info session was pretty small, so people were able to ask pretty detailed questions. They talked about how they landed in data analyst and AI positions, how they chose Fidelity, and their academic trajectories. I asked a question about how Machine Learning resources are shared at Fidelity and one of the panelists linked me to a library of their resources afterwards. If I have downtime, I will check out this library and see if it is applicable to my team.
+                </p>
+                <p>
+                  I did some preliminary online research about writing directly from a Python dataframe to Oracle. However, I would like to first check in with Rajiv and/or Kiran about the database table and if I should be writing to the database before I get started. I might set up a meeting with Kiran on Monday or I might hold off until after my and Rajiv’s 1:1 on Tuesday. Either way, next week I’ll get some feedback on my manual rules and proceed from there.
+                </p>
+            </div>
+          </div>
+          
+          <div id= "July-23-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 23, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Pulling From Database</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today I didn’t have any scheduled meetings after the daily scrum call, so I was able to focus on finishing documentation and making more progress on my Spend Classification tool. Additionally, I got an invite from Karin to present to her senior leadership team in 2 weeks so that I can get some feedback before presenting to the larger CTG leadership team.
+                </p>
+                <p>
+                  This morning I finished up the required infrastructure document. Since I’m not done developing my tool, I will need to go back and add more infrastructure as I progress. I anticipate that I will need to add infrastructure relating to reading information from the database. If we end up using servers then I will definitely need to add infrastructure notes for that. I also spent some time creating a flowchart for my process of creating the tool. The flowchart is not very detailed and skips some of the smaller steps like Jupyter and the details of predicting purchase codes. I sent my documentation to Kiran and added it to the shared folder with Mallikarjuna and the India team. I’m not sure if they will be giving direct feedback, but this is my first pass at documentation so I anticipate that I will need to make some changes.
+                </p>
+                <p>
+                  Next, I explored the data in the Oracle table that Kiran gave me access to. I noticed that some of the fields from the spreadsheet that David sent me are not in the table that I am accessing. I am guessing that those values were joined from another table. I will ask Rajiv and/or Kiran about this. I then used the instructions that Himanshu sent me a few weeks ago regarding cx_Oracle in order to connect to the database in Python. It only took a little bit of additional online research to pull the data from Oracle in the way I wanted. I was also able to figure out how to write Oracle data into an Excel sheet via Python which might be helpful for re-using the code I have already written which relies on Excel sheets. I couldn’t find any information about writing from Excel to Oracle via Python. I may need to explore if it is possible to write directly from Python’s pandas dataframes to Oracle. Alternatively, I may ask if it is acceptable for me to just write my outputs to an Excel file. For now, I will keep researching and exploring options, but if I’m still stuck, I’ll ask Rajiv or Himanshu
+                </p>
+                <p>
+                  Finally today, I started trying to implement a way to define manual rules for Spend Classification in combination with my existing LinearSVC model. Currently, my approach is to use dictionaries and stopwords as recommended during my project demonstration last Friday. So far, I’m not able to get this working, but I’ll keep trying tomorrow. One potential problem comes from the fact that my model works by combining all the description fields into one ‘Total Description’ column. If someone only wants that item to be classified manually when one field is equal to a certain value without regard for if other fields for other items are equal to that value, then my approach might run into issues. For now I’ll keep working on the initial approach that uses the ‘Total Description’ field and I’ll tackle this specific issue around specifying one value for one field later on.
+                </p>
+                <p>
+                  Tomorrow, I plan to continue researching if it is possible to write my predictions to the database. I will also continue to work on getting manual rules to work with the LinearSVC model. There are two intern webinars that I plan to attend about computer science AI which I’m looking forward to as well.
+                </p>
+            </div>
+          </div>
+          
+          <div id= "July-22-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 22, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Wednesday</p>
+                </div>
+                <div class="post-title">
+                    <p>Documentation and Presentation Practice</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  The first thing I did this morning after the daily scrum call was finish up the quick guide that I started yesterday. I tested my code documents to ensure that everything was running smoothly. I then added all the necessary documents to a shared file which included scripts and Excel sheets along with my quick guide. This was sent over to Mallikarjuna and the rest of the India development team that I demoed my tool for last Friday. It seems like everything was sent smoothly, but I’m ready to troubleshoot if my code has errors or if the team has suggestions for how to make the tool more efficient.
+                </p>
+                <p>
+                  Once this was done worked primarily on my presentation for the rest of the morning. I ran through my presentation and realized I would be way over the 5-7 minute time limit. I edited my slides pretty significantly so that I would only include the most necessary information. I also spent some time reading over and editing my script. I was able to get my presentation to about 7 minutes by the end of the morning but I’m still a little over the time limit.
+                </p>
+                <p>
+                  I started my afternoon by attending a webinar about how to have an effective resume. There was some insightful advice about how to catch a recruiter’s eye with your resume. With this information in mind, I can edit my existing resume and make sure I write the description for my Fidelity internship with these in mind. There is also a service for recruiters to review your resume which I might take advantage of if I have time. I also volunteered to be interviewed for Digital Champions to provide some feedback about the applications used within Fidelity.
+                </p>
+                <p>
+                  This afternoon I practiced my presentation with Nancy, Benjamin, and Gabe. For the presentation I basically read off of the script that I had finished preparing this morning, which I was worried about since reading off of a script can come off as monotonous. But it seems like Nancy, Benjamin, and Gabe didn’t find an issue with my pacing or tone. The main thing I was concerned about was timing. Benjamin mentioned that I could cut some things out of my demonstration since it was covered in my ‘Results’ slide. Otherwise, it seems like my presentation practice went well! After hearing their feedback, I’m definitely feeling less nervous about presenting. Rajiv mentioned that I might need to present for Karin and her senior staff to get some feedback before my final presentation for all of CTG’s senior leadership, and after practicing for Nancy, Benjamin, and Gabe, I feel ready to present for Karin.
+                </p>
+                <p>
+                  Kiran requested that I start the documentation for my tool. This includes a file that states and explains all required infrastructure and a flowchart of my process of developing the tool. I started creating the required infrastructure document since it had a lot of overlapping information with the quick guide that I sent out this morning. I started planning out what level of detail might go into the flowchart but I haven’t gotten around to making it yet.
+                </p>
+                <p>
+                  Tomorrow, I plan to create the flowchart and finish the required infrastructure document. Once this is done, I will use Toad and cx_Oracle to pull information from the database into an Excel sheet via Python. This will be my first step in moving off of the Excel and onto the database.
+                </p>
+            </div>
+          </div>
+          
           <div id= "July-21-2020-FI">
             <div class="post-header">
                 <div class="post-date">
