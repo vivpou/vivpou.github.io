@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-19-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#July-26-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,51 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-26-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 26, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>NaN Troubles</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning Kip, Allen, and I started our task of incrementing XP when users check off a task. Our approach was to use Async storage in a similar way to how we saved userID a few weeks ago. This approach allows multiple components of the app to access the same XP value and allows the XP to stay stored so that it doesn’t get reset when the user exits out of the app. However, we ran into issues with object types. Async storage only stores string values, but XP should be a numeric value since we need to increment and decrement the value. We tried to store it as a string in Async storage and just convert it to a number when we need to increment and decrement the value, then convert it back to a string when we save the value back to storage. However, we kept getting NaN values instead of the values we were expecting. We tried testing different approaches for where we were converting values and we added print statements throughout our code to see where the error was coming from. It seems like the error is coming from the step where we save the xp, but we aren’t sure how to proceed. We seem to be stuck this week, but we will continue to work through this problem next week.
+                </p>
+                <p>
+                  Later, we had our weekly team meeting. We started the meeting by talking through some of the app logistics. We confirmed some of the concepts we discussed last week, like how users’ XP is tracked by the progress bar at the top of each screen, then when the XP reaches a set amount where the progress bar is full, the next level will automatically check off and the user will get an alert that the level has been unlocked and the progress bar will zero out again. Once the level is checked off, the user can navigate to the quest screen to collect the new item. The item will only be added to the user’s inventory when they click on the quest and collect the item. We talked through some additional details, like if a user has already passed a level, but then they go back and uncheck a task, they will have negative XP in the progress bar instead of reverting the level and removing the item. Ultimately, the user still has to collect the same amount of XP to unlock the next level in either situation. But the negative XP method seems more simplistic and more intuitive. We also decided that the level numbers should be split by chapter, so it will be level 1.9 or level 2.6 instead of just continuously increasing the level number regardless of the chapter number (Ex: if chapter 1 has 10 levels, the 11th level would be level 2.1 instead of level 11).
+                </p>
+                <p>
+                  Lastly, we caught up on this week’s progress and discussed next week’s plans. Allen and Wayne were able to get a modal popup working when users click on a level, but they are having issues with formatting, specifically with rendering the bitmoji at the correct size. Next week they will fix these formatting issues with Bitmoji. Kip, Allen, and I updated the team on our struggles with Async storage, which we will continue working on next week. Kip and I talked about our attempts at rendering a customizable Bitmoji using Libmoji (see yesterday’s post) which we will continue working on next week. If we are not able to get the customizable Libmoji render working, we may need to scrap the Bitmoji idea and go for a simpler character design. Speaking of design, Elissa was able to join our meeting today! Her job seems to be winding down, so if she has time this week, she may design some backgrounds for our quest screen. I’m excited to see what she comes up with :).
+                </p>
+            </div>
+          </div>
+
+          <div id= "July-24-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 24, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Struggling With Libmoji Traits</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today Kip and I struggled with Libmoji for the duration of our work session. A consistent problem with Libmoji seems to be the lack of documentation. The aspect of Libmoji we are working with is the traits, which allows users to customize their character’s basic traits like hair, skin color, and facial features. The problem we are running into is with the formatting. Libmoji has a function that pulls the traits called getTraits(). The problem is that the input to this function has to be a Trait object, but we have no way to see what a Trait object should really look like or how to initialize a Trait object. We tried printing a Trait object using the given Libmoji randTrait() function, but it just printed a Javascript array. When we tried printing the type of a trait object, it just returned ‘object’ which was too generic to learn any additional information from. We tried all sorts of syntactic variations on Javascript arrays by moving brackets and commas into different grouping, but nothing seemed to work. The possible values for different traits and their customizations are stored in a JSON file. So, our next approach was to try different methods of pulling values directly from the JSON file, and then transforming those values to Javascript, leaving it as JSON, etc. None of these attempts yielded any successful results. Eventually, we just used a long URL template that was provided to render the Bitmoji. While this works for rendering in a specific Bitmoji, it doesn’t seem very scalable or intuitive for allowing users to customize their character. Kip and I will have to look more into how we can change the URL implementation or keep working on formatting to pull the traits from the JSON file so that it’s more scalable for customization.
+                </p>
+            </div>
+          </div>
+        
+        
           <div id= "July-19-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
