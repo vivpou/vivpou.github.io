@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#July-29-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#July-31-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,65 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "July-31-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 31, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Polishing Presentations</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today was a pretty relaxed day, since the only meeting I had was Power To Wow in the afternoon. I spent most of my day working on my end-of-internship presentation. I’m having a hard time getting my presentation within the time limit. I think the best approach will be to perfect my script so that I can speak more quickly throughout the presentation and I don't waste time stumbling over my words. I cut out some parts of my demo. I think I can get away with cutting out these parts since they include more specific information than might be necessary, but I’ll see what Rajiv and Janice think of this on Monday. For now, I’m still a bit over time, so I might ask Janice and Rajiv for suggestions on where to cut out information.
+                </p>
+                <p>
+                  Today I also started thinking about the manual rules implementation. Even if I don’t get access to the database within the next few days, I might be able to practice the formatting using a pandas dataframe, since cx_Oracle reads tables from databases into dataframes. However, I’m reluctant to get started on this until I get confirmation on what form the table will be implemented in since I don’t want to have to overwrite previous work if there is a last-minute change of mind on the formatting. The general structure for implementing manual rules in place, so the piece that’s left is just the format that the manual rules will come in. I tried to create a sample manual rules table in Oracle, but I don’t have the right permissions. Since Kiran said he’s changing database permissions currently, I’ll reach out to him in a few days if I still don’t see my permissions changing.
+                </p>
+                <p>
+                  This afternoon, I had the Power To Wow presentation with Nancy, Benjamin, Gabe, Anushka, and Jenna. I practiced my Power To Wow presentation a little bit this morning and I think my presentation went pretty well. It definitely wasn’t as polished as my end-of-internship presentation, but given that this is more of a public-speaking exercise than a presentation I think it’s appropriate that this presentation was more informal. Jenna presented about her project, which was concerned with UI design. It was interesting to hear about different types of projects that people are working on. Nancy presented about grocery bagging, which has a lot more nuance than I expected. This exercise will hopefully help me with thinking on the spot, like answering questions in presentations.
+                </p>
+                <p>
+                  Next week, I’ll try and work on implementing manual rules using data tables or at least using pandas dataframes if I can’t get access to the database. I’ll also be presenting to Janice on Monday and to Karin on Tuesday. Once I get feedback, I can improve and change my presentation before I present to Tammy and CTG leadership on August 12th. I’m not sure what else to work on for my tool, so maybe I’ll ask Rajiv if he has suggestions if I get stuck with manual rules or if I’m happy with my presentation.
+                </p>
+            </div>
+          </div>
+          
+          <div id= "July-30-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>JULY 10, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Manual Rules Meeting</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning I got the implementation of reading from Oracle and writing to Excel working with my manual rules. Since I already had the separate components of reading data from Oracle, writing formatted outputs to Excel, and applying manual rules working I just had to combine them in the right order and make sure everything was consistent. The run time is a little but slower than the previous version without manual rules and without the database connection. It takes about 2 minutes to save the model and 4-5 minutes to run the predictions. For now, I’m ok with this efficiency, but once I get access to more data, I’ll need to observe how my model scales and make changes accordingly.
+                </p>
+                <p>
+                  At noon I had my meeting with Kiran, Anuj, David, and Chris from Business Procurement. I updated them on my accuracy and efficiency for getting the predictions for different levels of commodity codes and on adding manual rules. It seems like the commodity code predictions are on track. David gave me some insight on the places where my code’s predictions don’t match the expected values. In some cases my predictions might be right even if they don’t match the expected value and in other cases I’ll need to go back and make some adjustments. I also showed them my approaches to implementing manual rules using the rigid for-loop structure and using the more broad dictionary/stopword structure. It seems like the rigid for-loop structure is more in line with what Dave Diamond (Head of Procurement Analytics and Programs) is looking for. Kiran suggested that the implementation in the future will likely be a table with the values that map to certain commodity codes. Once I get more clarity on what this table might look like and get more access to creating test tables in the database, I’ll work on transitioning my current model to this structure. David also suggested a more flexible approach of using NLP within the rules so that it doesn’t rely on such specific rules and can be more adaptable. I’ll look into more flexible rules using NLP, since I think it’s an interesting approach and would avoid the mess of manual rules, if I have time but for now I will stick with Dave Diamond’s ask for rigid manual rules. Kiran also gave some updates about the database. The meeting was extended but Kiran and Anuj had to leave, so I talked to Chris and David a bit more about my tool. David is using NLP in his project, so I offered to share the same folder that I shared with the India development team last week with him. Additionally, David offered to share the Oracle query he used to pull the data from the database into the spreadsheet he sent me a few weeks ago so that when I get access to the database I can recreate the same data format as I have been using, which will prove to be very useful given my lack of experience in Oracle. Overall, this meeting was really productive and I have a better understanding of the direction I should be going in.
+                </p>
+                <p>
+                  I also brought up my struggles with writing to the database and Kiran said that writing results to the database isn’t of the highest priority, so for now I’ll work more on manual rules implementation and fine-tuning my model. I’ll come back to writing to the database table if I can get some permissions fixed when Kiran has time. Since I don’t have to worry too much about writing to the database for now, I uploaded the files for defining my manual rules, saving models using the database table, and predicting into and excel. I also updated my quick guide to include descriptions of these files and a few additional steps to run these files. This way my folder is up-to-date and David has access to the files I showed in my presentation instead of outdated files from before I started working with the database.
+                </p>
+                <p>
+                  I spent a little bit of time practicing my Power To Wow presentation and my presentation script, but I think I’ll need to practice more tomorrow. I set up a meeting with Janice for Monday to get some initial feedback on my presentation before I present to Karin on Tuesday. I definitely need to cut down on my script. Rajiv recommended that I add a slide to summarize what I’ve learned throughout the project in terms of tools and skills. This slide puts me over the time limit, but since it's an important slide I can probably accommodate for it by cutting out information in other places. I’ll work on this tomorrow.
+                </p>
+                <p>
+                  Tomorrow, I plan to practice my end-of-internship presentation and my Power To Wow presentation. The Power To Wow event is tomorrow afternoon, so I’m excited to see what everyone else has prepared. Tomorrow, I’ll also think about what an implementation for reading manual rules from a table might look like, but since I don’t have the correct permissions, I won’t be able to actually implement it yet. I also plan to also analyze some of the mismatched predictions from my tool.
+                </p>
+            </div>
+          </div>
+          
           <div id= "July-29-2020-FI">
             <div class="post-header">
                 <div class="post-date">
