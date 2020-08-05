@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#August-4-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#August-5-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,25 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "August-5-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 5, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Wednesday</p>
+                </div>
+                <div class="post-title">
+                    <p>cx_Oracle Struggles continued…</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  I spent the entirety of my day continuing to try writing to the database table. I used some of the methods I researched yesterday. As a test, I tried updating the table so all the columns have the same value using cx_Oracle and the query command Rajiv showed me yesterday. I was able to run this without the database, value, and type errors I was getting yesterday and updated the table successfully, which is a good sign. However, the more challenging task is to update the table row by row using the predicted values which are stored in a pandas dataframe. I can’t find an efficient way to set a whole column in the database equal to a whole column of my python dataframe. I researched many different methods, and it seems like the only feasible way is to create an intermediary temporary table and transfer data from the temporary table to the final table. However, this might not be a sustainable way to complete the task and might create excess loose ends in the database structure. Additionally, I don’t have the correct permissions to do this, so it’s out of the question for now. The approach I’m taking is by looping through my dataframe and updating the database table row-by-row. This method is very slow, but I’d like to see if it works. If this method works, then I can work on making it more efficient and altering my approach. Otherwise, I might need to ask for more database permissions again so that I can try the approach of creating a new temporary database table for my predictions, transferring the columns from this temporary table to the final table, and then deleting the temporary table. But getting permissions to create and delete tables could be challenging, so I’m trying to avoid this if possible. Tomorrow, I’ll keep trying to find an efficient way to write from Python to the database.
+                </p>
+            </div>
+          </div>
+
           <div id= "August-4-2020-FI">
             <div class="post-header">
                 <div class="post-date">
