@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#August-5-2020-FI">&uArr;<br>To newest</a></p>
+                <p><a href="#August-7-2020-FI">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#June-08-2020-FI">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,62 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "August-7-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 7, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Friday</p>
+                </div>
+                <div class="post-title">
+                    <p>Successfully Writing To Oracle!</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today I was able to get the method for writing to Oracle working at a much more reasonable runtime. :) This morning I ran my program (with Toad closed) and it took about 20 minutes to complete 118k rows. I messaged Rajiv about my progress and he mentioned that he had a method that would help with the efficiency. He used an Oracle query to set a unique index so that the cost of running the query would be lower and the program would be more efficient. After adding a unique identifier, the runtime for solely writing to Oracle went down to less than a minute! I added this to my existing code, and it takes about 4-5 minutes total to run the predictions and write to Oracle, which is comparable to the runtime when I was writing to Excel. At this point I’m pretty much finished with my tool!
+                </p>
+                <p>
+                  Rajiv mentioned that the next steps for my project are mainly to get documentation down and make sure others can set up my tool. He sent over a template to be used for documentation which I’ll be using for my documentation. My documentation will include an overview of my project’s purpose/problem statement, the flowchart I made a few weeks ago, required infrastructure, and how to use the tool. I might add some additional appendix items about the algorithms I used and the presentation I gave on Tuesday since they might be helpful for future users or developers. I started working on the documentation’s formatting today and I updated my flowchart to include the database requirements. Next week, I’ll continue filling out the content of this guide. I set up a meeting with Kiran, David, Rajiv, and Daniel for next Wednesday so that we can review the documentation and address any remaining issues, like the format of the table that will hold manual rules.
+                </p>
+                <p>
+                  Today I set up some networking opportunities, which I’m looking forward to. I set up a meeting with Ramya, our team’s Scrum Master for Monday. I’m hoping to ask her about her career path and her role as a Systems Analyst as well as her experience as a Scrum master. I also set up a meeting with Laurena, a fellow intern under FPAIT. She mentioned that she’s a double major, so I’m curious about how her project plays into both her majors and getting her general opinion of Fidelity. Lastly, I met up with Ben and Alex, a member of the groupchat Ben added me to yesterday. There were a few other interns in the groupchat that couldn’t make it today, but hopefully we’ll get to meet next week. We talked about our projects, our teams, and our schools. It’s nice to continue meeting new people this far into the internship and I hope to keep in contact even after the internship ends.
+                </p>
+                <p>
+                  I also got an invite to present at a learning day in 2 weeks. I’ll be giving the same presentation as I gave to the FPAIT leadership team on Tuesday, but this time to a different audience. I haven’t participated in a learning day before, so I’m not sure what to expect, but I might ask Laurena since I know she’ll also be presenting on this learning day and she might have a better idea of what’s expected from the presenters, especially if she’s attended learning days before.
+                </p>
+                <p>
+                  Next week, I’ll be mostly focusing on getting my documentation together before my meeting on Wednesday. I also have my presentation for CTG’s senior team on Wednesday, so I’ll spend some time polishing my script and practicing the presentation to fit within the time limits. After presenting to FPAIT’s leadership on Tuesday, I’m feeling less nervous about this presentation. I’m also looking forward to my networking meetings next week and getting to know some new people!
+                </p>
+            </div>
+          </div>
+
+          <div id= "August-6-2020-FI">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 6, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Thursday</p>
+                </div>
+                <div class="post-title">
+                    <p>Technically a Technology Associate</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today I spent another day trying to write to the database table. Yesterday’s method was much too slow, so I tried another approach. I found a source that used a different Python to Oracle function that takes care of the problem of looping through the dataframe at the same time as you write to the database table row by row. I had to make some adjustments to my code to get this method to work. First, I formatted my dataframes into tuples since this method can only take in one list of tuples. Then I struggled for a while with converting types, since in the database table one of the fields is stored as a ‘NUMBER’ but python numpy.int64 or numpy.int32 types are not compatible with the Oracle ‘NUMBER’. Eventually, I just used list comprehension to convert to a Python native int within my sql query. I’m not sure if this method is the most efficient, but it seems to work for now. I can work on optimization later.
+                </p>
+                <p>
+                  Then, I tried running the program in Python, but it was taking a really long time to connect to the database and an even longer time to execute the command. I even tried reducing the number of rows being written to Oracle to only include 100 rows. I let this run for about an hour, but when it still hadn’t finished executing I felt it was reasonable to assume that something was fundamentally wrong, not that my code was just slow, especially since I was able to write the same data to Excel within a minute. I tried to use online resources to troubleshoot and see where the issue might be coming from, but could not find anything that fit my situation. Eventually, as a last ditch effort, I closed my connection on Toad and ran the program again. The program was able to execute in reasonable time for 100 rows! It’s still quite slow to run on all 100k+ rows and wasn’t able to finish executing by the end of the day, since I only found the solution with closing Toad before running the Python program at the very end of the work day, but I’ll definitely try running my program again tomorrow morning to see if it works.
+                </p>
+                <p>
+                  In my downtime while I was waiting for my code to run, I got involved with a few other tasks. First was that Benjamin added me to a small group chat with other interns whose internship periods were being extended. This was nice, especially since the internship webinars are no longer being held. I also filled out some paperwork for the extended period. For the next 2 weeks, I’m technically a ‘Technology Associate’ which is fun :). Being added to a new internship group has inspired me to reach out and try networking with new people. I might reach out to Laurena who is in FPAIT and gave her presentation before me on Tuesday, since she mentioned that her internship period was also being extended. I might also reach out to Ramya and ask her about her work and her role as a Systems Administrator since I’m not too familiar with this role and I’m interested in her experience being a Scrum Master.
+                </p>
+            </div>
+          </div>
+
           <div id= "August-5-2020-FI">
             <div class="post-header">
                 <div class="post-date">
