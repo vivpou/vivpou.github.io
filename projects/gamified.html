@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#August-2-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#August-9-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,56 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "August-9-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 9, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>XP Working!</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Allen, Kip, and I were able to make some great progress today with the To do screen. We are finally able to get and store the XP using Async storage successfully! Last week, Kip and Allen found information about the way Async storage works with handling promises instead of values, so this is where we picked up this week. We spent the first hour testing with various console.log() statements to get better insight into what was happening within our promise function and to break down what was working and what was failing. Following online sources about promises, we tried using promise.then() statements to execute what we needed with saving and incrementing the XP. At this point, we were getting frustrated with the lack of progress we were seeing with our Async storage approach. Additionally, it was getting difficult to debug, since at one point, the application that we were using to render our app was crashing when it ran into an error instead of logging our error, so we had no idea what was going wrong.
+                </p>
+                <p>
+                  At this point, we discussed the idea of ditching Async storage and moving to a counter variable of some sort instead. However after some discussion about inheritance and the long-term benefits of Async storage, we decided to continue working Async storage. It seems like having this discussion gave us some perspective or a much-needed break, because within 10 minutes of having this discussion about leaving Async storage behind, we were able to get our XP incrementation working with Async storage! We did this by using the promise.then() function. Before calling promise.then(), we resolved the value from GetXP so that we could use the up-to-date value of the XP. Within promise.then() we have a call to SaveXP, the input to which is the resolved GetXP() value which has been converted to a number and incremented appropriately before finally being converted back into a string. This is because we need to convert the value to a number so we can apply the math of incrementing, but we need to convert it back into a string because SaveXP can only save strings. Once this was finalized, we started working on resetting the XP when the user reaches the threshold for the next level. We are running into some issues with incrementing the level in the right place, but we can work on this next week.
+                </p>
+                <p>
+                  We also had our weekly team meeting today. Like last week, this was a pretty short meeting. We essentially just caught up on what each subteam accomplished this week and what we plan to do next week. Allen and Wayne have figured out how to put specific images for each level, so that we can display the color that has been unlocked for each level. Next week, they plan to fetch the level from Async storage and update which levels are unlocked or not. Allen updated the team on our progress with getting XP working with Async storage and how we plan to implement saving the level that the user is on next week. I updated the team on Kip and I’s progress with implementing the blob and the menu formatting. Next week, we plan to get the menu onPress() working so that users can actually dynamically change the character appearance using the menu. Kip and I will also work on pulling the XP and level from Async storage so that we can display the user’s XP progress and level progress in the top navigation bar. We discussed that we would give users 3 default blob colors of black, gray, and white which will be initialized in the MakeProfile screen and give us a starting point for the character screen without needing to link the character screen to the quest screen for now.
+                </p>
+            </div>
+          </div>
+
+          <div id= "August-8-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 8, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Introducing Blob</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Kip and I started implementing a placeholder blob character this week on the Character Screen. After struggling with Libmoji’s limited documentation and functionality for the last few weeks, we decided that it would be best to implement a simpler character which we have more control over. Eventually, we would like to implement a blob-shaped character, which Elissa might help us design, but for now, we’re using an image of different colored circles with transparent backgrounds. 
+                </p>
+                <p>
+                  Our first step was to implement the format of our character display and menu. To do this we just used a few flex boxes and rendered our image into the top ⅔ of the screen with the bottom ⅓ reserved for the inventory, where users can select the color that they want their blob character to be changed to. We spent some time struggling with the formatting of the menu since we ran into the problem of aligning by row instead of column again, but eventually we were able to fix this. Our next step was to make it so that clicking on different colored circles in the menu would actually change the character’s color. Our plan is to use onPress for the menu icons to change color. We created a separate class for the menu so that it can inherit the color we want to customize and so that we can easily set the states. However, we ran into issues with passing the color into the image location so that we could render different colored circles based on the name of the file. To load in an image, react native uses a require() statement within the image source, but the input to require() must be a string, so it's hard to dynamically change the source of the image by passing in a variable, even if the variable stores a string. We tested a few different ways of passing information to require, but still are having no luck.
+                </p>
+                <p>
+                  Next week, we will continue working on being able to dynamically change the image of the character using the menu buttons so that we have a functioning character screen. For now, I’m pretty happy with the progress we’ve made with setting up the format of the character screen for our new blob. Once we figure out how to change the image url using variables, we should be pretty close to finishing the prototype version of our character screen. :)
+                </p>
+            </div>
+          </div>
+
           <div id= "August-2-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
