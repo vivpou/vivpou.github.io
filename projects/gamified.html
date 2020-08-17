@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#August-09-2020-GTM">&uArr;<br>To newest</a></p>
+                <p><a href="#August-16-2020-GTM">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#May-25-2020-GTM">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,56 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "August-16-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 16, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Sunday</p>
+                </div>
+                <div class="post-title">
+                    <p>Last Meeting of The Summer</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  This morning Allen, Kip, and I were able to get the level incrementing working. We picked up where Allen and I left off last week. Kip was able to help us out and guide us through how we needed to layer promise.then() functions to get the levels incrementing correctly. We did some testing with checking and unchecking tasks to check that incrementing levels and xp were working as well as decrementing xp to be negative instead of decrementing the levels as we discussed a few weeks ago.
+                </p>
+                <p>
+                  Since we were able to finish the levels so early, we decided to continue working on the top navigation that Kip and I were having trouble with yesterday. We consulted quite a few online resources about await, usePromise, and promise.map(). Ultimately, we were able to get the xp and level values displayed as text with usePromise. However, the values were continuously flashing on and off and we got an error about having too many pending requests. We’re not sure how to fix this error, and online resources seem to say that this error has to do with unstable versions of react native and react navigation. Because of this error, we haven’t merged our local changes into the development branch, since it would cause our current stable prototype to become unstable. Although we’re able to access the values and display them as text, the progress bar still does not update. This is an open issue that we’ll have to revisit the next time we work on ths app.
+                </p>
+                <p>
+                  Today was our last app meeting, so we caught up with our progress for this week and listed out our open issues so we know where to pick up the next time we work on the app. This week, Allen and Wayne implemented a function that updates which levels are shown on the QuestScreen based on what level the user is on and were able to change the images displayed on the MakeProfile screen. Allen updated the team on our progress with incrementing levels. I updated the team on my and Kip’s progress with the character customization prototype and the struggles with the top navigation bar. We then updated the backlog to be up-to-date with our current progress so we would know what has already been done and what still needs to be done when we reconvene. We explicitly highlighted the main open issues that we have yet to resolve with our current prototype, namely the top navigation’s issues with displaying xp and level as well as updating the progress bar, implementing a habits screen based on our todo list screen, and updating the inventory of the character screen based on the level that the user is on. This is our last day of working on the app for this summer and I’m really proud of the progress we’ve been able to make over the last few months. We were able to implement pretty much all of our screens and even get Async storage working. Our remaining issues are regarding getting screens to interact with one another, which we’ve already started on with xp. We might reconvene over winter break, but that’s all for now! :)
+                </p>
+            </div>
+          </div>
+
+          <div id= "August-15-2020-GTM">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>AUGUST 15, 2020</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Saturday</p>
+                </div>
+                <div class="post-title">
+                    <p>Change Character Color Implemented</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  Today Kip and I were able to get the prototype of the character customization screen working. Last week we struggled with being able to dynamically change the image of the character using the menu buttons using the require function. This week we decided to use a style property called ‘tintColor’ to change the color of the blob instead of actually changing the image of the blob for each color. We struggled a bit with the syntax of changing the state, but eventually we were able to get this working. TintColor changes the color by applying the specified color on all the nontransparent pixels of the image, so since our initial ‘blob’ is white, whatever color we specify in tintColor will appear. This works for our prototype, but eventually if we want to add patterns or other customization beyond color changing, we may run into issues and will need to change our implementation. For now, we have a functioning prototype/proof of concept of our character customization screen. :)
+                </p>
+                <p>
+                  We also started working on displaying the xp in the progress bar of our top navigation bar. Initially, I thought this would be relatively simple. Since the xp value is just stored in Async storage and the progress bar can change its appearance based on whatever value between 0 and 1 is passed to it, I thought we could just pull the current xp out of Async storage, divide it by the xp needed to pass the level, and pass that decimal value into the progress bar. However, because of the way that promises work with Async storage, this was not nearly as simple as I anticipated. Using promise.then() works to manipulate the values, but it cannot return the value as a number, it can only return promises, which cannot be used by our progress bar. If we try to use other methods to resolve the promise value and just return the value stored in the promise, then when the xp is updated in Async storage, the resolved value will not change to reflect this update, so our progress bar won’t update in real time. Kip and I struggled with a few different, but were not able to come up with a solution.
+                </p>
+                <p>
+                  This is our last week working on the app for this summer, so we might just need to make a note of where we’ve left off and what we’ve tried and then continue working on this issue whenever we pick up on the app. Alternatively, if our TaskList team finishes early tomorrow, we might be able to work on the top navigation together. Although our progress bar isn’t working, I’m glad that we were able to get our character customization prototype working before the end of the summer.
+                </p>
+            </div>
+          </div>
+
           <div id= "August-09-2020-GTM">
             <div class="post-header">
                 <div class="post-date">
