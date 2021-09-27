@@ -46,7 +46,7 @@
         <!-- shortcuts to top and bottom -->
         <div class="proj-shortcuts">
             <div class="proj-shortcuts-top">
-                <p><a href="#Week-3-eB">&uArr;<br>To newest</a></p>
+                <p><a href="#Week-4-eB">&uArr;<br>To newest</a></p>
             </div>
             <div class="proj-shortcuts-bot">
                 <p><a href="#Week-1-eB">To oldest<br>&dArr;</a></p>
@@ -55,6 +55,34 @@
 
         <!-- Blog posts -->
         <div class="posts">
+          <div id= "Week-4-eB">
+            <div class="post-header">
+                <div class="post-date">
+                    <p><strong>SEPTEMBER 18, 2021 - SEPTEMBER 24, 2021</strong></p>
+                </div>
+                <div class="post-dow">
+                    <p>Week 4</p>
+                </div>
+                <div class="post-title">
+                    <p>Baseline Models and Data Exploration</p>
+                </div>
+            </div>
+            <div class="post-body">
+                <p>
+                  We were able to finish set-up/tutorials last week which means that this week we were able to start independently using the provided tools and getting a feel for how they fit into our project. For this week, we split into two subteams. Rory and Thomas worked on writing SQL queries and getting used to pulling data tables from eBays datalake to be downloaded for model training. Yuki, Kyle, and I worked on writing some basic baseline models for making predictions based on the previous week’s data. We created baseline models such as using the previous week’s data directly, scaling the previous week’s data, finding the average over the last n days, and using the median of the last week. We calculated and graphed the predictions for these baseline models to try and interpret the results. We found that using the previous week’s data directly and scaling the previous week’s data followed the general data trend with the exception of weeks after banking holidays. We also did some basic data exploration graphing the data directly from the dataset to observe general trendlines. 
+                </p>
+                <p>
+                  During our advisor meeting with Prof. Williams, we presented the work we had done and received feedback about how to present our data and future areas we might consider exploring. Prof. Williams also gave us very helpful insight regarding the metrics we might use to compare our baseline models based on the research we had done so far. She explained why some metrics might not be applicable to our project and which metrics might be a better fit. Lastly, we received more feedback about our statement of work in terms of adding visuals and clarifying deadlines.
+                </p>
+                <p>
+                  In this week’s liaison meeting, we showed Stephanie and Nathan the results of our data exploration, baseline models, and SQL queries. We had the opportunity to ask about some inconsistencies we saw in the data and got insights into what could be causing this as well as how to handle these inconsistencies. Regarding our baseline models, Stephanie and Nathan suggested how we might further incorporate metrics so that each model could be directly, quantitatively compared to one another. We also received advice on how to more clearly visualize our results. Finally, we received advice on how to navigate the datalake in order to get access to the necessary data. 
+                </p>
+                <p>
+                  For next week, we will apply Stephanie and Nathan’s advice on adding metrics for comparison and metric visualizations to our existing baseline models. We will also refactor our existing code to allow for easier collaboration and a more efficient workflow. Lastly, our statement of work draft is due on Monday, so we will work as a team on completing and turning in the draft.
+                </p>
+            </div>
+          </div>
+          
           <div id= "Week-3-eB">
             <div class="post-header">
                 <div class="post-date">
@@ -69,7 +97,8 @@
             </div>
             <div class="post-body">
                 <p>
-                  This week we spent most of our time doing individual work of working on sections of our Statement of Work and going through the tools for data exploration. We split up the sections of the Statement of Work on Sunday and worked on it throughout the week. I was tasked with the introduction, where I gave a high-level overview of eBay’s functions, the parts of their payment transactions, and how this connects to the problem we are trying to solve. Yuki and Kyle added sources to our literature review as a part of their work on our approaches. Lastly, we each spent a few hours going through eBay’s provided tutorial videos for the capabilities. This tool will allow us to write SQL queries to access parts of eBay’s datalake so that we can use it for our models.                </p>
+                  This week we spent most of our time doing individual work of working on sections of our Statement of Work and going through the tools for data exploration. We split up the sections of the Statement of Work on Sunday and worked on it throughout the week. I was tasked with the introduction, where I gave a high-level overview of eBay’s functions, the parts of their payment transactions, and how this connects to the problem we are trying to solve. Yuki and Kyle added sources to our literature review as a part of their work on our approaches. Lastly, we each spent a few hours going through eBay’s provided tutorial videos for the capabilities. This tool will allow us to write SQL queries to access parts of eBay’s datalake so that we can use it for our models.
+                </p>
                 <p>
                   In this week’s advisor meeting, we went over our statement of work with Prof. Williams and got some feedback on what to change, specifically focusing on our deadlines. We also talked through the logistics for Stephanie’s in-person meeting next week. In this week’s liaison meeting, we received additional feedback on our statement of work, specifically surrounding metrics for scoring our models, adding a bit about exploratory data analysis, and the importance of failing often in the iterative process while documenting those failures. We talked through some additional insights on our literature review to get guidance on what direction to go in for this upcoming week. In the last half of the meeting, Priya walked us through a dashboard that eBay uses for data visualization. This was really informative in terms of gaining insights and being able to see the data patterns more easily. The dashboard had a lot information so I anticipate that as we get to know the data better we will be able to leverage the dashboard better and understand the insights it is providing.
                 </p>
